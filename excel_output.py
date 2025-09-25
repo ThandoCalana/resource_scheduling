@@ -189,6 +189,27 @@ def write_combined_excel(filename="combined_schedule.xlsx"):
                 row.append(", ".join(evs))
             rows.append(row)
 
+        # Leave 2 blank rows
+        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
+        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
+
+        # --- Load % Row ---
+        load_row = ["Load %"]
+        start_index, end_index = None, None
+        for idx, slot in enumerate(time_slots):
+            if slot == time(8,0): start_index = idx + 1
+            if slot == time(17,0): end_index = idx + 1
+        if start_index is None: start_index = 1
+        if end_index is None: end_index = len(time_slots)
+
+        total_slots = end_index - start_index
+        for col_idx in range(1, len(OUTLOOK_USER_EMAILS)+1):
+            col_letter = get_column_letter(col_idx+1)
+            formula = f'=COUNTIF({col_letter}{start_index+1}:{col_letter}{end_index},"<>")/{total_slots}'
+            load_row.append(formula)
+        rows.append(load_row)
+
+        # Leave 2 blank rows
         rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
         rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
 
