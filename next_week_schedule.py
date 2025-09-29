@@ -86,14 +86,15 @@ def get_harvest_entries():
 def fetch_clickup_harvest_tasks():
     now = datetime.now(timezone.utc)
     weekdays = get_week_dates()
-    excluded_lists = {"certification", "product management"}
+    next_weekdays = [d + timedelta(days=7) for d in weekdays]
+    excluded_lists = {"product management"}
     task_dict = {a: [] for a in ASSIGNEES_WITH_UNASSIGNED}
     seen = {a: set() for a in ASSIGNEES_WITH_UNASSIGNED}
 
     def build_sheet_dates(due, allow_overdue):
-        if not due: return weekdays
-        days = [d for d in weekdays if d <= due]
-        return days or ([weekdays[0]] if allow_overdue else [])
+        if not due: return next_weekdays
+        days = [d for d in next_weekdays if d <= due]
+        return days or ([next_weekdays[0]] if allow_overdue else [])
 
     def push(task_id, name, link, assignees, sheet_dates):
         for a in assignees:
@@ -146,21 +147,47 @@ def fetch_clickup_harvest_tasks():
 # -------------------- OUTLOOK --------------------
 def get_outlook_events(user):
     token_url = f"https://login.microsoftonline.com/{TENANT_ID}/oauth2/v2.0/token"
-    token_data = {"client_id": CLIENT_ID,"client_secret": CLIENT_SECRET,"scope": "https://graph.microsoft.com/.default","grant_type": "client_credentials"}
+    token_data = {
+        "client_id": CLIENT_ID,
+        "client_secret": CLIENT_SECRET,
+        "scope": "https://graph.microsoft.com/.default",
+        "grant_type": "client_credentials",
+    }
     access_token = requests.post(token_url, data=token_data).json()["access_token"]
-    headers = {"Authorization": f"Bearer {access_token}", "Prefer": 'outlook.timezone="Africa/Johannesburg"'}
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "Prefer": 'outlook.timezone="Africa/Johannesburg"',
+    }
+
+    # get this week's weekdays
     weekdays = get_week_dates()
-    url = f"https://graph.microsoft.com/v1.0/users/{user}/calendarview?startDateTime={weekdays[0]}T00:00:00Z&endDateTime={weekdays[-1]}T23:59:59Z&$top=1000"
+
+    # shift them by 7 days to target next week
+    next_weekdays = [d + timedelta(days=7) for d in weekdays]
+
+    url = (
+        f"https://graph.microsoft.com/v1.0/users/{user}/calendarview"
+        f"?startDateTime={next_weekdays[0]}T00:00:00Z"
+        f"&endDateTime={next_weekdays[-1]}T23:59:59Z&$top=1000"
+    )
+
     events = requests.get(url, headers=headers).json().get("value", [])
-    formatted=[]
+    formatted = []
     for ev in events:
         start_dt = datetime.fromisoformat(ev["start"]["dateTime"]).astimezone(LOCAL_TZ)
         end_dt = datetime.fromisoformat(ev["end"]["dateTime"]).astimezone(LOCAL_TZ)
-        formatted.append({"subject": ev.get("subject","No subject"),"date": start_dt.date(),"start_time": start_dt.time(),"end_time": end_dt.time()})
+        formatted.append(
+            {
+                "subject": ev.get("subject", "No subject"),
+                "date": start_dt.date(),
+                "start_time": start_dt.time(),
+                "end_time": end_dt.time(),
+            }
+        )
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="combined_schedule.xlsx"):
+def write_combined_excel(filename="next_week_combined_schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
@@ -171,9 +198,10 @@ def write_combined_excel(filename="combined_schedule.xlsx"):
     all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAILS}
     task_dict = fetch_clickup_harvest_tasks()
     weekdays = get_week_dates()
+    next_weekdays = [d + timedelta(days=7) for d in weekdays]
     time_slots = generate_time_slots()
 
-    for day in weekdays:
+    for day in next_weekdays:
         sheet_name = f"{day.strftime('%A')} {day.isoformat()}"
         if sheet_name in wb.sheetnames:
             ws = wb[sheet_name]
@@ -205,7 +233,7 @@ def write_combined_excel(filename="combined_schedule.xlsx"):
         total_slots = end_index - start_index
         for col_idx in range(1, len(OUTLOOK_USER_EMAILS)+1):
             col_letter = get_column_letter(col_idx+1)
-            formula = f'=COUNTIF({col_letter}{start_index+1}:{col_letter}{end_index},"<>")/{total_slots}'
+            formula = f'=ROUND(COUNTIF({col_letter}{start_index+1}:{col_letter}{end_index},"<>")/{total_slots},4)'
             load_row.append(formula)
         rows.append(load_row)
 
@@ -248,4 +276,6 @@ def write_combined_excel(filename="combined_schedule.xlsx"):
 
 # -------------------- MAIN --------------------
 if __name__ == "__main__":
+    print(datetime.now())
     write_combined_excel()
+    print(datetime.now())
