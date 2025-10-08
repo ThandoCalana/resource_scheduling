@@ -9,20 +9,12 @@ from openpyxl.utils import get_column_letter
 # --- Load environment variables ---
 load_dotenv()
 
-# ClickUp + Harvest
+# ClickUp 
 CLICKUP_API_TOKEN = os.getenv("CLICKUP_TOKEN")
 SPACE_IDS = [s.strip() for s in os.getenv("CLICKUP_SPACE_IDS", "").split(",") if s.strip()]
 ASSIGNEES = [a.strip() for a in os.getenv("CLICKUP_ASSIGNEES", "").split(",") if a.strip()]
 ASSIGNEES_WITH_UNASSIGNED = ASSIGNEES + ["Unassigned"]
-HARVEST_ACCOUNT_ID = os.getenv("HARVEST_ACCOUNT_ID")
-HARVEST_TOKEN = os.getenv("HARVEST_TOKEN")
-
 CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
-HARVEST_HEADERS = {
-    "Authorization": f"Bearer {HARVEST_TOKEN}",
-    "Harvest-Account-ID": HARVEST_ACCOUNT_ID,
-    "User-Agent": "IntegrationScript"
-}
 
 # Outlook
 OUTLOOK_USER_EMAILS = [e.strip() for e in os.getenv("OUTLOOK_USER_EMAIL", "").split(",")]
@@ -49,7 +41,7 @@ def generate_time_slots(start_hour=8, end_hour=18):
 def email_to_name(email): 
     return " ".join(p.capitalize() for p in email.split("@")[0].split("."))
 
-# -------------------- CLICKUP + HARVEST --------------------
+# -------------------- CLICKUP --------------------
 def get_folders(space_id):
     return requests.get(f"https://api.clickup.com/api/v2/space/{space_id}/folder", headers=CLICKUP_HEADERS).json().get("folders", [])
 
@@ -65,25 +57,7 @@ def get_tasks(list_id):
 def get_subtasks(task_id):
     return requests.get(f"https://api.clickup.com/api/v2/task/{task_id}/subtask", headers=CLICKUP_HEADERS).json().get("tasks", [])
 
-def get_harvest_entries():
-    week_start, week_end = get_week_dates()[0].isoformat(), get_week_dates()[-1].isoformat()
-    url = f"https://api.harvestapp.com/v2/time_entries?from={week_start}&to={week_end}"
-    entries = requests.get(url, headers=HARVEST_HEADERS).json().get("time_entries", [])
-    formatted = []
-    for e in entries:
-        assignee = e.get("user", {}).get("name", "Unassigned")
-        assignee = assignee if assignee in ASSIGNEES_WITH_UNASSIGNED else "Unassigned"
-        entry_date = datetime.fromisoformat(e["spent_date"]).date()
-        duration = e.get("hours", 0)
-        formatted.append({
-            "id": f"harvest_{e.get('id')}",
-            "name": f"[Harvest] {e.get('notes', 'No description')} ({duration}h)",
-            "assignee": assignee,
-            "sheet_dates": [entry_date]
-        })
-    return formatted
-
-def fetch_clickup_harvest_tasks():
+def fetch_clickup_tasks():
     now = datetime.now(timezone.utc)
     weekdays = get_week_dates()
     excluded_lists = {"product management"}
@@ -136,11 +110,6 @@ def fetch_clickup_harvest_tasks():
                 if lname == "freshdesk": add_task(t, {"IN PROGRESS","TO DO","REVIEW"}, lname, restrict=False)
                 else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)
 
-    for entry in get_harvest_entries():
-        if entry["id"] not in seen[entry["assignee"]]:
-            task_dict[entry["assignee"]].append(entry)
-            seen[entry["assignee"]].add(entry["id"])
-
     return task_dict
 
 # -------------------- OUTLOOK --------------------
@@ -192,7 +161,7 @@ def write_combined_excel(filename="This_Week_Team_Schedule.xlsx"):
             wb.remove(wb.active)
 
     all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAILS}
-    task_dict = fetch_clickup_harvest_tasks()
+    task_dict = fetch_clickup_tasks()
     weekdays = get_week_dates()
     time_slots = generate_time_slots()
 
