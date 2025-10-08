@@ -86,7 +86,7 @@ def get_harvest_entries():
 def fetch_clickup_harvest_tasks():
     now = datetime.now(timezone.utc)
     weekdays = get_week_dates()
-    next_weekdays = [d + timedelta(days=7) for d in weekdays]
+    next_weekdays = [d + timedelta(days=28) for d in weekdays]
     excluded_lists = {"product management"}
     task_dict = {a: [] for a in ASSIGNEES_WITH_UNASSIGNED}
     seen = {a: set() for a in ASSIGNEES_WITH_UNASSIGNED}
@@ -162,8 +162,8 @@ def get_outlook_events(user):
     # get this week's weekdays
     weekdays = get_week_dates()
 
-    # shift them by 7 days to target next week
-    next_weekdays = [d + timedelta(days=7) for d in weekdays]
+    # shift them by 7 days to target next week (14 for 2 weeks from now etc.)
+    next_weekdays = [d + timedelta(days=28) for d in weekdays]
 
     url = (
         f"https://graph.microsoft.com/v1.0/users/{user}/calendarview"
@@ -187,7 +187,7 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="next_week_combined_schedule.xlsx"):
+def write_combined_excel(filename="Next_Week_Team_Schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
@@ -198,7 +198,7 @@ def write_combined_excel(filename="next_week_combined_schedule.xlsx"):
     all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAILS}
     task_dict = fetch_clickup_harvest_tasks()
     weekdays = get_week_dates()
-    next_weekdays = [d + timedelta(days=7) for d in weekdays]
+    next_weekdays = [d + timedelta(days=28) for d in weekdays]
     time_slots = generate_time_slots()
 
     for day in next_weekdays:
