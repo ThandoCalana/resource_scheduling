@@ -30,7 +30,7 @@ def get_week_dates():
     # Get number of days in month
     next_month = (first_day.replace(day=28) + timedelta(days=4)).replace(day=1)
     days_in_month = (next_month - first_day).days
-    return [first_day + timedelta(days=i) for i in range(days_in_month)]
+    return [first_day + timedelta(days=i) for i in range(92)]
 
 
 def generate_time_slots(start_hour=8, end_hour=18):
@@ -64,7 +64,6 @@ def get_subtasks(task_id):
 def fetch_clickup_tasks():
     now = datetime.now(timezone.utc)
     weekdays = get_week_dates()
-    excluded_lists = {"product management"}
     task_dict = {a: [] for a in ASSIGNEES_WITH_UNASSIGNED}
     seen = {a: set() for a in ASSIGNEES_WITH_UNASSIGNED}
 
@@ -103,7 +102,6 @@ def fetch_clickup_tasks():
         for folder in get_folders(space_id):
             for lst in get_lists_in_folder(folder["id"]):
                 lname = lst.get("name","").lower()
-                if lname in excluded_lists: continue
                 for t in get_tasks(lst["id"]):
                     if lname == "freshdesk": add_task(t, {"IN PROGRESS","TO DO","REVIEW"}, lname, restrict=False)
                     else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)
@@ -156,7 +154,7 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="This_Week_Team_Schedule.xlsx"):
+def write_combined_excel(filename="This_Month_Team_Schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
