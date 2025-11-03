@@ -25,7 +25,7 @@ CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
 HARVEST_HEADERS = {
     "Authorization": f"Bearer {HARVEST_TOKEN}",
     "Harvest-Account-ID": HARVEST_ACCOUNT_ID,
-    "User-Agent": "IntegrationScrip"
+    "User-Agent": "IntegrationScript"
 }
 
 # Outlook
