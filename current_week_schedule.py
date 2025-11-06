@@ -152,7 +152,7 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="This_Week_Team_Schedule.xlsx"):
+def write_combined_excel(filename="Current_Week_Team_Schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
@@ -177,7 +177,7 @@ def write_combined_excel(filename="This_Week_Team_Schedule.xlsx"):
         for slot in time_slots:
             row = [slot.strftime("%H:%M")]
             for u in OUTLOOK_USER_EMAILS:
-                evs = [ev["subject"] for ev in all_events[u] if ev["date"]==day and ev["start_time"]<=slot<ev["end_time"]]
+                evs = [str(ev.get("subject") or "No subject") for ev in all_events[u] if ev["date"]==day and ev["start_time"]<=slot<ev["end_time"]]
                 row.append(", ".join(evs))
             rows.append(row)
 
