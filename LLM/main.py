@@ -1,12 +1,14 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-from vector import retriever
+from vector_csv import retriever
 
 
 model = OllamaLLM(model="llama3.2")
 
 template = """
-You are an expert in answering questions related to the team's schedule availability as well as their technical capabilities
+You are an expert in answering questions related to the team's schedule availability as well as their technical capabilities.
+Do not hallucinate answers.
+Keep answers clean and direct.
 
 Here is the information about the team's availability: {schedule}
 
