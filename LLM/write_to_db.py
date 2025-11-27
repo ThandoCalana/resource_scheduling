@@ -136,6 +136,7 @@ BUSY_SLOTS:
 {busy_str}
 FREE_SLOTS:
 {free_str}
+
 META:
 TOTAL_FREE_HOURS: {round(total_free_hours, 2)}
 TOTAL_BUSY_HOURS: {round(total_busy_hours, 2)}
