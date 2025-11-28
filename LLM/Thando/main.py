@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from vector_csv import retriever
 
 
-model = OllamaLLM(model="llama3.2")
+model = OllamaLLM(model="smollm")
 
 template = """
 You are an expert in answering questions related to the team's schedule availability as well as their technical capabilities.
