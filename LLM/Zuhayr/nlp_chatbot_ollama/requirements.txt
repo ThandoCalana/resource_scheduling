@@ -1,0 +1,7 @@
+langchain
+langchain-ollama
+langchain-chroma
+pandas
+sqlalchemy
+pyodbc 
+python-dotenv
