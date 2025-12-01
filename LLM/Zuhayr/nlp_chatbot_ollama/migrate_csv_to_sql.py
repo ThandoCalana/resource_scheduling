@@ -8,6 +8,7 @@ load_dotenv()
 # CONFIGURATION
 DB_SERVER = os.getenv("SQL_SERVER")
 DB_NAME = os.getenv("SQL_DATABASE")
+DB_DRIVER = os.getenv("SQL_DRIVER")
 TABLE_NAME = "meetings"
 CSV_FILE = "data_transformed.csv"
 CSV_SEPARATOR = "`"
@@ -15,7 +16,7 @@ CSV_SEPARATOR = "`"
 # Creating database using pyodbc
 print(f"Connecting to SQL Server {DB_SERVER} (master DB)...")
 
-conn_str = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={DB_SERVER};DATABASE=master;Trusted_Connection=yes"
+conn_str = f"DRIVER={DB_DRIVER};SERVER={DB_SERVER};DATABASE=master;Trusted_Connection=yes"
 with pyodbc.connect(conn_str, autocommit=True) as conn:
     cursor = conn.cursor()
     print(f"Ensuring database '{DB_NAME}' exists...")

@@ -13,7 +13,7 @@ loaddotenv()
 # CONFIG 
 SQL_SERVER = os.getenv("SQL_SERVER")
 SQL_DATABASE = os.getenv("SQL_DATABASE")
-SQL_DRIVER = os.getenv("SQL_DRIVER", "ODBC Driver 17 for SQL Server")
+SQL_DRIVER = os.getenv("SQL_DRIVER")
 TABLE_NAME = "meetings"
 LLAMA_MODEL = "llama3.2"
 DEFAULT_LIMIT = 200
