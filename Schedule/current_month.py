@@ -30,7 +30,7 @@ def get_week_dates():
     # Get number of days in month
     next_month = (first_day.replace(day=28) + timedelta(days=4)).replace(day=1)
     days_in_month = (next_month - first_day).days
-    return [first_day + timedelta(days=i) for i in range(92)]
+    return [first_day + timedelta(days=i) for i in range(31)]
 
 
 def generate_time_slots(start_hour=8, end_hour=18):
@@ -107,7 +107,6 @@ def fetch_clickup_tasks():
                     else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)
         for lst in get_lists_directly_in_space(space_id):
             lname = lst.get("name","").lower()
-            if lname in excluded_lists: continue
             for t in get_tasks(lst["id"]):
                 if lname == "freshdesk": add_task(t, {"IN PROGRESS","TO DO","REVIEW"}, lname, restrict=False)
                 else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)

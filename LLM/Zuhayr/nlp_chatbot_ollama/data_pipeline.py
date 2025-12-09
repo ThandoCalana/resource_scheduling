@@ -9,9 +9,9 @@ import pyodbc
 # Load environment variables from .env file
 load_dotenv()
 
-DB_SERVER = os.getenv("SQL_SERVER")
-DB_NAME = os.getenv("SQL_DATABASE")
-DB_DRIVER = os.getenv("SQL_DRIVER")
+SQL_SERVER = os.getenv("SQL_SERVER")
+SQL_DATABASE = os.getenv("SQL_DATABASE")
+SQL_DRIVER = os.getenv("SQL_DRIVER")
 
 RAW_INPUT_FILE = os.getenv("RAW_INPUT_FILE")
 TRANSFORMED_OUTPUT_FILE = os.getenv("TRANSFORMED_OUTPUT_FILE")
@@ -28,17 +28,17 @@ def validate_env():
         missing.append("RAW_INPUT_FILE")
     if not TRANSFORMED_OUTPUT_FILE:
         missing.append("RAW_OUTPUT_FILE")
-    if not DB_SERVER:
+    if not SQL_SERVER:
         missing.append("SQL_SERVER")
-    if not DB_NAME:
+    if not SQL_DATABASE:
         missing.append("SQL_DATABASE")
-    if not DB_DRIVER:
+    if not SQL_DRIVER:
         missing.append("SQL_DRIVER")
 
     # Fail fast if anything is missing to avoid cryptic errors later
     if missing:
         raise ValueError(
-            f"❌ Missing the following required .env variables: {', '.join(missing)}"
+            f"Missing the following required .env variables: {', '.join(missing)}"
         )
 
 validate_env()
@@ -46,32 +46,32 @@ validate_env()
 
 # Create SQLAlchemy connection string with proper escaping for the ODBC driver
 def build_sql_engine():
-    encoded_driver = DB_DRIVER.replace(" ", "+")
+    encoded_driver = SQL_DRIVER.replace(" ", "+")
     conn_str = (
-        f"mssql+pyodbc://@{DB_SERVER}/{DB_NAME}"
-        f"?driver={encoded_driver}&trusted_connection=yes"
+        f"mssql+pyodbc://@{SQL_SERVER}/{SQL_DATABASE}"
+        f"?driver={encoded_driver}&Trusted_Connection=yes;TrustServerCertificate=yes;"
     )
     return create_engine(conn_str)
 
 
 # Connect directly to master database to create the target database if it doesn't exist yet
-print(f"Connecting to SQL Server {DB_SERVER} (master DB)...")
+print(f"Connecting to SQL Server {SQL_SERVER} (master DB)...")
 
-conn_str = f"DRIVER={{{DB_DRIVER}}};SERVER={DB_SERVER};DATABASE=master;Trusted_Connection=yes"
+conn_str = f"DRIVER={{{SQL_DRIVER}}};SERVER={SQL_SERVER};DATABASE=master;Trusted_Connection=yes;TrustServerCertificate=yes;"
 
 with pyodbc.connect(conn_str, autocommit=True) as conn:
     cursor = conn.cursor()
-    print(f"Checking if database '{DB_NAME}' exists...")
+    print(f"Checking if database '{SQL_DATABASE}' exists...")
     # Use SQL conditional to safely create database only if missing
     cursor.execute(
-        f"IF DB_ID('{DB_NAME}') IS NULL CREATE DATABASE [{DB_NAME}]"
+        f"IF DB_ID('{SQL_DATABASE}') IS NULL CREATE DATABASE [{SQL_DATABASE}]"
     )
-    print(f"Database '{DB_NAME}' is ready!")
+    print(f"Database '{SQL_DATABASE}' is ready!")
 
 
 # Parse raw CSV and enrich with calculated fields for analysis
 def transform_meeting_data():
-    print(f"📥 Loading raw CSV: {RAW_INPUT_FILE}")
+    print(f"Loading raw CSV: {RAW_INPUT_FILE}")
 
     df = pd.read_csv(RAW_INPUT_FILE, sep=CSV_SEP)
 
@@ -133,7 +133,7 @@ def transform_meeting_data():
     cols_to_drop = ["content", "week_number", "year", "time_slot"] 
     df = df.drop(columns=[c for c in cols_to_drop if c in df.columns])
 
-    print(f"💾 Saving transformed CSV → {TRANSFORMED_OUTPUT_FILE}")
+    print(f"Saving transformed CSV → {TRANSFORMED_OUTPUT_FILE}")
     df.to_csv(TRANSFORMED_OUTPUT_FILE, sep=CSV_SEP, index=False)
 
     return df
@@ -141,15 +141,15 @@ def transform_meeting_data():
 
 # Push the enriched dataset into SQL Server for persistence and downstream analytics
 def upload_to_sql(df):
-    print("📡 Uploading data to SQL Server...")
+    print("Uploading data to SQL Server...")
     engine = build_sql_engine()
     # Use replace mode to overwrite the table with fresh transformed data each run
     df.to_sql(TABLE_NAME, engine, if_exists="replace", index=False)
-    print("✅ SQL upload complete.")
+    print("SQL upload complete.")
 
 
 # Run the full ETL pipeline from raw CSV through transformation to database storage
 if __name__ == "__main__":
     df = transform_meeting_data()
     upload_to_sql(df)
-    print("🎉 Pipeline complete!")
+    print("Pipeline complete!")

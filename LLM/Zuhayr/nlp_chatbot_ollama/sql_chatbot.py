@@ -5,10 +5,10 @@ import pandas as pd
 import urllib.parse
 import ollama
 
-from dotenv import loaddotenv
+from dotenv import load_dotenv
 from typing import Optional, Tuple, List, Dict, Any
 from sqlalchemy import create_engine, text
-loaddotenv()
+load_dotenv()
 
 # CONFIG 
 SQL_SERVER = os.getenv("SQL_SERVER")
