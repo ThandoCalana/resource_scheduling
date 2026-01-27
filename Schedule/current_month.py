@@ -29,8 +29,8 @@ def get_week_dates():
     first_day = today.replace(day=1)
     # Get number of days in month
     next_month = (first_day.replace(day=28) + timedelta(days=4)).replace(day=1)
-    days_in_month = (next_month - first_day).days
-    return [first_day + timedelta(days=i) for i in range(31)]
+    monday = today - timedelta(days=today.weekday())
+    return [first_day + timedelta(days=i) for i in range(92)]
 
 
 def generate_time_slots(start_hour=8, end_hour=18):
@@ -153,7 +153,7 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="This_Month_Team_Schedule.xlsx"):
+def write_combined_excel(filename="Three_Month_Team_Schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
