@@ -6,16 +6,15 @@ from datetime import datetime
 SOURCE_FILE = "Three_Month_Team_Schedule.xlsx"
 OUTPUT_FILE = "Aggregated_Hours.xlsx"
 
-# Dynamic reporting period
 REPORT_START = datetime(2026, 1, 1).date()
 REPORT_END   = datetime(2026, 3, 31).date()
 # -------------------------------------------------
 
-# Load workbook and sheet names
+# Load workbook
 wb = load_workbook(SOURCE_FILE, data_only=True)
-day_sheets = [s for s in wb.sheetnames if s not in ["Names", "Daily Loads", "Monthly Averages"]]
+day_sheets = [s for s in wb.sheetnames if s not in ["Names", "Daily Loads", "Monthly Aggregation"]]
 
-# --- Extract team member names from first sheet row 1, column B onward ---
+# --- Extract team members from first day sheet ---
 first_sheet = wb[day_sheets[0]]
 team_members = []
 col = 2
@@ -25,68 +24,111 @@ while first_sheet.cell(row=1, column=col).value:
 
 team_members_df = pd.DataFrame({"Team Member": team_members})
 
-# --- Collect logs (weekdays only) ---
-all_logs = []
+# ---------------- Atomic fact table ----------------
+facts = []
 
 for sheet_name in day_sheets:
-    # Read sheet
-    df = pd.read_excel(SOURCE_FILE, sheet_name=sheet_name, header=None)
-    
-    # Extract date from sheet name
-    date_part = sheet_name.split(" ")[-1]
     try:
-        sheet_date = datetime.fromisoformat(date_part).date()
+        sheet_date = datetime.fromisoformat(sheet_name.split(" ")[-1]).date()
     except:
         continue
 
-    # Skip dates outside reporting period
-    if sheet_date < REPORT_START or sheet_date > REPORT_END:
+    if not (REPORT_START <= sheet_date <= REPORT_END):
         continue
 
-    # Skip weekends (Saturday=5, Sunday=6)
     if sheet_date.weekday() >= 5:
-        continue
+        continue  # exclude weekends
 
-    # Rows 2-21 (30-min slots)
-    time_data = df.iloc[1:21, 1:]
-    existing_cols = df.iloc[0, 1:].tolist()
-    
-    # Keep only columns that match team_members and exist in this sheet
-    cols_to_use = [col for col in team_members if col in existing_cols]
-    time_data_filtered = pd.DataFrame({col: time_data.iloc[:, existing_cols.index(col)] for col in cols_to_use})
+    df = pd.read_excel(SOURCE_FILE, sheet_name=sheet_name, header=None)
+    headers = df.iloc[0, 1:].tolist()
 
-    # Calculate hours: 0.5 per non-empty slot
-    hours_logged = (time_data_filtered.notna().astype(int) * 0.5).sum()
+    for row_idx in range(1, 21):  # rows 2–21 = 30-min slots
+        for member in team_members:
+            if member not in headers:
+                continue
 
-    # Append to logs
-    temp_df = pd.DataFrame({
-        "Team Member": hours_logged.index,
-        "Hours": hours_logged.values,
-        "Date": pd.to_datetime(sheet_date)  # ensure datetime64[ns]
-    })
-    all_logs.append(temp_df)
+            col_idx = headers.index(member) + 1
+            task = df.iat[row_idx, col_idx]
 
-# Combine all logs into one DataFrame
-full_log = pd.concat(all_logs)
+            if pd.notna(task):
+                facts.append({
+                    "Date": pd.to_datetime(sheet_date),
+                    "Team Member": member,
+                    "Task": str(task).strip(),
+                    "Hours": 0.5
+                })
 
-# --- Sheet 2: Daily Loads ---
-daily_pivot = full_log.pivot(index="Date", columns="Team Member", values="Hours").fillna(0)
-daily_pivot = daily_pivot.reindex(columns=team_members, fill_value=0).sort_index()
+fact_df = pd.DataFrame(facts)
 
-# --- Sheet 3: Monthly Aggregation ---
-monthly_agg = full_log.groupby([
-    "Team Member",
-    pd.Grouper(key="Date", freq="ME")
-])["Hours"].sum().reset_index()
+# ---------------- Sheet 2: Daily Loads ----------------
+daily = (
+    fact_df
+    .groupby(["Date", "Team Member"])["Hours"]
+    .sum()
+    .reset_index()
+)
 
-monthly_pivot = monthly_agg.pivot(index="Team Member", columns="Date", values="Hours").fillna(0)
+daily_pivot = (
+    daily
+    .pivot(index="Date", columns="Team Member", values="Hours")
+    .fillna(0)
+    .reindex(columns=team_members, fill_value=0)
+    .sort_index()
+)
+
+# ---------------- Sheet 3: Monthly Aggregation ----------------
+fact_df["MonthDate"] = fact_df["Date"].dt.to_period("M").dt.to_timestamp()
+
+monthly = (
+    fact_df
+    .groupby(["Team Member", "MonthDate"])["Hours"]
+    .sum()
+    .reset_index()
+)
+
+monthly_pivot = (
+    monthly
+    .pivot(index="Team Member", columns="MonthDate", values="Hours")
+    .fillna(0)
+    .reindex(index=team_members, fill_value=0)
+    .sort_index(axis=1)
+)
+
 monthly_pivot.columns = [d.strftime("%B %Y") for d in monthly_pivot.columns]
-monthly_pivot = monthly_pivot.reindex(index=team_members, fill_value=0).sort_index(axis=1)
 
-# --- Write to Excel (3 sheets only) ---
+# -------- Per-member task monthly aggregation sheets --------
+member_task_monthly = (
+    fact_df
+    .groupby(["Team Member", "Task", "MonthDate"])["Hours"]
+    .sum()
+    .reset_index()
+)
+
+# ---------------- Write to Excel ----------------
 with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
     team_members_df.to_excel(writer, sheet_name="Names", index=False)
     daily_pivot.to_excel(writer, sheet_name="Daily Loads")
     monthly_pivot.to_excel(writer, sheet_name="Monthly Aggregation")
 
-print(f"Aggregated report saved to {OUTPUT_FILE} (weekends excluded)")
+    for member in team_members:
+        member_df = member_task_monthly[
+            member_task_monthly["Team Member"] == member
+        ]
+
+        if member_df.empty:
+            continue
+
+        pivot = (
+            member_df
+            .pivot(index="Task", columns="MonthDate", values="Hours")
+            .fillna(0)
+            .sort_index(axis=1)  # 🔑 true chronological ordering
+        )
+
+        # Format month headers AFTER ordering is fixed
+        pivot.columns = [d.strftime("%B %Y") for d in pivot.columns]
+
+        pivot.to_excel(writer, sheet_name=member[:31])
+
+
+print(f"Output written to {OUTPUT_FILE}")
