@@ -1,0 +1,284 @@
+name: employee_schedule_agent
+description: >
+  This semantic model answers questions about employee meeting schedules and workloads
+  at Slipstream Data. Each row represents a single meeting or activity logged by an employee
+  on a specific date. Use this model to analyze meeting patterns, compare workloads between
+  employees, and understand how time is spent across the team.
+
+tables:
+  - name: employee_schedule
+    base_table:
+      database: SCHEDULE_DB
+      schema: PUBLIC
+      table: EMPLOYEE_SCHEDULE
+    description: >
+      Each row is one meeting or calendar activity for one employee on one date.
+      An employee can have multiple meetings per day. The same meeting may appear
+      more than once if it was logged multiple times (e.g. prep sessions).
+      Load percentage reflects the proportion of the working day consumed by meetings on that date.
+
+    dimensions:
+      - name: employee_name
+        expr: FIRST_NAME
+        data_type: TEXT
+        description: >
+          The first name of the employee.
+          Use this to filter by a specific person.
+        sample_values:
+          - Andrew
+          - Robin
+          - Palesa
+          - Mark
+
+      - name: email
+        expr: USER_EMAIL
+        data_type: TEXT
+        description: >
+          The full email address of the employee, e.g. andrew@slipstreamdata.co.za.
+          Use this as a unique identifier for an employee.
+        sample_values:
+          - andrew@slipstreamdata.co.za
+          - robin@slipstreamdata.co.za
+          - palesa@slipstreamdata.co.za
+
+      - name: meeting_title
+        expr: MEETING_SUBJECT
+        data_type: TEXT
+        description: >
+          The subject or title of the meeting or activity, e.g. "Investec internal scoping feedback","leave","upskilling",
+          "Harmony presentation prep".It basically means anything the employees do in their schedule. Used to identify what the subject of an event was about.
+        sample_values:
+          - Investec internal scoping feedback
+          - Internal Harmony Gold RFP presentation prep
+          - Harmony presentation prep
+          - Team standup
+          - Client review
+
+      - name: workload_band
+        expr: LOAD_BAND
+        data_type: TEXT
+        description: >
+          A categorical label for the employee's workload level on that day.
+          Based on the load_percentage value. Use to filter busy or light days.
+        sample_values:
+          - Light
+          - Medium
+          - High
+
+      - name: day_of_week
+        expr: WEEKDAY
+        data_type: TEXT
+        description: >
+          The full name of the day of the week when the meeting occurred.
+          Useful for analyzing which days are busiest.
+        sample_values:
+          - Monday
+          - Tuesday
+          - Wednesday
+          - Thursday
+          - Friday
+
+      - name: month_name
+        expr: MONTH_NAME
+        data_type: TEXT
+        description: >
+          The full name of the month when the meeting occurred, e.g. November.
+          Use to filter or group by month.
+        sample_values:
+          - October
+          - November
+          - December
+          - January
+
+      - name: time_of_day
+        expr: TIME_OF_DAY
+        data_type: TEXT
+        description: >
+          The part of the day when the meeting occurred: Morning, Afternoon, or Evening.
+          Derived from the start time of the meeting.
+        sample_values:
+          - Morning
+          - Afternoon
+          - Evening
+
+      - name: summary
+        expr: SUMMARY_SENTENCE
+        data_type: TEXT
+        description: >
+          A plain English narrative sentence summarising the employee's activity for that day.
+          Example: "On Tuesday, 2025-11-11, Andrew logged an activity consuming 72% of his day."
+          Use this for natural language summaries rather than filtering.
+        sample_values:
+          - "On Tuesday, 2025-11-11, Andrew logged an activity consuming 72% of his day."
+
+    time_dimensions:
+      - name: schedule_date
+        expr: SCHEDULE_DATE
+        data_type: DATE
+        description: >
+          The calendar date of the meeting in YYYY-MM-DD format.
+          Use this for date filtering, trending over time, and date range queries.
+          The dataset covers late 2025 into 2026.
+        sample_values:
+          - "2025-11-11"
+          - "2025-11-12"
+          - "2025-12-01"
+
+      - name: start_time
+        expr: START_TIME
+        data_type: TIMESTAMP
+        description: >
+          The timestamp when the meeting started, e.g. 2025-11-11T10:30:00.
+          Use to determine meeting timing and order meetings within a day.
+        sample_values:
+          - "2025-11-11T10:30:00"
+          - "2025-11-11T11:00:00"
+          - "2025-11-11T13:00:00"
+
+      - name: end_time
+        expr: END_TIME
+        data_type: TIMESTAMP
+        description: >
+          The timestamp when the meeting ended, e.g. 2025-11-11T11:00:00.
+          Use together with start_time to calculate overlap or gaps between meetings.
+        sample_values:
+          - "2025-11-11T11:00:00"
+          - "2025-11-11T12:00:00"
+          - "2025-11-11T16:00:00"
+
+    measures:
+      - name: total_minutes
+        expr: DURATION_MINUTES
+        data_type: NUMBER
+        default_aggregation: sum
+        description: >
+          Total number of minutes spent in meetings. Sum across rows.
+          A 30-minute meeting = 30, a 3-hour meeting = 180.
+          Use to understand total time commitment.
+        sample_values:
+          - 30
+          - 60
+          - 180
+
+      - name: average_minutes
+        expr: DURATION_MINUTES
+        data_type: NUMBER
+        default_aggregation: avg
+        description: >
+          Average duration of a single meeting in minutes.
+          Use to understand typical meeting length for an employee or time period.
+        sample_values:
+          - 30
+          - 60
+          - 90
+
+      - name: load_percentage
+        expr: LOAD_PERCENTAGE
+        data_type: NUMBER
+        default_aggregation: avg
+        description: >
+          The proportion of the working day consumed by meetings, expressed as a decimal.
+          0.72 means 72% of the day was in meetings. Average this across days to get
+          an employee's typical daily meeting load.
+        sample_values:
+          - 0.25
+          - 0.50
+          - 0.72
+          - 1.0
+
+      - name: meeting_count
+        expr: "1"
+        data_type: NUMBER
+        default_aggregation: sum
+        description: >
+          Count of meeting rows. Each row = one meeting entry.
+          Sum to get total number of meetings for an employee, day, or period.
+        sample_values:
+          - 1
+          - 5
+          - 12
+
+verified_queries:
+  - name: all_meetings_for_employee
+    question: "Show me all of Palesa's meetings"
+    sql: >
+      SELECT
+        first_name AS employee_name,
+        schedule_date,
+        meeting_subject AS meeting_title,
+        start_time,
+        end_time,
+        duration_minutes,
+        time_of_day
+      FROM schedule_db.public.employee_schedule
+      WHERE first_name = 'Palesa'
+      ORDER BY schedule_date, start_time
+
+  - name: compare_employee_workload
+    question: "Compare the workload between Robin and Andrew"
+    sql: >
+      SELECT
+        first_name AS employee_name,
+        COUNT(1) AS total_meetings,
+        SUM(duration_minutes) AS total_minutes,
+        AVG(duration_minutes) AS avg_meeting_duration,
+        AVG(load_percentage) * 100 AS avg_load_percentage
+      FROM schedule_db.public.employee_schedule
+      WHERE first_name IN ('Robin', 'Andrew')
+      GROUP BY first_name
+      ORDER BY total_minutes DESC
+
+  - name: busiest_days_for_employee
+    question: "What are Andrew's busiest days?"
+    sql: >
+      SELECT
+        schedule_date,
+        weekday,
+        COUNT(1) AS meeting_count,
+        SUM(duration_minutes) AS total_minutes,
+        AVG(load_percentage) * 100 AS load_pct
+      FROM schedule_db.public.employee_schedule
+      WHERE first_name = 'Andrew'
+      GROUP BY schedule_date, weekday
+      ORDER BY total_minutes DESC
+      LIMIT 10
+
+  - name: meetings_by_day_of_week
+    question: "Which day of the week has the most meetings across the team?"
+    sql: >
+      SELECT
+        weekday,
+        COUNT(1) AS total_meetings,
+        SUM(duration_minutes) AS total_minutes
+      FROM schedule_db.public.employee_schedule
+      GROUP BY weekday
+      ORDER BY total_meetings DESC
+
+  - name: monthly_summary
+    question: "Give me a monthly summary of meeting hours per employee"
+    sql: >
+      SELECT
+        first_name AS employee_name,
+        month_name,
+        COUNT(1) AS total_meetings,
+        SUM(duration_minutes) / 60 AS total_hours,
+        AVG(load_percentage) * 100 AS avg_daily_load_pct
+      FROM schedule_db.public.employee_schedule
+      GROUP BY first_name, month_name
+      ORDER BY first_name, total_hours DESC
+
+  - name: high_load_days
+    question: "Show me all days where any employee had a high workload"
+    sql: >
+      SELECT
+        first_name AS employee_name,
+        schedule_date,
+        weekday,
+        load_band,
+        AVG(load_percentage) * 100 AS load_pct,
+        SUM(duration_minutes) AS total_minutes,
+        COUNT(1) AS meeting_count
+      FROM schedule_db.public.employee_schedule
+      WHERE load_band = 'High'
+      GROUP BY first_name, schedule_date, weekday, load_band
+      ORDER BY load_pct DESC
