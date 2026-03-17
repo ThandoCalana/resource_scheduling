@@ -3,7 +3,7 @@ name: Run Python Pipeline
 on:
   schedule:
     - cron: '*/9 * * * *' 
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
     build:
