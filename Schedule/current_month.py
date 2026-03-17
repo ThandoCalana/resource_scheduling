@@ -10,17 +10,17 @@ from openpyxl.utils import get_column_letter
 load_dotenv()
 
 # ClickUp 
-CLICKUP_API_TOKEN = os.getenv("CLICKUP_TOKEN")
-SPACE_IDS = [s.strip() for s in os.getenv("CLICKUP_SPACE_IDS", "").split(",") if s.strip()]
-ASSIGNEES = [a.strip() for a in os.getenv("CLICKUP_ASSIGNEES", "").split(",") if a.strip()]
+CLICKUP_API_TOKEN = os.environ["CLICKUP_TOKEN"]
+SPACE_IDS = [s.strip() for s in os.environ["CLICKUP_SPACE_IDS"].split(",") if s.strip()]
+ASSIGNEES = [a.strip() for a in os.environ["CLICKUP_ASSIGNEES"].split(",") if a.strip()]
 ASSIGNEES_WITH_UNASSIGNED = ASSIGNEES + ["Unassigned"]
 CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
 
 # Outlook
-OUTLOOK_USER_EMAILS = [e.strip() for e in os.getenv("OUTLOOK_USER_EMAIL", "").split(",")]
-TENANT_ID = os.getenv("TENANT_ID")
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+OUTLOOK_USER_EMAILS = [e.strip() for e in os.environ["OUTLOOK_USER_EMAIL"].split(",")]
+TENANT_ID = os.environ["TENANT_ID"]
+CLIENT_ID = os.environ["CLIENT_ID"]
+CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 LOCAL_TZ = pytz.timezone("Africa/Johannesburg")
 
 # --- Shared helpers ---
