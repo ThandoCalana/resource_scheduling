@@ -25,11 +25,11 @@ jobs:
             - name: extract outlook data
               env:
                 CLICKUP_TOKEN = ${{ secrets.CLICKUP_TOKEN }}
-                CLICKUP_SPACE_IDS = ${{ CLICKUP_SPACE_IDS }}
-                CLICKUP_ASSIGNEES = ${{ CLICKUP_ASSIGNEES }}
-                OUTLOOK_USER_EMAIL = ${{ OUTLOOK_USER_EMAIL }}
-                TENANT_ID = ${{ TENANT_ID }}
-                CLIENT_ID = ${{ CLIENT_ID }}
-                CLIENT_SECRET = ${{ CLIENT_SECRET}}
+                CLICKUP_SPACE_IDS = ${{ secrets.CLICKUP_SPACE_IDS }}
+                CLICKUP_ASSIGNEES = ${{ secrets.CLICKUP_ASSIGNEES }}
+                OUTLOOK_USER_EMAIL = ${{ secrets.OUTLOOK_USER_EMAIL }}
+                TENANT_ID = ${{ secrets.TENANT_ID }}
+                CLIENT_ID = ${{ secrets.CLIENT_ID }}
+                CLIENT_SECRET = ${{ secrets.CLIENT_SECRET}}
 
               run: python Schedule/current_month.py
