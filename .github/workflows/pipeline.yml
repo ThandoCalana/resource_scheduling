@@ -2,7 +2,8 @@ name: Run Python Pipeline
 
 on:
   schedule:
-    - cron: '*/9 * * * *'  # Runs every week on Monday at 8 AM (SAST)
+    - cron: '*/9 * * * *' 
+    workflow_dispatch:
 
 jobs:
     build:
@@ -30,6 +31,6 @@ jobs:
                 OUTLOOK_USER_EMAIL = ${{ secrets.OUTLOOK_USER_EMAIL }}
                 TENANT_ID = ${{ secrets.TENANT_ID }}
                 CLIENT_ID = ${{ secrets.CLIENT_ID }}
-                CLIENT_SECRET = ${{ secrets.CLIENT_SECRET}}
+                CLIENT_SECRET = ${{ secrets.CLIENT_SECRET }}
 
               run: python Schedule/current_month.py
