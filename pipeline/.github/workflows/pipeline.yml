@@ -1,0 +1,35 @@
+name: Run Python Pipeline
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'  # Runs every week on Monday at 8 AM (SAST)
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+
+            - name: checkout repo
+              uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
+
+            - name: setup python
+              uses: actions/setup-python@v6
+              with:
+                python-version: '3.11.0'
+
+            - name: setup dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+            
+            - name: extract outlook data
+              env:
+                CLICKUP_TOKEN = ${{ secrets.CLICKUP_TOKEN }}
+                CLICKUP_SPACE_IDS = ${{ CLICKUP_SPACE_IDS }}
+                CLICKUP_ASSIGNEES = ${{ CLICKUP_ASSIGNEES }}
+                OUTLOOK_USER_EMAIL = ${{ OUTLOOK_USER_EMAIL }}
+                TENANT_ID = ${{ TENANT_ID }}
+                CLIENT_ID = ${{ CLIENT_ID }}
+                CLIENT_SECRET = ${{ CLIENT_SECRET}}
+
+              run: python current_month.py
