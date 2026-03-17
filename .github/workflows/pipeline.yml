@@ -32,4 +32,4 @@ jobs:
                 CLIENT_ID = ${{ CLIENT_ID }}
                 CLIENT_SECRET = ${{ CLIENT_SECRET}}
 
-              run: python current_month.py
+              run: python Schedule/current_month.py
