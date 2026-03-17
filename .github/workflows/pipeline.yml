@@ -2,7 +2,7 @@ name: Run Python Pipeline
 
 on:
   schedule:
-    - cron: '0 10 * * 1'  # Runs every week on Monday at 8 AM (SAST)
+    - cron: '0 */7 * * 1'  # Runs every week on Monday at 8 AM (SAST)
 
 jobs:
     build:
