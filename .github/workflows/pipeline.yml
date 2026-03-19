@@ -17,8 +17,6 @@ jobs:
 
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
-              with:
-                  path: './Schedule/'
                   
             - name: Setup Python
               uses: actions/setup-python@v6
@@ -45,6 +43,7 @@ jobs:
             - name: Commit changes 
               uses: EndBug/add-and-commit@v9
               with:
+                  cwd: './Schedule/'
                   remove: ${{ env.FILE_NAME }}
                   add: ${{ env.FILE_NAME }}
                   committer_name: 'GitHub Actions'
