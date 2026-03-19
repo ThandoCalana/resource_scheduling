@@ -19,8 +19,6 @@ jobs:
         
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
-              with:
-                  repository: resource_scheduling
                   
             # - name: Setup Python
             #   uses: actions/setup-python@v6
