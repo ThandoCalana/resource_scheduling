@@ -1,6 +1,4 @@
 import os
-import requests
-import pytz
 from datetime import datetime, timezone, timedelta, time
 from dotenv import load_dotenv
 from openpyxl import Workbook, load_workbook
@@ -153,7 +151,7 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="Three_Month_Team_Schedule.xlsx"):
+def write_combined_excel(filename="Schedule/Three_Month_Team_Schedule.xlsx"):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
