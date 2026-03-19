@@ -6,15 +6,16 @@ from dotenv import load_dotenv
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
 
-# --- Load environment variables ---
-load_dotenv()
-
 # ClickUp 
 CLICKUP_API_TOKEN = os.environ["CLICKUP_TOKEN"]
 SPACE_IDS = [s.strip() for s in os.environ["CLICKUP_SPACE_IDS"].split(",") if s.strip()]
 ASSIGNEES = [a.strip() for a in os.environ["CLICKUP_ASSIGNEES"].split(",") if a.strip()]
 ASSIGNEES_WITH_UNASSIGNED = ASSIGNEES + ["Unassigned"]
 CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
+
+# Output
+OUTPUT_PATH = os.path.join(os.getcwd(), "Schedule", "Three_Month_Team_Schedule.xlsx")
+os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
 
 # Outlook
 OUTLOOK_USER_EMAILS = [e.strip() for e in os.environ["OUTLOOK_USER_EMAIL"].split(",")]
@@ -35,8 +36,8 @@ def get_week_dates():
 
 def generate_time_slots(start_hour=8, end_hour=18):
     slots = []
-    current = datetime.combine(datetime.today(), time(start_hour,0))
-    end = datetime.combine(datetime.today(), time(end_hour,0))
+    current = datetime.combine(datetime.now(LOCAL_TZ), time(start_hour,0))
+    end = datetime.combine(datetime.now(LOCAL_TZ), time(end_hour,0))
     while current < end:
         slots.append(current.time())
         current += timedelta(minutes=30)
@@ -153,7 +154,9 @@ def get_outlook_events(user):
     return formatted
 
 # -------------------- WRITE TO LOCAL EXCEL --------------------
-def write_combined_excel(filename="Schedule/Three_Month_Team_Schedule.xlsx"):
+
+
+def write_combined_excel(filename=OUTPUT_PATH):
     if os.path.exists(filename):
         wb = load_workbook(filename)
     else:
@@ -241,6 +244,6 @@ def write_combined_excel(filename="Schedule/Three_Month_Team_Schedule.xlsx"):
 
 # -------------------- MAIN --------------------
 if __name__ == "__main__":
-    print(datetime.now())
-    write_combined_excel()
-    print(datetime.now())
+    print(datetime.now(LOCAL_TZ))
+    write_combined_excel(filename = OUTPUT_PATH)
+    print(datetime.now(LOCAL_TZ))
