@@ -11,6 +11,10 @@ env:
 jobs:
     pipeline:
         runs-on: ubuntu-latest
+        defaults:
+            run:
+              working-directory: ./resource_scheduling
+              
         steps:
         
             - name: Checkout repo
