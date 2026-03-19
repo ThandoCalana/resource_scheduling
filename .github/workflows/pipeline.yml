@@ -51,7 +51,7 @@ jobs:
             - name: Add new file 
               uses: EndBug/add-and-commit@v9
               with:
-                  add: ${{ env.FILE_NAME }}
+                  add: "${{ env.FILE_NAME }}"
                   committer_name: "GitHub Actions"
                   message: "Added new schedule at ${{ env.NOW }}"
 
