@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: '/Schedule/Three_Month_Team_Schedule.xlsx'
+    FILE_NAME: 'Three_Month_Team_Schedule.xlsx'
 
 jobs:
     pipeline:
@@ -17,6 +17,8 @@ jobs:
 
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
+                  with:
+                    path: './Schedule/'
                   
             - name: Setup Python
               uses: actions/setup-python@v6
@@ -38,12 +40,11 @@ jobs:
                 CLIENT_ID: ${{ secrets.CLIENT_ID }}
                 CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
-              run: python Schedule/current_month.py
+              run: python current_month.py
               
             - name: Commit changes 
               uses: EndBug/add-and-commit@v9
               with:
-                  cwd: './Schedule/'
                   remove: ${{ env.FILE_NAME }}
                   add: ${{ env.FILE_NAME }}
                   committer_name: 'GitHub Actions'
