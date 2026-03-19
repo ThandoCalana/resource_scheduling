@@ -5,6 +5,9 @@ on:
     - cron: '*/9 * * * *' #https://crontab.guru/ 
   workflow_dispatch:
 
+env:
+    FILE_NAME: 'Three_Month_Team_Schedule.xlsx'
+
 jobs:
     pipeline:
         runs-on: ubuntu-latest
@@ -39,5 +42,6 @@ jobs:
               uses: EndBug/add-and-commit@v9
               with:
                   cwd: './Schedule/'
+                  remove: ${{ env.FILE_NAME }}
                   committer_name: 'GitHub Actions'
-                  message: 'updated at $(Get-Date -Format "MM/dd/yyyy HH: mm K")'
+                  message: 'updated at $(Get-Date) -Format "MM/dd/yyyy HH: mm K"'
