@@ -46,13 +46,12 @@ jobs:
                   message: "removing old schedule"
 
             - name: Set current_timestamp
-              run: echo "NOW=$(date +'%Y-%m-%d Z%H:%M:%S')" >> $GITHUB_ENV
+              run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
             - name: Upload artifact
               uses: actions/upload-artifact@v4
               with:
-                  path: $FILE_NAME
-                  echo: "$path"
+                  path: ${{ env.FILE_NAME }}
               
             - name: Add new file 
               if: ${{ success() }}
