@@ -38,4 +38,6 @@ jobs:
             - name: Commit changes 
               uses: EndBug/add-and-commit@v9
               with:
-                  path: './Schedule/'
+                  cwd: './Schedule/'
+                  committer_name: 'GitHub Actions'
+                  message: 'updated at $(Get-Date -Format "MM/dd/yyyy HH: mm K")'
