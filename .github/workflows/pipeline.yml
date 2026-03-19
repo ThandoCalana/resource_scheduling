@@ -12,10 +12,14 @@ jobs:
     pipeline:
         runs-on: ubuntu-latest
         steps:
+            - name: Set current_timestamp
+              run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
 
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
-
+              with:
+                  path: './Schedule/'
+                  
             - name: Setup Python
               uses: actions/setup-python@v6
               with:
@@ -41,20 +45,18 @@ jobs:
             - name: Commit changes 
               uses: EndBug/add-and-commit@v9
               with:
-                  cwd: './Schedule/'
                   remove: ${{ env.FILE_NAME }}
+                  add: ${{ env.FILE_NAME }}
                   committer_name: 'GitHub Actions'
-                  message: 'updated at $(Get-Date) -Format "MM/dd/yyyy HH: mm K"'
+                  message: 'updated at ${{ env.NOW }}'
 
-            - name: Transform and load to Snowflake
-              env:
-                SNOWFLAKE_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
-                SNOWFLAKE_USER:     ${{ secrets.SNOWFLAKE_USER }}
-                SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
-                SNOWFLAKE_WAREHOUSE: COMPUTE_WH
-              run: python pipeline_transform_load.py 
-            - name: Install dependencies
-              run: |
-                pip install pandas numpy snowflake-connector-python
-
-  
+            # - name: Transform and load to Snowflake
+            #   env:
+            #     SNOWFLAKE_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
+            #     SNOWFLAKE_USER:     ${{ secrets.SNOWFLAKE_USER }}
+            #     SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+            #     SNOWFLAKE_WAREHOUSE: COMPUTE_WH
+            #   run: python pipeline_transform_load.py 
+            # - name: Install dependencies
+            #   run: |
+            #     pip install pandas numpy snowflake-connector-python
