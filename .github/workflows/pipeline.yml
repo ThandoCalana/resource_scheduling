@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: 'Three_Month_Team_Schedule.xlsx'
+    FILE_NAME: "Schedule/Three_Month_Team_Schedule.xlsx"
 
 jobs:
     pipeline:
