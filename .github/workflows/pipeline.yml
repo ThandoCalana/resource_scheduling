@@ -12,9 +12,7 @@ jobs:
     pipeline:
         runs-on: ubuntu-latest
         steps:
-            - name: Set current_timestamp
-              run: echo "NOW=$(date +'%Y-%m-%d Z%H:%M:%S')" >> $GITHUB_ENV
-
+        
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
                   
@@ -40,14 +38,22 @@ jobs:
 
               run: python Schedule/current_month.py
               
-            - name: Commit changes 
+            - name: Remove old file 
               uses: EndBug/add-and-commit@v9
               with:
-                  cwd: './Schedule/'
                   remove: ${{ env.FILE_NAME }}
+                  committer_name: "GitHub Actions"
+                  message: "removing old schedule"
+                  
+            - name: Set current_timestamp
+              run: echo "NOW=$(date +'%Y-%m-%d Z%H:%M:%S')" >> $GITHUB_ENV
+              
+            - name: Add new file 
+              uses: EndBug/add-and-commit@v9
+              with:
                   add: ${{ env.FILE_NAME }}
                   committer_name: "GitHub Actions"
-                  message: "updated at ${{ env.NOW }}"
+                  message: "Added new schedule at ${{ env.NOW }}"
 
             # - name: Transform and load to Snowflake
             #   env:
