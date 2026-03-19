@@ -6,14 +6,14 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: 'Three_Month_Team_Schedule.xlsx'
+    FILE_NAME: '/Schedule/Three_Month_Team_Schedule.xlsx'
 
 jobs:
     pipeline:
         runs-on: ubuntu-latest
         steps:
             - name: Set current_timestamp
-              run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+              run: echo "NOW=$(date +'%Y-%m-%d Z%H:%M:%S')" >> $GITHUB_ENV
 
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
