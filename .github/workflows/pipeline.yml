@@ -43,8 +43,9 @@ jobs:
             - name: Commit changes 
               uses: EndBug/add-and-commit@v9
               with:
-                  remove: "Schedule/${{ env.FILE_NAME }}"
-                  add: "Schedule/${{ env.FILE_NAME }}"
+                  cwd: './Schedule/'
+                  remove: ${{ env.FILE_NAME }}
+                  add: ${{ env.FILE_NAME }}
                   committer_name: "GitHub Actions"
                   message: "updated at ${{ env.NOW }}"
 
