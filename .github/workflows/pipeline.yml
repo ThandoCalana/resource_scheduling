@@ -39,15 +39,15 @@ jobs:
 
               run: python Schedule/current_month.py
               
-            # - name: Remove old file 
-            #   uses: EndBug/add-and-commit@v9
-            #   with:
-            #       remove: ${{ env.FILE_NAME }}
-            #       committer_name: "GitHub Actions"
-            #       message: "removing old schedule"
+            - name: Remove old file 
+              uses: EndBug/add-and-commit@v9
+              with:
+                  remove: ${{ env.FILE_NAME }}
+                  committer_name: "GitHub Actions"
+                  message: "removing old schedule"
 
-            # - name: Set current_timestamp
-            #   run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+            - name: Set current_timestamp
+              run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
             # - name: Upload artifact
             #   uses: actions/upload-artifact@v4
