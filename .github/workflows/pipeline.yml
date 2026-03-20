@@ -20,27 +20,27 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v6 # Allows the GitHub runner access to the repo content
                   
-            # - name: Setup Python
-            #   uses: actions/setup-python@v6
-            #   with:
-            #     python-version: "3.11.0"
+            - name: Setup Python
+              uses: actions/setup-python@v6
+              with:
+                python-version: "3.11.0"
 
-            # - name: Setup dependencies
-            #   run: |
-            #     python -m pip install --upgrade pip
-            #     pip install -r Schedule/requirements.txt
+            - name: Setup dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r Schedule/requirements.txt
             
-            # - name: Extract Outlook data
-            #   env:
-            #     CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
-            #     CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
-            #     CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
-            #     OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
-            #     TENANT_ID: ${{ secrets.TENANT_ID }}
-            #     CLIENT_ID: ${{ secrets.CLIENT_ID }}
-            #     CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+            - name: Extract Outlook data
+              env:
+                CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+                CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
+                CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
+                OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
+                TENANT_ID: ${{ secrets.TENANT_ID }}
+                CLIENT_ID: ${{ secrets.CLIENT_ID }}
+                CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
-            #   run: python Schedule/current_month.py
+              run: python Schedule/current_month.py
               
             # - name: Remove old file 
             #   uses: EndBug/add-and-commit@v9
@@ -57,13 +57,13 @@ jobs:
             #   with:
             #       path: ${{ env.FILE_NAME }}
               
-            # - name: Add new file 
-            #   if: ${{ success() }}
-            #   uses: EndBug/add-and-commit@v9
-            #   with:
-            #       add: "${{ env.FILE_NAME }}"
-            #       committer_name: "GitHub Actions"
-            #       message: "Added new schedule at ${{ env.NOW }}"
+            - name: Add new file 
+              if: ${{ success() }}
+              uses: EndBug/add-and-commit@v9
+              with:
+                  add: "${{ env.FILE_NAME }}"
+                  committer_name: "GitHub Actions"
+                  message: "Added new schedule at ${{ env.NOW }}"
 
             # - name: Transform and load to Snowflake
             #   env:
