@@ -2,7 +2,7 @@ name: Run Python Pipeline
 
 on:
   schedule:
-    - cron: '*/9 * * * *' #https://crontab.guru/ 
+    - cron: '*/15 * * * *' #https://crontab.guru/ 
   workflow_dispatch:
 
 env:
@@ -39,18 +39,18 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r Schedule/requirements.txt
             
-            # - name: Extract Outlook data
-            #   run: python Schedule/outlook_to_csv.py
+            - name: Extract Outlook data
+              run: python Schedule/outlook_to_csv.py
 
-            # - name: Set current_timestamp
-            #   run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+            - name: Set current_timestamp
+              run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
               
-            # - name: Commit new file 
-            #   uses: EndBug/add-and-commit@v9
-            #   with:
-            #       add: "${{ env.FILE_NAME }}"
-            #       committer_name: "GitHub Actions"
-            #       message: "Added new schedule data at ${{ env.NOW }}"
+            - name: Commit new file 
+              uses: EndBug/add-and-commit@v9
+              with:
+                  add: "${{ env.FILE_NAME }}"
+                  committer_name: "GitHub Actions"
+                  message: "Added new Outlook data at ${{ env.NOW }}"
 
             - name: Transform and load to Snowflake
               run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
