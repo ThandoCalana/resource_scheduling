@@ -1,64 +1,45 @@
 import pandas as pd
-from openpyxl import load_workbook
 from datetime import datetime
 
 # ----------------- User Settings -----------------
-SOURCE_FILE = "Three_Month_Team_Schedule.xlsx"
+SOURCE_FILE = "outlook_availability.csv"
 OUTPUT_FILE = "Aggregated_Hours.xlsx"
 
 REPORT_START = datetime(2026, 1, 1).date()
 REPORT_END   = datetime(2026, 5, 31).date()
 # -------------------------------------------------
 
-# Load workbook
-wb = load_workbook(SOURCE_FILE, data_only=True)
-day_sheets = [s for s in wb.sheetnames if s not in ["Names", "Daily Loads", "Monthly Aggregation"]]
+# ---------------- Load Data ----------------
+df = pd.read_csv(SOURCE_FILE)
 
-# --- Extract team members from first day sheet ---
-first_sheet = wb[day_sheets[0]]
-team_members = []
-col = 2
-while first_sheet.cell(row=1, column=col).value:
-    team_members.append(first_sheet.cell(row=1, column=col).value)
-    col += 1
+# Standardise columns
+df["date"] = pd.to_datetime(df["date"]).dt.date
+df["time"] = pd.to_datetime(df["time"], format="%H:%M").dt.time
+df["user"] = df["user"].astype(str)
+df["subject"] = df["subject"].fillna("").astype(str)
+df["is_busy"] = df["is_busy"].astype(int)
 
-team_members_df = pd.DataFrame({"Team Member": team_members})
+# Filter date range
+df = df[(df["date"] >= REPORT_START) & (df["date"] <= REPORT_END)]
+
+# Exclude weekends
+df = df[pd.to_datetime(df["date"]).dt.weekday < 5]
 
 # ---------------- Atomic fact table ----------------
-facts = []
+# Only keep busy slots → each = 0.5 hours
+fact_df = df[df["is_busy"] == 1].copy()
+fact_df["Hours"] = 0.5
 
-for sheet_name in day_sheets:
-    try:
-        sheet_date = datetime.fromisoformat(sheet_name.split(" ")[-1]).date()
-    except:
-        continue
+fact_df.rename(columns={
+    "date": "Date",
+    "user": "Team Member",
+    "subject": "Task"
+}, inplace=True)
 
-    if not (REPORT_START <= sheet_date <= REPORT_END):
-        continue
+fact_df["Date"] = pd.to_datetime(fact_df["Date"])
 
-    if sheet_date.weekday() >= 5:
-        continue  # exclude weekends
-
-    df = pd.read_excel(SOURCE_FILE, sheet_name=sheet_name, header=None)
-    headers = df.iloc[0, 1:].tolist()
-
-    for row_idx in range(1, 21):  # rows 2–21 = 30-min slots
-        for member in team_members:
-            if member not in headers:
-                continue
-
-            col_idx = headers.index(member) + 1
-            task = df.iat[row_idx, col_idx]
-
-            if pd.notna(task):
-                facts.append({
-                    "Date": pd.to_datetime(sheet_date),
-                    "Team Member": member,
-                    "Task": str(task).strip(),
-                    "Hours": 0.5
-                })
-
-fact_df = pd.DataFrame(facts)
+team_members = sorted(fact_df["Team Member"].unique())
+team_members_df = pd.DataFrame({"Team Member": team_members})
 
 # ---------------- Sheet 2: Daily Loads ----------------
 daily = (
@@ -122,13 +103,11 @@ with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
             member_df
             .pivot(index="Task", columns="MonthDate", values="Hours")
             .fillna(0)
-            .sort_index(axis=1)  # 🔑 true chronological ordering
+            .sort_index(axis=1)
         )
 
-        # Format month headers AFTER ordering is fixed
         pivot.columns = [d.strftime("%B %Y") for d in pivot.columns]
 
         pivot.to_excel(writer, sheet_name=member[:31])
-
 
 print(f"Output written to {OUTPUT_FILE}")

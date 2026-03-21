@@ -17,6 +17,9 @@ Run:
 import os
 import argparse
 from datetime import date
+from dotenv import load_dotenv
+
+load_dotenv()
 
 import pandas as pd
 import numpy as np
@@ -38,7 +41,7 @@ def email_to_fullname(email: str) -> str:
 
 
 def read_raw(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path, sep="`", engine="python")
+    df = pd.read_csv(path, sep=",", engine="python")
     # Drop any phantom columns from trailing delimiters
     df = df.loc[:, ~df.columns.str.startswith("Unnamed")]
     return df
@@ -49,11 +52,12 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     # Normalise email and derive full_name
     df["user_email"] = df["user_email"].apply(normalise_email)
     df["full_name"]  = df["user_email"].apply(email_to_fullname)
+    df["first_name"] = df['full_name'].str.split(' ').str[0]
 
     # Parse dates and times
     df["date"]       = pd.to_datetime(df["date"], errors="coerce")
-    df["start_time"] = pd.to_datetime(df["start_time"], errors="coerce")
-    df["end_time"]   = pd.to_datetime(df["end_time"],   errors="coerce")
+    df["start_time"] = pd.to_datetime(df["start_dt"], errors="coerce")
+    df["end_time"]   = pd.to_datetime(df["end_dt"],   errors="coerce")
 
     # Drop rows with unparseable dates
     bad = df["date"].isnull() | df["start_time"].isnull() | df["end_time"].isnull()
@@ -68,14 +72,15 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
 
     # Clean meeting subject
     df["meeting_subject"] = (
-        df["meeting_subject"]
+        df["subject"]
         .fillna("[No Subject / Private]")
         .str.replace(r"\s{2,}", " ", regex=True)
         .str.strip()
     )
 
     # Load percentage: source is decimal (0.72) → convert to integer (72)
-    df["load_pct"]    = (df["load_percentage"] * 100).round(0).astype(int)
+    df["load_pct"]    = (df["load_pct"] * 100).round(0).astype(int)
+    df["load_pct"]    = df["load_pct"].clip(upper=100)
     df["has_overlap"] = df["load_pct"] > 100
 
     # Calendar helpers
@@ -133,7 +138,7 @@ def build_daily(meetings: pd.DataFrame, df_full: pd.DataFrame) -> pd.DataFrame:
     agg["year"]        = agg["date"].dt.isocalendar().year.astype(int)
     agg["month"]       = agg["date"].dt.month_name()
     agg["week_start"]  = (agg["date"] - pd.to_timedelta(agg["date"].dt.dayofweek, unit="D")).dt.date
-    agg["date"]        = agg["date"].dt.date
+    agg["date"]        = agg["date"].astype(str)
 
     def load_category(pct):
         if pd.isna(pct): return "Unknown"
@@ -182,61 +187,18 @@ def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
     )
     cur = conn.cursor()
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_MEETINGS")
-
-    # Rename columns to match Snowflake table (uppercase)
-    meetings_upload = meetings.rename(columns={
-        "user_email":    "USER_EMAIL",
-        "full_name":     "FULL_NAME",
-        "first_name":    "FIRST_NAME",
-        "date":          "DATE",
-        "week_start":    "WEEK_START",
-        "week_number":   "WEEK_NUMBER",
-        "year":          "YEAR",
-        "month":         "MONTH",
-        "day_of_week":   "DAY_OF_WEEK",
-        "meeting_subject":"MEETING_SUBJECT",
-        "start_time":    "START_TIME",
-        "end_time":      "END_TIME",
-        "duration_mins": "DURATION_MINS",
-        "load_pct":      "LOAD_PCT",
-        "has_overlap":   "HAS_OVERLAP",
-        "meeting_id":    "MEETING_ID",
-    })
+    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_MEETINGS_TEST")
 
     success, nchunks, nrows, _ = write_pandas(
-        conn, meetings_upload, "FACT_SCHEDULE_MEETINGS",
-        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False
+        conn, meetings.rename(columns=str.upper), "FACT_SCHEDULE_MEETINGS_TEST",
+        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False,use_logical_type=True
     )
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_DAILY")
-
-    daily_upload = daily.rename(columns={
-        "daily_id":             "DAILY_ID",
-        "user_email":           "USER_EMAIL",
-        "full_name":            "FULL_NAME",
-        "first_name":           "FIRST_NAME",
-        "date":                 "DATE",
-        "week_start":           "WEEK_START",
-        "week_number":          "WEEK_NUMBER",
-        "year":                 "YEAR",
-        "month":                "MONTH",
-        "day_of_week":          "DAY_OF_WEEK",
-        "meeting_count":        "MEETING_COUNT",
-        "total_booked_mins":    "TOTAL_BOOKED_MINS",
-        "free_mins":            "FREE_MINS",
-        "longest_meeting_mins": "LONGEST_MEETING_MINS",
-        "shortest_meeting_mins":"SHORTEST_MEETING_MINS",
-        "first_meeting_start":  "FIRST_MEETING_START",
-        "last_meeting_end":     "LAST_MEETING_END",
-        "load_pct":             "LOAD_PCT",
-        "load_category":        "LOAD_CATEGORY",
-        "has_overlap":          "HAS_OVERLAP",
-    })
+    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_TEST")
 
     success, nchunks, nrows, _ = write_pandas(
-        conn, daily_upload, "FACT_SCHEDULE_DAILY",
-        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False
+        conn, daily.rename(columns=str.upper), "FACT_SCHEDULE_TEST",
+        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False, use_logical_type=True
     )
 
     cur.close()
@@ -266,3 +228,4 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Transform only, skip Snowflake load")
     args = parser.parse_args()
     run(args.input, args.dry_run)
+    print("Snowflake tables updated")

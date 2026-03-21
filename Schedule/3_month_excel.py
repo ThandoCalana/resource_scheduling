@@ -14,11 +14,13 @@ ASSIGNEES_WITH_UNASSIGNED = ASSIGNEES + ["Unassigned"]
 CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
 
 # Output
-OUTPUT_PATH = os.path.join(os.getcwd(), "Schedule", "Three_Month_Team_Schedule.xlsx")
-os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+# OUTPUT_PATH = os.path.join(os.getcwd(), "Schedule", "Three_Month_Team_Schedule.xlsx")
+# os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+
+OUTPUT_PATH = "./Three_Month_Team_Schedule.xlsx"
 
 # Outlook
-OUTLOOK_USER_EMAILS = [e.strip() for e in os.environ["OUTLOOK_USER_EMAIL"].split(",")]
+OUTLOOK_USER_EMAIL = [e.strip() for e in os.environ["OUTLOOK_USER_EMAIL"].split(",")]
 TENANT_ID = os.environ["TENANT_ID"]
 CLIENT_ID = os.environ["CLIENT_ID"]
 CLIENT_SECRET = os.environ["CLIENT_SECRET"]
@@ -164,7 +166,7 @@ def write_combined_excel(filename=OUTPUT_PATH):
         if "Sheet" in wb.sheetnames and len(wb.sheetnames) == 1 and not wb.active["A1"].value:
             wb.remove(wb.active)
 
-    all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAILS}
+    all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAIL}
     task_dict = fetch_clickup_tasks()
     weekdays = get_week_dates()
     time_slots = generate_time_slots()
@@ -177,17 +179,17 @@ def write_combined_excel(filename=OUTPUT_PATH):
         ws = wb.create_sheet(title=sheet_name)
 
         # Calendar rows
-        rows = [["Time"] + [email_to_name(u) for u in OUTLOOK_USER_EMAILS]]
+        rows = [["Time"] + [email_to_name(u) for u in OUTLOOK_USER_EMAIL]]
         for slot in time_slots:
             row = [slot.strftime("%H:%M")]
-            for u in OUTLOOK_USER_EMAILS:
+            for u in OUTLOOK_USER_EMAIL:
                 evs = [ev["subject"] for ev in all_events[u] if ev["date"]==day and ev["start_time"]<=slot<ev["end_time"]]
                 row.append(", ".join(evs))
             rows.append(row)
 
         # Leave 2 blank rows
-        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
-        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
+        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
+        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
 
         # --- Load % Row ---
         load_row = ["Load %"]
@@ -199,15 +201,15 @@ def write_combined_excel(filename=OUTPUT_PATH):
         if end_index is None: end_index = len(time_slots)
 
         total_slots = end_index - start_index
-        for col_idx in range(1, len(OUTLOOK_USER_EMAILS)+1):
+        for col_idx in range(1, len(OUTLOOK_USER_EMAIL)+1):
             col_letter = get_column_letter(col_idx+1)
             formula = f'=ROUND(COUNTIF({col_letter}{start_index+1}:{col_letter}{end_index},"<>")/{total_slots},4)'
             load_row.append(formula)
         rows.append(load_row)
 
         # Leave 2 blank rows
-        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
-        rows.append([""]*(len(OUTLOOK_USER_EMAILS)+1))
+        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
+        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
 
         # Tasks header
         rows.append(["Tasks per Assignee"] + ASSIGNEES_WITH_UNASSIGNED)

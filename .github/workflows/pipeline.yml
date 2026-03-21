@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: "Schedule/Three_Month_Team_Schedule.xlsx"
+    FILE_NAME: "./Schedule/outlook_events.csv"
 
 jobs:
     pipeline:
@@ -37,7 +37,12 @@ jobs:
                 CLIENT_ID: ${{ secrets.CLIENT_ID }}
                 CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
-              run: python Schedule/current_month.py
+                SNOWFLAKE_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
+                SNOWFLAKE_USER:     ${{ secrets.SNOWFLAKE_USER }}
+                SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+                SNOWFLAKE_WAREHOUSE: COMPUTE_WH
+
+              run: python Schedule/outlook_to_csv.py
 
             - name: Set current_timestamp
               run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
@@ -50,12 +55,5 @@ jobs:
                   message: "Added new schedule data at ${{ env.NOW }}"
 
             # - name: Transform and load to Snowflake
-            #   env:
-            #     SNOWFLAKE_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
-            #     SNOWFLAKE_USER:     ${{ secrets.SNOWFLAKE_USER }}
-            #     SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
-            #     SNOWFLAKE_WAREHOUSE: COMPUTE_WH
-            #   run: python pipeline_transform_load.py 
-            # - name: Install dependencies
-            #   run: |
-            #     pip install pandas numpy snowflake-connector-python
+            #   run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
+   
