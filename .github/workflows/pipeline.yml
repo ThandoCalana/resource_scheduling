@@ -54,6 +54,6 @@ jobs:
                   committer_name: "GitHub Actions"
                   message: "Added new schedule data at ${{ env.NOW }}"
 
-            # - name: Transform and load to Snowflake
-            #   run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
+            - name: Transform and load to Snowflake
+              run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
    
