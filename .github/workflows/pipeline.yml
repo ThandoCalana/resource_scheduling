@@ -7,6 +7,18 @@ on:
 
 env:
     FILE_NAME: "./Schedule/outlook_events.csv"
+    CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+    CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
+    CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
+    OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
+    TENANT_ID: ${{ secrets.TENANT_ID }}
+    CLIENT_ID: ${{ secrets.CLIENT_ID }}
+    CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+
+    SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+    SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+    SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+    SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
 
 jobs:
     pipeline:
@@ -27,32 +39,18 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r Schedule/requirements.txt
             
-            - name: Extract Outlook data
-              env:
-                CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
-                CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
-                CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
-                OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
-                TENANT_ID: ${{ secrets.TENANT_ID }}
-                CLIENT_ID: ${{ secrets.CLIENT_ID }}
-                CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+            # - name: Extract Outlook data
+            #   run: python Schedule/outlook_to_csv.py
 
-                SNOWFLAKE_ACCOUNT:  ${{ secrets.SNOWFLAKE_ACCOUNT }}
-                SNOWFLAKE_USER:     ${{ secrets.SNOWFLAKE_USER }}
-                SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
-                SNOWFLAKE_WAREHOUSE: COMPUTE_WH
-
-              run: python Schedule/outlook_to_csv.py
-
-            - name: Set current_timestamp
-              run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+            # - name: Set current_timestamp
+            #   run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
               
-            - name: Commit new file 
-              uses: EndBug/add-and-commit@v9
-              with:
-                  add: "${{ env.FILE_NAME }}"
-                  committer_name: "GitHub Actions"
-                  message: "Added new schedule data at ${{ env.NOW }}"
+            # - name: Commit new file 
+            #   uses: EndBug/add-and-commit@v9
+            #   with:
+            #       add: "${{ env.FILE_NAME }}"
+            #       committer_name: "GitHub Actions"
+            #       message: "Added new schedule data at ${{ env.NOW }}"
 
             - name: Transform and load to Snowflake
               run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
