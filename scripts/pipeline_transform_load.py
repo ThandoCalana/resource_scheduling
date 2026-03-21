@@ -17,9 +17,9 @@ Run:
 import os
 import argparse
 from datetime import date
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 import pandas as pd
 import numpy as np
