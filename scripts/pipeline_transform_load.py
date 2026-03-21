@@ -187,17 +187,17 @@ def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
     )
     cur = conn.cursor()
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_MEETINGS_TEST")
+    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_MEETINGS")
 
     success, nchunks, nrows, _ = write_pandas(
-        conn, meetings.rename(columns=str.upper), "FACT_SCHEDULE_MEETINGS_TEST",
+        conn, meetings.rename(columns=str.upper), "FACT_SCHEDULE_MEETINGS",
         database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False,use_logical_type=True
     )
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_TEST")
+    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_DAILY")
 
     success, nchunks, nrows, _ = write_pandas(
-        conn, daily.rename(columns=str.upper), "FACT_SCHEDULE_TEST",
+        conn, daily.rename(columns=str.upper), "FACT_SCHEDULE_DAILY",
         database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False, use_logical_type=True
     )
 
