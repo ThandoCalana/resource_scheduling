@@ -3,7 +3,7 @@ name: Run Python Pipeline
 on:
   schedule:
     - cron: '0 */2 * * */2' #https://crontab.guru/
-  # workflow_dispatch:
+  workflow_dispatch:
 
 env:
     FILE_NAME: "./Schedule/outlook_events.csv"
