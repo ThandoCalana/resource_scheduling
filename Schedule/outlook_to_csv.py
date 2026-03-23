@@ -74,7 +74,7 @@ def main():
 
     token = get_access_token()
 
-    start_dt = datetime.now(LOCAL_TZ).replace(hour=0, minute=0, second=0, microsecond=0)
+    start_dt = datetime.now(LOCAL_TZ).replace(day=1)
     end_dt   = start_dt + timedelta(days=92)
 
     event_rows = []
