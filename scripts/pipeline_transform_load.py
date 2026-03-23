@@ -79,7 +79,7 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     # Load percentage: source is decimal (0.72) → convert to integer (72)
-    df["load_pct"]    = (df["load_pct"] * 100).astype(int)
+    df["load_pct"]    = (df["load_pct"] * 100).astype(float)
     df["load_pct"]    = df["load_pct"].clip(upper=100)
     df["has_overlap"] = df["load_pct"] > 100
 
