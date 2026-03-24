@@ -78,10 +78,10 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
         .str.strip()
     )
 
-    # Load percentage: source is decimal (0.72) → convert to integer (72)
-    df["load_pct"]    = (df["load_pct"] * 100).astype(float)
-    df["load_pct"]    = df["load_pct"].clip(upper=100)
-    df["has_overlap"] = df["load_pct"] > 100
+    # load_pct arrives as integer percentage (e.g. 72) from outlook_to_csv.py
+    # do NOT multiply by 100 — it is already in percentage form
+    df["load_pct"]    = df["load_pct"].astype(float).clip(upper=100)
+    df["has_overlap"] = df["load_pct"] >= 100
 
     # Calendar helpers
     df["day_of_week"] = df["date"].dt.day_name()
