@@ -37,7 +37,7 @@ jobs:
               id: storage
               run: |
                   execute_python = python Schedule/3_month_excel.py
-                  echo "base_report=execute_python" >> $GITHUB_OUTPUT
+                  echo "base_report=$execute_python" >> $GITHUB_OUTPUT
 # python Schedule/3_month_excel.py
     print_job:
         runs-on: ubuntu-latest
