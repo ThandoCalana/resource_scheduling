@@ -36,7 +36,7 @@ jobs:
             - name: Store output
               id: storage
               run: |
-                  execute_python = python Schedule/3_month_excel.py
+                  
                   echo "base_report=python Schedule/3_month_excel.py" >> $GITHUB_OUTPUT
 # python Schedule/3_month_excel.py
     print_job:
