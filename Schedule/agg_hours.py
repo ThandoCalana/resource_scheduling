@@ -99,8 +99,5 @@ with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
 
         task_summary.to_excel(writer, sheet_name=sheet_name, index=False)
 
-<<<<<<< HEAD
 print(f"Output written → {OUTPUT_FILE}")
-=======
-print(f"Output written to {OUTPUT_FILE}")
->>>>>>> f019d005e0522b3738dc9ec5334affe7e5b26e97
+
