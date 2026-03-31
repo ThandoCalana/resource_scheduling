@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime, timezone, timedelta, time
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # -------------------- ENV SETUP --------------------
 # load_dotenv()
