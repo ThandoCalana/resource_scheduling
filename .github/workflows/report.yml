@@ -30,8 +30,8 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r Schedule/requirements.txt
                 
-            - name: Extract 3 Month data
-              run: python Schedule/3_month_excel.py
+            # - name: Extract 3 Month data
+            #   run: python Schedule/3_month_excel.py
 
             - name: Store output
               id: storage
