@@ -6,7 +6,14 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"
+    FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"  
+    CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
+    CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
+    CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
+    OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
+    TENANT_ID: ${{ secrets.TENANT_ID }}
+    CLIENT_ID: ${{ secrets.CLIENT_ID }}
+    CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 jobs:
     extract_report_date:
