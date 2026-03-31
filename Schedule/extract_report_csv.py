@@ -1,50 +1,49 @@
 import os
 import requests
 import pytz
+import pandas as pd
 from datetime import datetime, timezone, timedelta, time
-from dotenv import load_dotenv
-from openpyxl import Workbook, load_workbook
+from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
+from dotenv import load_dotenv
 
-# Uncomment to test locally
-# load_dotenv() 
+# -------------------- ENV SETUP --------------------
+load_dotenv()
 
-# ClickUp 
 CLICKUP_API_TOKEN = os.environ["CLICKUP_TOKEN"]
 SPACE_IDS = [s.strip() for s in os.environ["CLICKUP_SPACE_IDS"].split(",") if s.strip()]
 ASSIGNEES = [a.strip() for a in os.environ["CLICKUP_ASSIGNEES"].split(",") if a.strip()]
 ASSIGNEES_WITH_UNASSIGNED = ASSIGNEES + ["Unassigned"]
-CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
 
-OUTPUT_PATH = "./Three_Month_Team_Schedule.xlsx"
-
-# Outlook
 OUTLOOK_USER_EMAIL = [e.strip() for e in os.environ["OUTLOOK_USER_EMAIL"].split(",")]
 TENANT_ID = os.environ["TENANT_ID"]
 CLIENT_ID = os.environ["CLIENT_ID"]
 CLIENT_SECRET = os.environ["CLIENT_SECRET"]
+
+CLICKUP_HEADERS = {"Authorization": CLICKUP_API_TOKEN}
+
+# Output paths
+OUTPUT_DIR = "./data"
+OUTPUT_CSV = os.path.join(OUTPUT_DIR, "calendar_flat.csv")
+
 LOCAL_TZ = pytz.timezone("Africa/Johannesburg")
 
-# --- Shared helpers ---
+# -------------------- HELPERS --------------------
 def get_week_dates():
     today = datetime.now(LOCAL_TZ).date()
     first_day = today.replace(day=1)
-    # Get number of days in month
-    next_month = (first_day.replace(day=28) + timedelta(days=4)).replace(day=1)
-    monday = today - timedelta(days=today.weekday())
     return [first_day + timedelta(days=i) for i in range(92)]
-
 
 def generate_time_slots(start_hour=8, end_hour=18):
     slots = []
-    current = datetime.combine(datetime.now(LOCAL_TZ), time(start_hour,0))
-    end = datetime.combine(datetime.now(LOCAL_TZ), time(end_hour,0))
+    current = datetime.combine(datetime.now(LOCAL_TZ), time(start_hour, 0))
+    end = datetime.combine(datetime.now(LOCAL_TZ), time(end_hour, 0))
     while current < end:
         slots.append(current.time())
         current += timedelta(minutes=30)
     return slots
 
-def email_to_name(email): 
+def email_to_name(email):
     return " ".join(p.capitalize() for p in email.split("@")[0].split("."))
 
 # -------------------- CLICKUP --------------------
@@ -70,7 +69,8 @@ def fetch_clickup_tasks():
     seen = {a: set() for a in ASSIGNEES_WITH_UNASSIGNED}
 
     def build_sheet_dates(due, allow_overdue):
-        if not due: return weekdays
+        if not due:
+            return weekdays
         days = [d for d in weekdays if d <= due]
         return days or ([weekdays[0]] if allow_overdue else [])
 
@@ -78,40 +78,51 @@ def fetch_clickup_tasks():
         for a in assignees:
             target = a if a in ASSIGNEES_WITH_UNASSIGNED else "Unassigned"
             if task_id not in seen[target]:
-                task_dict[target].append({"name": name, "sheet_dates": sheet_dates, "id": task_id, "link": link})
+                task_dict[target].append({
+                    "name": name,
+                    "sheet_dates": sheet_dates,
+                    "id": task_id,
+                    "link": link
+                })
                 seen[target].add(task_id)
 
     def add_task(t, allowed, list_name, restrict=False, is_sub=False, parent_due=None):
         tid = t.get("id")
         status = (t.get("status", {}) or {}).get("status", "").upper()
-        due = datetime.fromtimestamp(int(t["due_date"])/1000, tz=timezone.utc).date() if t.get("due_date") else parent_due
+        due = datetime.fromtimestamp(int(t["due_date"]) / 1000, tz=timezone.utc).date() if t.get("due_date") else parent_due
         assignees = [a.get("username", "") for a in t.get("assignees", [])] or ["Unassigned"]
-        allow_overdue = not restrict
 
         if restrict and ("Unassigned" in assignees or (due and due < now.date())):
-            for sub in get_subtasks(tid): add_task(sub, allowed, list_name, restrict, True, due)
+            for sub in get_subtasks(tid):
+                add_task(sub, allowed, list_name, restrict, True, due)
             return
 
         if status in allowed:
-            sheet_dates = build_sheet_dates(due, allow_overdue)
+            sheet_dates = build_sheet_dates(due, not restrict)
             if sheet_dates:
                 name = f"(Subtask) {t.get('name','Untitled')}" if is_sub else f"[{list_name}] {t.get('name','Untitled')}"
                 push(tid, name, t.get("url"), assignees, sheet_dates)
 
-        for sub in get_subtasks(tid): add_task(sub, allowed, list_name, restrict, True, due)
+        for sub in get_subtasks(tid):
+            add_task(sub, allowed, list_name, restrict, True, due)
 
     for space_id in SPACE_IDS:
         for folder in get_folders(space_id):
             for lst in get_lists_in_folder(folder["id"]):
-                lname = lst.get("name","").lower()
+                lname = lst.get("name", "").lower()
                 for t in get_tasks(lst["id"]):
-                    if lname == "freshdesk": add_task(t, {"IN PROGRESS","TO DO","REVIEW"}, lname, restrict=False)
-                    else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)
+                    if lname == "freshdesk":
+                        add_task(t, {"IN PROGRESS", "TO DO", "REVIEW"}, lname)
+                    else:
+                        add_task(t, {"IN PROGRESS", "REVIEW"}, lname, restrict=True)
+
         for lst in get_lists_directly_in_space(space_id):
-            lname = lst.get("name","").lower()
+            lname = lst.get("name", "").lower()
             for t in get_tasks(lst["id"]):
-                if lname == "freshdesk": add_task(t, {"IN PROGRESS","TO DO","REVIEW"}, lname, restrict=False)
-                else: add_task(t, {"IN PROGRESS","REVIEW"}, lname, restrict=True)
+                if lname == "freshdesk":
+                    add_task(t, {"IN PROGRESS", "TO DO", "REVIEW"}, lname)
+                else:
+                    add_task(t, {"IN PROGRESS", "REVIEW"}, lname, restrict=True)
 
     return task_dict
 
@@ -124,13 +135,14 @@ def get_outlook_events(user):
         "scope": "https://graph.microsoft.com/.default",
         "grant_type": "client_credentials",
     }
+
     access_token = requests.post(token_url, data=token_data).json()["access_token"]
+
     headers = {
         "Authorization": f"Bearer {access_token}",
         "Prefer": 'outlook.timezone="Africa/Johannesburg"',
     }
 
-    # get this week's weekdays
     weekdays = get_week_dates()
 
     url = (
@@ -140,111 +152,80 @@ def get_outlook_events(user):
     )
 
     events = requests.get(url, headers=headers).json().get("value", [])
+
     formatted = []
     for ev in events:
         start_dt = datetime.fromisoformat(ev["start"]["dateTime"]).astimezone(LOCAL_TZ)
         end_dt = datetime.fromisoformat(ev["end"]["dateTime"]).astimezone(LOCAL_TZ)
-        formatted.append(
-            {
-                "subject": ev.get("subject", "No subject"),
-                "date": start_dt.date(),
-                "start_time": start_dt.time(),
-                "end_time": end_dt.time(),
-            }
-        )
+
+        # filter useless events
+        if (end_dt - start_dt).total_seconds() <= 0:
+            continue
+
+        formatted.append({
+            "subject": ev.get("subject", "No subject"),
+            "date": start_dt.date(),
+            "start_time": start_dt.time(),
+            "end_time": end_dt.time(),
+        })
+
     return formatted
 
-# -------------------- WRITE TO LOCAL EXCEL --------------------
+# -------------------- MAIN --------------------
+def run_extraction():
+    print(f"Started → {datetime.now(LOCAL_TZ)}")
 
-
-def write_combined_excel(filename=OUTPUT_PATH):
-    if os.path.exists(filename):
-        wb = load_workbook(filename)
-    else:
-        wb = Workbook()
-        if "Sheet" in wb.sheetnames and len(wb.sheetnames) == 1 and not wb.active["A1"].value:
-            wb.remove(wb.active)
+    wb = Workbook()
+    if "Sheet" in wb.sheetnames:
+        wb.remove(wb.active)
 
     all_events = {u: get_outlook_events(u) for u in OUTLOOK_USER_EMAIL}
     task_dict = fetch_clickup_tasks()
+
     weekdays = get_week_dates()
     time_slots = generate_time_slots()
 
+    flat_rows = []
+
     for day in weekdays:
         sheet_name = f"{day.strftime('%A')} {day.isoformat()}"
-        if sheet_name in wb.sheetnames:
-            ws = wb[sheet_name]
-            wb.remove(ws)
         ws = wb.create_sheet(title=sheet_name)
 
-        # Calendar rows
-        rows = [["Time"] + [email_to_name(u) for u in OUTLOOK_USER_EMAIL]]
+        header = ["Time"] + [email_to_name(u) for u in OUTLOOK_USER_EMAIL]
+        ws.append(header)
+
         for slot in time_slots:
             row = [slot.strftime("%H:%M")]
+
             for u in OUTLOOK_USER_EMAIL:
-                evs = [ev["subject"] for ev in all_events[u] if ev["date"]==day and ev["start_time"]<=slot<ev["end_time"]]
-                row.append(", ".join(evs))
-            rows.append(row)
+                user_name = email_to_name(u)
 
-        # Leave 2 blank rows
-        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
-        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
+                evs = [
+                    ev["subject"]
+                    for ev in all_events[u]
+                    if ev["date"] == day and ev["start_time"] <= slot < ev["end_time"]
+                ]
 
-        # --- Load % Row ---
-        load_row = ["Load %"]
-        start_index, end_index = None, None
-        for idx, slot in enumerate(time_slots):
-            if slot == time(8,0): start_index = idx + 1
-            if slot == time(17,0): end_index = idx + 1
-        if start_index is None: start_index = 1
-        if end_index is None: end_index = len(time_slots)
+                subject = ", ".join(evs)
+                is_busy = 1 if subject else 0
 
-        total_slots = end_index - start_index
-        for col_idx in range(1, len(OUTLOOK_USER_EMAIL)+1):
-            col_letter = get_column_letter(col_idx+1)
-            formula = f'=ROUND(COUNTIF({col_letter}{start_index+1}:{col_letter}{end_index},"<>")/{total_slots},4)'
-            load_row.append(formula)
-        rows.append(load_row)
+                row.append(subject)
 
-        # Leave 2 blank rows
-        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
-        rows.append([""]*(len(OUTLOOK_USER_EMAIL)+1))
+                flat_rows.append({
+                    "date": day,
+                    "time": slot.strftime("%H:%M"),
+                    "user": user_name,
+                    "subject": subject,
+                    "is_busy": is_busy
+                })
 
-        # Tasks header
-        rows.append(["Tasks per Assignee"] + ASSIGNEES_WITH_UNASSIGNED)
-        max_tasks = max([len(task_dict[a]) for a in ASSIGNEES_WITH_UNASSIGNED]+[0])
-        for i in range(max_tasks):
-            row = [""]
-            for a in ASSIGNEES_WITH_UNASSIGNED:
-                if i < len(task_dict[a]):
-                    t = task_dict[a][i]
-                    if t.get("link"):
-                        row.append(f'=HYPERLINK("{t["link"]}", "{t["name"]}")')
-                    else:
-                        row.append(t["name"])
-                else:
-                    row.append("")
-            rows.append(row)
+            ws.append(row)
 
-        # Write to Excel
-        for r_idx, row in enumerate(rows, 1):
-            for c_idx, val in enumerate(row, 1):
-                ws.cell(row=r_idx, column=c_idx, value=val)
+    df = pd.DataFrame(flat_rows)
+    df.to_csv(OUTPUT_CSV, index=False)
 
-        # Auto-fit columns
-        for col in ws.columns:
-            max_length = 0
-            col_letter = get_column_letter(col[0].column)
-            for cell in col:
-                if cell.value:
-                    max_length = max(max_length, len(str(cell.value)))
-            ws.column_dimensions[col_letter].width = min(max_length + 2, 50)
+    print(f"Finished → {datetime.now(LOCAL_TZ)}")
 
-    wb.save(filename)
-    print(f"Local Excel written to {filename}")
 
-# -------------------- MAIN --------------------
 if __name__ == "__main__":
-    print(datetime.now(LOCAL_TZ))
-    write_combined_excel(filename = OUTPUT_PATH)
-    print(datetime.now(LOCAL_TZ))
+    run_extraction()
