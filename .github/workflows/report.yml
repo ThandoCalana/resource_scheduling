@@ -55,16 +55,16 @@ jobs:
 #
 
 
-#            - name: Email report
-#              uses: dawidd6/action-send-mail@<REF>
-#              with:
-#                  connection_url: ${{secrets.MAIL_CONNECTION}}
-#                  server_address: smtp-mail.outlook.com
-#                  server_port: 587
-#                  secure: true
-#                  username: ${{secrets.MAIL_USERNAME}}
-#                  password: ${{secrets.MAIL_PASSWORD}}
-#                  subject: Github Actions job result
-#                  to: tcalana2013@gmail.com
-#                  from: "Thando Calana <thando.calana@slipstreamdata.co.za>"
-#                  attachments: "${{ env.FILE_NAME }}"
+            - name: Email report
+              uses: dawidd6/action-send-mail@<REF>
+              with:
+                  connection_url: ${{secrets.MAIL_CONNECTION}}
+                  server_address: smtp-mail.outlook.com
+                  server_port: 587
+                  secure: true
+                  username: ${{secrets.MAIL_USERNAME}}
+                  password: ${{secrets.MAIL_PASSWORD}}
+                  subject: Github Actions job result
+                  to: tcalana2013@gmail.com
+                  from: "Thando Calana <thando.calana@slipstreamdata.co.za>"
+                  attachments: "${{ env.FILE_NAME }}"
