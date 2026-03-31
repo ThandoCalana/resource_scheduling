@@ -2,7 +2,7 @@ import os
 import requests
 import pytz
 from datetime import datetime, timezone, timedelta, time
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
 

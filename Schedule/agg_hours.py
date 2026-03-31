@@ -4,9 +4,6 @@ from datetime import datetime
 SOURCE_FILE = "./data/calendar_flat.csv"
 OUTPUT_FILE = "./data/Aggregated_Hours.xlsx"
 
-REPORT_START = datetime(2026, 1, 1).date()
-REPORT_END   = datetime(2026, 5, 31).date()
-
 df = pd.read_csv(SOURCE_FILE)
 
 # --- Clean + standardize ---
@@ -102,4 +99,8 @@ with pd.ExcelWriter(OUTPUT_FILE, engine="openpyxl") as writer:
 
         task_summary.to_excel(writer, sheet_name=sheet_name, index=False)
 
+<<<<<<< HEAD
 print(f"Output written → {OUTPUT_FILE}")
+=======
+print(f"Output written to {OUTPUT_FILE}")
+>>>>>>> f019d005e0522b3738dc9ec5334affe7e5b26e97
