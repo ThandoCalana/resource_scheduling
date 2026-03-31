@@ -9,8 +9,11 @@ env:
     FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"
 
 jobs:
-    pipeline:
+    extract_report_date:
         runs-on: ubuntu-latest
+
+        outputs:
+            base_report: ${{ steps.storage.outputs.base_report }}
               
         steps:
         
@@ -26,9 +29,21 @@ jobs:
               run: |
                 python -m pip install --upgrade pip
                 pip install -r Schedule/requirements.txt
-#            
-#            - name: Extract 3 Month data
-#              run: python Schedule/3_month_excel.py
+                
+            - name: Extract 3 Month data
+              run: python Schedule/3_month_excel.py
+
+            - name: Store output
+              id: storage
+              run: |
+                  echo "::set-output name=base_report::Hello"
+# python Schedule/3_month_excel.py
+    print_job:
+        runs-on: ubuntu-latest
+        needs: extract_report_date
+        steps:
+          - run: echo ${{needs.extract_report_date.outputs.base_report}}
+      
 #
 #            - name: Aggregate Hours + Generate Report
 #              run: python Schedule/agg_hours.py
