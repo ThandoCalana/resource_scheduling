@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 # ----------------- User Settings -----------------
-SOURCE_FILE = "outlook_availability.csv"
+SOURCE_FILE = "./Three_Month_Team_Schedule.xlsx"
 OUTPUT_FILE = "Aggregated_Hours.xlsx"
 
 REPORT_START = datetime(2026, 1, 1).date()
