@@ -2,18 +2,22 @@ name: 3 Month Report Flow
 
 on:
   schedule:
-    - cron: '0 */4 * * *' #https://crontab.guru/
+    - cron: '0 6 1 * *' #https://crontab.guru/
   workflow_dispatch:
 
 env:
-    FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"  
+    FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"
+    
     CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
     CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
     CLICKUP_ASSIGNEES: ${{ secrets.CLICKUP_ASSIGNEES }}
+    
     OUTLOOK_USER_EMAIL: ${{ secrets.OUTLOOK_USER_EMAIL }}
+    
     TENANT_ID: ${{ secrets.TENANT_ID }}
     CLIENT_ID: ${{ secrets.CLIENT_ID }}
     CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+    
     EMAIL_USER: ${{ secrets.EMAIL_USER }}
     EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
     EMAIL_TO: ${{ secrets.EMAIL_TO }}
@@ -21,9 +25,6 @@ env:
 jobs:
     extract_report_date:
         runs-on: ubuntu-latest
-
-        outputs:
-            base_report: ${{ steps.storage.outputs.base_report }}
               
         steps:
         
@@ -45,16 +46,6 @@ jobs:
 
             - name: Aggregate Hours + Generate Report
               run: python Schedule/agg_hours.py
-#
-#            - name: Set current_timestamp
-#              run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
-#              
-#            - name: Commit new file 
-#              uses: EndBug/add-and-commit@v9
-#              with:
-#                  add: "${{ env.FILE_NAME }}"
-#                  committer_name: "GitHub Actions"
-#                  message: "Added new Outlook data at ${{ env.NOW }}"
-#
+
             - name: Email report
               run: python Schedule/send_mail.py
