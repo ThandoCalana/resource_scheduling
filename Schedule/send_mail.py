@@ -18,7 +18,7 @@ def send_email():
     print(f"Starting email send → {datetime.now()}")
 
     msg = EmailMessage()
-    msg["Subject"] = "Automated Team Hours Report"
+    msg["Subject"] = "3 Months FWD Looking Resource Forecast"
     msg["From"] = EMAIL_USER
     msg["To"] = EMAIL_TO.split(",")
 
