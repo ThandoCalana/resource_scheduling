@@ -2,10 +2,10 @@ import os
 import smtplib
 from email.message import EmailMessage
 from datetime import datetime
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # -------------------- ENV --------------------
-load_dotenv()
+# load_dotenv()
 
 EMAIL_USER = os.environ["EMAIL_USER"] 
 EMAIL_PASS = os.environ["EMAIL_PASS"]    
