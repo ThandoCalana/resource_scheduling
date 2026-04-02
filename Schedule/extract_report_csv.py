@@ -5,10 +5,10 @@ import pandas as pd
 from datetime import datetime, timezone, timedelta, time
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # -------------------- ENV SETUP --------------------
-load_dotenv()
+# load_dotenv()
 
 CLICKUP_API_TOKEN = os.environ["CLICKUP_TOKEN"]
 SPACE_IDS = [s.strip() for s in os.environ["CLICKUP_SPACE_IDS"].split(",") if s.strip()]
