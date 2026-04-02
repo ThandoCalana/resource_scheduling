@@ -3,7 +3,7 @@ name: 3 Month Report Flow
 on:
   schedule:
     - cron: '0 */4 * * *' #https://crontab.guru/
-  workflow_dispatch:
+  # workflow_dispatch:
 
 env:
     FILE_NAME: "./Schedule/Aggregated_Hours.xlsx"  
