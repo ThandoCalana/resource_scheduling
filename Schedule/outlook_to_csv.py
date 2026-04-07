@@ -3,10 +3,10 @@ import csv
 import requests
 import pytz
 from datetime import datetime, timedelta, time
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # --- Load environment variables ---
-load_dotenv()
+# load_dotenv()
 
 TENANT_ID = os.environ["TENANT_ID"]
 CLIENT_ID = os.environ["CLIENT_ID"]
