@@ -11,7 +11,6 @@ Then loads both directly into Snowflake via the connector.
 
 Run:
     python pipeline_transform_load.py --input output.csv
-    python pipeline_transform_load.py --input output.csv --dry-run
 """
 
 import os
@@ -181,9 +180,9 @@ def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
         account   = os.environ["SNOWFLAKE_ACCOUNT"],
         user      = os.environ["SNOWFLAKE_USER"],
         password  = os.environ["SNOWFLAKE_PASSWORD"],
-        warehouse = os.environ.get("SNOWFLAKE_WAREHOUSE", "COMPUTE_WH"),
-        database  = "SCHEDULE_DB",
-        schema    = "PUBLIC",
+        warehouse = os.environ["SNOWFLAKE_WAREHOUSE"],
+        database  = os.environ["SNOWFLAKE_SCH_DB"],
+        schema    = os.environ["SNOWFLAKE_SCH_SCHEMA"],
     )
     cur = conn.cursor()
 
@@ -191,21 +190,21 @@ def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
 
     success, nchunks, nrows, _ = write_pandas(
         conn, meetings.rename(columns=str.upper), "FACT_SCHEDULE_MEETINGS",
-        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False,use_logical_type=True
+        auto_create_table=False,use_logical_type=True
     )
 
     cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_DAILY")
 
     success, nchunks, nrows, _ = write_pandas(
         conn, daily.rename(columns=str.upper), "FACT_SCHEDULE_DAILY",
-        database="SCHEDULE_DB", schema="PUBLIC", auto_create_table=False, use_logical_type=True
+        auto_create_table=False, use_logical_type=True
     )
 
     cur.close()
     conn.close()
 
 
-def run(input_path: str, dry_run: bool = False):
+def run(input_path: str):
 
     raw      = read_raw(input_path)
     cleaned  = clean(raw)
@@ -213,19 +212,11 @@ def run(input_path: str, dry_run: bool = False):
     daily    = build_daily(meetings, cleaned)
 
     validate(meetings, daily)
-
-
-    if dry_run:
-        meetings.to_csv("fact_schedule_meetings_preview.csv", index=False)
-        daily.to_csv("fact_schedule_daily_preview.csv", index=False)
-    else:
-        load_to_snowflake(meetings, daily)
-
+    load_to_snowflake(meetings, daily)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input",   required=True, help="Path to raw output.csv")
-    parser.add_argument("--dry-run", action="store_true", help="Transform only, skip Snowflake load")
+    parser.add_argument("--input",   required=True)
     args = parser.parse_args()
-    run(args.input, args.dry_run)
+    run(args.input)
     print("Snowflake tables updated")
