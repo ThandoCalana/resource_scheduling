@@ -20,6 +20,8 @@ env:
     SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
     SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
     SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+    SNOWFLAKE_SCH_DB: ${{ secrets.SNOWFLAKE_SCH_DB }}
+    SNOWFLAKE_SCH_SCHEMA: ${{ secrets.SNOWFLAKE_SCH_SCHEMA }}
 
 jobs:
     pipeline:
