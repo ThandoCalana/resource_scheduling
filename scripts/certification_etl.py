@@ -70,7 +70,7 @@ def parse_epoch_or_iso(series: pd.Series) -> pd.Series:
     parsed_epoch = pd.to_datetime(numeric, unit="ms", errors="coerce")
 
     # For any that failed numeric conversion, try ISO string parsing
-    parsed_iso = pd.to_datetime(series, errors="coerce", infer_datetime_format=True)
+    parsed_iso = pd.to_datetime(series, errors="coerce")
 
     # Use epoch result where available, fall back to ISO
     return parsed_epoch.where(parsed_epoch.notna(), parsed_iso)
