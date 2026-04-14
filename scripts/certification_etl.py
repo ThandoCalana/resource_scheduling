@@ -60,6 +60,22 @@ def fetch_tasks() -> list[dict[str, Any]]:
 # Transform
 # ---------------------------------------------------------------------------
 
+def parse_epoch_or_iso(series: pd.Series) -> pd.Series:
+    """
+    ClickUp returns dates as epoch-ms strings (e.g. "1693612800000") or
+    occasionally as ISO strings. This handles both safely.
+    """
+    # Try numeric first (epoch ms as string or int)
+    numeric = pd.to_numeric(series, errors="coerce")
+    parsed_epoch = pd.to_datetime(numeric, unit="ms", errors="coerce")
+
+    # For any that failed numeric conversion, try ISO string parsing
+    parsed_iso = pd.to_datetime(series, errors="coerce", infer_datetime_format=True)
+
+    # Use epoch result where available, fall back to ISO
+    return parsed_epoch.where(parsed_epoch.notna(), parsed_iso)
+
+
 def normalize_tasks(tasks: list[dict[str, Any]]) -> pd.DataFrame:
     rows = []
     for task in tasks:
@@ -81,10 +97,12 @@ def normalize_tasks(tasks: list[dict[str, Any]]) -> pd.DataFrame:
         })
 
     df = pd.DataFrame(rows)
-    df["date_created"] = pd.to_datetime(df["date_created"], unit="ms", errors="coerce")
-    df["due_date"]     = pd.to_datetime(df["due_date"],     unit="ms", errors="coerce").dt.normalize()
-    df["Expire Date"]  = pd.to_datetime(df["Expire Date"],  unit="ms", errors="coerce").dt.normalize()
 
+    df["date_created"] = parse_epoch_or_iso(df["date_created"])
+    df["due_date"]     = parse_epoch_or_iso(df["due_date"]).dt.normalize()
+    df["Expire Date"]  = parse_epoch_or_iso(df["Expire Date"]).dt.normalize()
+
+    # Strip whitespace from text columns only (leave datetime columns alone)
     for col in df.select_dtypes(include=["object"]).columns:
         df[col] = df[col].fillna("").astype(str).str.strip()
 
