@@ -39,7 +39,7 @@ jobs:
         run: mkdir -p outputs
 
       - name: Run certification pipeline
-        run: python scripts/certification_testdata.py
+        run: python scripts/certification_etl.py
 
       - name: Upload CSV artifact
         uses: actions/upload-artifact@v4
