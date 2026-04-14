@@ -1,8 +1,6 @@
 from __future__ import annotations
-
 import os
 from typing import Any
-
 import numpy as np
 import pandas as pd
 import requests
@@ -26,6 +24,22 @@ SNOWFLAKE_DATABASE  = os.environ["SNOWFLAKE_DATABASE"]
 SNOWFLAKE_SCHEMA    = os.environ["SNOWFLAKE_SCHEMA"]
 
 RESIGNED_NAMES = ["Jenny Wrench", "Lynn Carelse", "Carl Brink"]
+
+# Validity in years per technology — update as needed
+VALIDITY_YEARS: dict[str, float] = {
+    "AWS":        3.0,
+    "Salesforce": 1.0,
+    "Snowflake":  2.0,
+    "Alteryx":    2.0,
+    "Google":     2.0,
+    "Tableau":    3.0,   # Tableau Desktop Specialist does not expire; others do
+    "Matillion":  2.0,
+    "Wherescape": 2.0,
+    "Data Vault": 2.0,
+    "Design Kit": 2.0,
+    "Other":      2.0,
+    "default":    2.0,   # fallback for any unmapped technology
+}
 
 OUTPUT_COLUMNS = [
     "Name",
@@ -144,8 +158,17 @@ def build_planned(df: pd.DataFrame) -> pd.DataFrame:
         (df["Name"].ne("") | df["due_date"].notna())
     ].copy()
 
-    planned["Record Date"]     = planned["date_created"].dt.normalize()
-    planned["Expiration Date"] = planned["due_date"] + pd.DateOffset(years=2)
+    planned["Record Date"] = planned["date_created"].dt.normalize()
+
+    # Use due_date as exam date where available; fall back to date_created
+    exam_date = planned["due_date"].where(
+        planned["due_date"].notna(),
+        planned["date_created"].dt.normalize(),
+    )
+
+    # Validity period varies by technology
+    validity_years = planned["Technology"].map(VALIDITY_YEARS).fillna(VALIDITY_YEARS["default"])
+    planned["Expiration Date"] = exam_date + pd.to_timedelta(validity_years * 365.25, unit="D")
     planned["Status"]          = "Planned"
 
     return planned[OUTPUT_COLUMNS]
