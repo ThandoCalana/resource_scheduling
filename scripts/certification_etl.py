@@ -4,7 +4,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 import requests
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
 
 # ---------------------------------------------------------------------------
@@ -51,6 +51,8 @@ OUTPUT_COLUMNS = [
     "Employment Status",
 ]
 
+TABLE_NAME = "FACT_EMPLOYEE_CERTIFICATION"
+
 
 # ---------------------------------------------------------------------------
 # Extract
@@ -80,11 +82,12 @@ def parse_epoch_or_iso(series: pd.Series) -> pd.Series:
     occasionally as ISO strings. This handles both safely.
     """
     # Try numeric first (epoch ms as string or int)
-    numeric = pd.to_numeric(series, errors="coerce")
+    numeric      = pd.to_numeric(series, errors="coerce")
     parsed_epoch = pd.to_datetime(numeric, unit="ms", errors="coerce")
 
     # For any that failed numeric conversion, try ISO string parsing
-    parsed_iso = pd.to_datetime(series, errors="coerce")
+    # format="mixed" suppresses the dateutil fallback UserWarning
+    parsed_iso = pd.to_datetime(series, format="mixed", dayfirst=False, errors="coerce")
 
     # Use epoch result where available, fall back to ISO
     return parsed_epoch.where(parsed_epoch.notna(), parsed_iso)
@@ -116,8 +119,9 @@ def normalize_tasks(tasks: list[dict[str, Any]]) -> pd.DataFrame:
     df["due_date"]     = parse_epoch_or_iso(df["due_date"]).dt.normalize()
     df["Expire Date"]  = parse_epoch_or_iso(df["Expire Date"]).dt.normalize()
 
-    # Strip whitespace from text columns only (leave datetime columns alone)
-    for col in df.select_dtypes(include=["object"]).columns:
+    # Strip whitespace from text columns only — explicitly include both
+    # "object" and "str" dtypes to silence the Pandas 4 deprecation warning
+    for col in df.select_dtypes(include=["object", "str"]).columns:
         df[col] = df[col].fillna("").astype(str).str.strip()
 
     return df
@@ -222,15 +226,24 @@ def push_to_snowflake(df: pd.DataFrame) -> None:
         f"?warehouse={SNOWFLAKE_WAREHOUSE}&role={SNOWFLAKE_ROLE}"
     )
     engine = create_engine(conn_str)
+
+    # Explicitly DROP the table first to avoid SQLAlchemy reflection errors
+    # when the table does not yet exist (if_exists="replace" fails in that case)
+    with engine.connect() as conn:
+        conn.execute(text(f'DROP TABLE IF EXISTS "{TABLE_NAME}"'))
+        conn.execute(text("COMMIT"))  # Snowflake requires explicit commit for DDL
+
+    # Table is now gone — "append" simply creates it fresh and inserts all rows
     with engine.connect() as conn:
         df.to_sql(
-            "FACT_EMPLOYEE_CERTIFICATION",
+            TABLE_NAME,
             con=conn,
             index=False,
-            if_exists="replace",
+            if_exists="append",
             chunksize=10_000,
         )
-    print(f"[load] {len(df)} rows written to Snowflake → {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.FACT_EMPLOYEE_CERTIFICATION")
+
+    print(f"[load] {len(df)} rows written to Snowflake → {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{TABLE_NAME}")
 
 
 # ---------------------------------------------------------------------------
