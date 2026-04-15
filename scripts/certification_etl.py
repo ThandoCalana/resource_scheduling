@@ -230,7 +230,7 @@ def push_to_snowflake(df: pd.DataFrame) -> None:
             if_exists="replace",
             chunksize=10_000,
         )
-    print(f"[load] {len(df)} rows written to Snowflake → {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.certifications")
+    print(f"[load] {len(df)} rows written to Snowflake → {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.FACT_EMPLOYEE_CERTIFICATION")
 
 
 # ---------------------------------------------------------------------------
