@@ -224,7 +224,7 @@ def push_to_snowflake(df: pd.DataFrame) -> None:
     engine = create_engine(conn_str)
     with engine.connect() as conn:
         df.to_sql(
-            "certifications",
+            "FACT_EMPLOYEE_CERTIFICATION",
             con=conn,
             index=False,
             if_exists="replace",
