@@ -723,7 +723,7 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 12:00:00+02:00,2026-04
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 11:30:00+02:00,2026-04-16 13:00:00+02:00,FATCA Workflow review - Continued,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 13:00:00+02:00,2026-04-16 14:00:00+02:00,GFS Monitoring Dashboard - Walkthrough,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 15:00:00+02:00,2026-04-16 15:30:00+02:00,SnowPipe,100
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 15:00:00+02:00,2026-04-16 17:00:00+02:00,Blocked - SS,100
+Flora.Kundaeli@slipstreamdata.co.za,2026-04-16,2026-04-16 15:00:00+02:00,2026-04-16 17:00:00+02:00,Blocked - Old Mutual CDW LIS File Issues,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-17,2026-04-17 07:30:00+02:00,2026-04-17 08:30:00+02:00,Focus time,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-17,2026-04-17 10:00:00+02:00,2026-04-17 11:00:00+02:00,OM Handover - FATCA P2,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-17,2026-04-17 10:00:00+02:00,2026-04-17 13:00:00+02:00,Blocked - OM Handover,100
@@ -2127,13 +2127,17 @@ Robin.April@slipstreamdata.co.za,2026-04-13,2026-04-13 16:00:00+02:00,2026-04-13
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 11:00:00+02:00,2026-04-15 12:30:00+02:00,New Alteryx partner manager intro & product roadmap update,47
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 14:00:00+02:00,2026-04-15 15:00:00+02:00,SSGP26 - Power BI  Masterclass & Demo,47
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 15:30:00+02:00,2026-04-15 16:00:00+02:00,Robin <> Legh-Ann Paternity Leave Discussion,47
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 09:00:00+02:00,2026-04-16 10:00:00+02:00,Datalake Project - Openflow Incremental Use Case (Focus Session),94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 10:15:00+02:00,2026-04-16 11:00:00+02:00,Robin <> Palesa Planning Meeting,94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 11:00:00+02:00,2026-04-16 12:00:00+02:00,Data Mesh Demo: How to Build and Govern Your Data Products in Snowflake,94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 11:30:00+02:00,2026-04-16 12:30:00+02:00,Wonga DWH Support - Documentation & Handover Prep (Focus Session),94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 13:30:00+02:00,2026-04-16 15:00:00+02:00,SSGP Update Compilation & Internal Projects SLA Report (Focus Session),94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 15:00:00+02:00,2026-04-16 16:00:00+02:00,Internal Projects Monitoring and Status Update (Focus Session),94
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 17:00:00+02:00,Upskilling - Openflow / Apache Nifi Ingestion,94
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 09:00:00+02:00,2026-04-16 10:00:00+02:00,Datalake Project - Openflow Incremental Use Case (Focus Session),82
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 10:15:00+02:00,2026-04-16 11:00:00+02:00,Robin <> Palesa Planning Meeting,82
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 11:30:00+02:00,2026-04-16 12:30:00+02:00,Wonga DWH Support - Documentation & Handover Prep (Focus Session),82
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 13:30:00+02:00,2026-04-16 15:00:00+02:00,SSGP Update Compilation & Internal Projects SLA Report (Focus Session),82
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 15:00:00+02:00,2026-04-16 16:00:00+02:00,Internal Projects Monitoring and Status Update (Focus Session),82
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 17:00:00+02:00,Upskilling - Openflow / Apache Nifi Ingestion,82
+Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 11:00:00+02:00,2026-04-22 12:00:00+02:00,Getting More from SAP Data with Snowflake,24
+Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 11:00:00+02:00,2026-04-23 12:00:00+02:00,AI for Finance Leaders: Transforming Financial Decision-Making,32
+Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 11:00:00+02:00,2026-04-23 12:00:00+02:00,Build Reliable and Production-Ready Agents Faster,32
+Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 11:30:00+02:00,2026-04-29 13:00:00+02:00,AI Builder Series: Northstar Education Workshops,29
+Robin.April@slipstreamdata.co.za,2026-04-30,2026-04-30 12:00:00+02:00,2026-05-01 01:00:00+02:00,"Snowflake Marketplace – Growth, Monetization & Competitive Positioning",100
 Robin.April@slipstreamdata.co.za,2026-05-13,2026-05-13 11:00:00+02:00,2026-05-13 12:00:00+02:00,Alteryx One Roadmap Update,24
 Robin.April@slipstreamdata.co.za,2026-04-07,2026-04-07 14:00:00+02:00,2026-04-07 14:30:00+02:00,Declined: Robin <> Nate - 1:1,85
 Robin.April@slipstreamdata.co.za,2026-04-21,2026-04-21 14:00:00+02:00,2026-04-21 14:30:00+02:00,Robin <> Nate - 1:1,15
@@ -2152,17 +2156,17 @@ Robin.April@slipstreamdata.co.za,2026-04-10,2026-04-10 08:30:00+02:00,2026-04-10
 Robin.April@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-13 09:00:00+02:00,Daily Stand Up,94
 Robin.April@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,9
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,47
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,94
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,82
 Robin.April@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,24
 Robin.April@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,29
 Robin.April@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,15
-Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,12
-Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,9
+Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,24
+Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,32
 Robin.April@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,24
 Robin.April@slipstreamdata.co.za,2026-04-27,2026-04-27 08:30:00+02:00,2026-04-27 09:00:00+02:00,Daily Stand Up,24
 Robin.April@slipstreamdata.co.za,2026-04-28,2026-04-28 08:30:00+02:00,2026-04-28 09:00:00+02:00,Daily Stand Up,9
-Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,12
-Robin.April@slipstreamdata.co.za,2026-04-30,2026-04-30 08:30:00+02:00,2026-04-30 09:00:00+02:00,Daily Stand Up,9
+Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,29
+Robin.April@slipstreamdata.co.za,2026-04-30,2026-04-30 08:30:00+02:00,2026-04-30 09:00:00+02:00,Daily Stand Up,100
 Robin.April@slipstreamdata.co.za,2026-05-01,2026-05-01 08:30:00+02:00,2026-05-01 09:00:00+02:00,Daily Stand Up,24
 Robin.April@slipstreamdata.co.za,2026-05-04,2026-05-04 08:30:00+02:00,2026-05-04 09:00:00+02:00,Daily Stand Up,29
 Robin.April@slipstreamdata.co.za,2026-05-05,2026-05-05 08:30:00+02:00,2026-05-05 09:00:00+02:00,Daily Stand Up,15
@@ -2213,13 +2217,13 @@ Robin.April@slipstreamdata.co.za,2026-04-08,2026-04-08 10:00:00+02:00,2026-04-08
 Robin.April@slipstreamdata.co.za,2026-04-09,2026-04-09 10:00:00+02:00,2026-04-09 10:15:00+02:00,SA - Cloud BI | Stand Up,26
 Robin.April@slipstreamdata.co.za,2026-04-14,2026-04-14 10:00:00+02:00,2026-04-14 10:15:00+02:00,SA - Cloud BI | Stand Up,9
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 10:00:00+02:00,2026-04-15 10:15:00+02:00,SA - Cloud BI | Stand Up,47
-Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 10:00:00+02:00,2026-04-16 10:15:00+02:00,SA - Cloud BI | Stand Up,94
+Robin.April@slipstreamdata.co.za,2026-04-16,2026-04-16 10:00:00+02:00,2026-04-16 10:15:00+02:00,SA - Cloud BI | Stand Up,82
 Robin.April@slipstreamdata.co.za,2026-04-21,2026-04-21 10:00:00+02:00,2026-04-21 10:15:00+02:00,SA - Cloud BI | Stand Up,15
-Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 10:00:00+02:00,2026-04-22 10:15:00+02:00,SA - Cloud BI | Stand Up,12
-Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 10:00:00+02:00,2026-04-23 10:15:00+02:00,SA - Cloud BI | Stand Up,9
+Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 10:00:00+02:00,2026-04-22 10:15:00+02:00,SA - Cloud BI | Stand Up,24
+Robin.April@slipstreamdata.co.za,2026-04-23,2026-04-23 10:00:00+02:00,2026-04-23 10:15:00+02:00,SA - Cloud BI | Stand Up,32
 Robin.April@slipstreamdata.co.za,2026-04-28,2026-04-28 10:00:00+02:00,2026-04-28 10:15:00+02:00,SA - Cloud BI | Stand Up,9
-Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 10:00:00+02:00,2026-04-29 10:15:00+02:00,SA - Cloud BI | Stand Up,12
-Robin.April@slipstreamdata.co.za,2026-04-30,2026-04-30 10:00:00+02:00,2026-04-30 10:15:00+02:00,SA - Cloud BI | Stand Up,9
+Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 10:00:00+02:00,2026-04-29 10:15:00+02:00,SA - Cloud BI | Stand Up,29
+Robin.April@slipstreamdata.co.za,2026-04-30,2026-04-30 10:00:00+02:00,2026-04-30 10:15:00+02:00,SA - Cloud BI | Stand Up,100
 Robin.April@slipstreamdata.co.za,2026-05-05,2026-05-05 10:00:00+02:00,2026-05-05 10:15:00+02:00,Canceled: SA - Cloud BI | Stand Up,15
 Robin.April@slipstreamdata.co.za,2026-05-06,2026-05-06 10:00:00+02:00,2026-05-06 10:15:00+02:00,Canceled: SA - Cloud BI | Stand Up,12
 Robin.April@slipstreamdata.co.za,2026-05-07,2026-05-07 10:00:00+02:00,2026-05-07 10:15:00+02:00,SA - Cloud BI | Stand Up,9
@@ -2255,10 +2259,10 @@ Robin.April@slipstreamdata.co.za,2026-04-13,2026-04-13 10:45:00+02:00,2026-04-13
 Robin.April@slipstreamdata.co.za,2026-04-15,2026-04-15 09:45:00+02:00,2026-04-15 10:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,47
 Robin.April@slipstreamdata.co.za,2026-04-17,2026-04-17 10:45:00+02:00,2026-04-17 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,24
 Robin.April@slipstreamdata.co.za,2026-04-20,2026-04-20 10:45:00+02:00,2026-04-20 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,29
-Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 10:45:00+02:00,2026-04-22 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,12
+Robin.April@slipstreamdata.co.za,2026-04-22,2026-04-22 10:45:00+02:00,2026-04-22 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,24
 Robin.April@slipstreamdata.co.za,2026-04-24,2026-04-24 10:45:00+02:00,2026-04-24 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,24
 Robin.April@slipstreamdata.co.za,2026-04-27,2026-04-27 10:45:00+02:00,2026-04-27 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,24
-Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 10:45:00+02:00,2026-04-29 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,12
+Robin.April@slipstreamdata.co.za,2026-04-29,2026-04-29 10:45:00+02:00,2026-04-29 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,29
 Robin.April@slipstreamdata.co.za,2026-05-01,2026-05-01 10:45:00+02:00,2026-05-01 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,24
 Robin.April@slipstreamdata.co.za,2026-05-04,2026-05-04 10:45:00+02:00,2026-05-04 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,29
 Robin.April@slipstreamdata.co.za,2026-05-06,2026-05-06 10:45:00+02:00,2026-05-06 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,12
