@@ -1,5 +1,4 @@
 user_email,date,start_dt,end_dt,subject,load_pct
-Andrew@slipstreamdata.co.za,2026-04-01,2026-04-01 14:00:00+02:00,2026-04-01 15:00:00+02:00,EVA-LAST & SLIPSTREAM | DATA VISIBILITY & LOGISTICS REPORTING SOLUTIONS,12
 Andrew@slipstreamdata.co.za,2026-04-02,2026-04-02 11:30:00+02:00,2026-04-02 12:30:00+02:00,Tableau Server solution: Licensing call being blocked ,82
 Andrew@slipstreamdata.co.za,2026-04-02,2026-04-02 12:30:00+02:00,2026-04-02 14:00:00+02:00,RAF Bid - 24/03 Retrospective,82
 Andrew@slipstreamdata.co.za,2026-04-02,2026-04-02 14:00:00+02:00,2026-04-02 14:30:00+02:00,Discovery Alignment for streaming,82
@@ -30,6 +29,7 @@ Andrew@slipstreamdata.co.za,2026-04-16,2026-04-16 12:00:00+02:00,2026-04-16 13:0
 Andrew@slipstreamdata.co.za,2026-04-16,2026-04-16 13:00:00+02:00,2026-04-16 14:00:00+02:00,Slipstream & MCP activity,74
 Andrew@slipstreamdata.co.za,2026-04-16,2026-04-16 14:00:00+02:00,2026-04-16 15:00:00+02:00,ATNS Check In,74
 Andrew@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 17:00:00+02:00,Is Visual Data Modeling Better Than Code-Based Data Modeling?,74
+Andrew@slipstreamdata.co.za,2026-04-17,2026-04-17 08:00:00+02:00,2026-04-17 08:30:00+02:00,Tableau Server solution install,100
 Andrew@slipstreamdata.co.za,2026-04-17,2026-04-17 08:00:00+02:00,2026-04-17 16:00:00+02:00,ScaleUp - Strategic Planning ,100
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 11:00:00+02:00,2026-04-20 11:30:00+02:00,Discovery SLA ,59
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 16:30:00+02:00,2026-04-20 17:00:00+02:00,Salesforce CBU | Slipstream Data Presentation ,59
@@ -50,7 +50,7 @@ Andrew@slipstreamdata.co.za,2026-06-04,2026-06-04 09:00:00+02:00,2026-06-04 16:0
 Andrew@slipstreamdata.co.za,2026-06-11,2026-06-11 09:00:00+02:00,2026-06-11 16:00:00+02:00,Strategy and solution Day,94
 Andrew@slipstreamdata.co.za,2026-06-18,2026-06-18 09:00:00+02:00,2026-06-18 16:00:00+02:00,Strategy and solution Day,100
 Andrew@slipstreamdata.co.za,2026-06-25,2026-06-25 09:00:00+02:00,2026-06-25 16:00:00+02:00,Strategy and solution Day,94
-Andrew@slipstreamdata.co.za,2026-07-02,2026-07-02 09:00:00+02:00,2026-07-02 16:00:00+02:00,Strategy and solution Day,88
+Andrew@slipstreamdata.co.za,2026-07-02,2026-07-02 09:00:00+02:00,2026-07-02 16:00:00+02:00,Strategy and solution Day,94
 Andrew@slipstreamdata.co.za,2026-04-06,2026-04-06 08:30:00+02:00,2026-04-06 09:00:00+02:00,Reminder: Update and Submit Timesheets,24
 Andrew@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-13 09:00:00+02:00,Reminder: Update and Submit Timesheets,41
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Reminder: Update and Submit Timesheets,59
@@ -169,10 +169,11 @@ Andrew@slipstreamdata.co.za,2026-06-04,2026-06-04 10:00:00+02:00,2026-06-04 10:3
 Andrew@slipstreamdata.co.za,2026-06-11,2026-06-11 10:00:00+02:00,2026-06-11 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,94
 Andrew@slipstreamdata.co.za,2026-06-18,2026-06-18 10:00:00+02:00,2026-06-18 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,100
 Andrew@slipstreamdata.co.za,2026-06-25,2026-06-25 10:00:00+02:00,2026-06-25 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,94
-Andrew@slipstreamdata.co.za,2026-07-02,2026-07-02 10:00:00+02:00,2026-07-02 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,88
+Andrew@slipstreamdata.co.za,2026-07-02,2026-07-02 10:00:00+02:00,2026-07-02 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,94
 Andrew@slipstreamdata.co.za,2026-04-02,2026-04-02 15:00:00+02:00,2026-04-02 15:30:00+02:00,OPS Exec Updates,82
 Andrew@slipstreamdata.co.za,2026-05-07,2026-05-07 15:00:00+02:00,2026-05-07 15:30:00+02:00,OPS Exec Updates,100
 Andrew@slipstreamdata.co.za,2026-06-04,2026-06-04 15:00:00+02:00,2026-06-04 15:30:00+02:00,OPS Exec Updates,100
+Andrew@slipstreamdata.co.za,2026-07-02,2026-07-02 15:00:00+02:00,2026-07-02 15:30:00+02:00,OPS Exec Updates,94
 Andrew@slipstreamdata.co.za,2026-04-07,2026-04-07 12:00:00+02:00,2026-04-07 13:30:00+02:00,ScaleUp Homework sessions ,65
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 12:00:00+02:00,2026-04-21 13:30:00+02:00,ScaleUp Homework sessions ,65
 Andrew@slipstreamdata.co.za,2026-04-28,2026-04-28 12:00:00+02:00,2026-04-28 13:30:00+02:00,ScaleUp Homework sessions ,35
@@ -270,6 +271,7 @@ Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-10,2026-04-10 08:15:00+02:00,2026
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-10,2026-04-10 14:15:00+02:00,2026-04-10 14:30:00+02:00,DataLake - Streaming,24
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-13,2026-04-13 12:00:00+02:00,2026-04-13 13:15:00+02:00,Wonga DWH Project Handover Planning ,24
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-15,2026-04-15 09:00:00+02:00,2026-04-15 13:00:00+02:00,Wonga : Querying Marts,56
+Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-16,2026-04-16 16:30:00+02:00,2026-04-16 17:00:00+02:00,Wonga Saccra,15
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-06,2026-04-06 12:00:00+02:00,2026-04-06 12:30:00+02:00,Aza <> Nate - 1:1,15
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-20,2026-04-20 12:00:00+02:00,2026-04-20 12:30:00+02:00,Aza <> Nate - 1:1,26
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-05-04,2026-05-04 12:00:00+02:00,2026-05-04 12:30:00+02:00,Aza <> Nate - 1:1,26
@@ -287,7 +289,7 @@ Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-10,2026-04-10 08:30:00+02:00,2026
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-13 09:00:00+02:00,Daily Stand Up,24
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,12
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,56
-Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,9
+Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,15
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,18
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,26
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,12
@@ -347,7 +349,7 @@ Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-08,2026-04-08 10:00:00+02:00,2026
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-09,2026-04-09 10:00:00+02:00,2026-04-09 10:15:00+02:00,Taquanta: Projects Internal Standup,15
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-13,2026-04-13 10:30:00+02:00,2026-04-13 10:45:00+02:00,Taquanta: Projects Internal Standup,24
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-15,2026-04-15 09:30:00+02:00,2026-04-15 09:45:00+02:00,Taquanta: Projects Internal Standup,56
-Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-16,2026-04-16 10:30:00+02:00,2026-04-16 10:45:00+02:00,Taquanta: Projects Internal Standup,9
+Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-16,2026-04-16 10:30:00+02:00,2026-04-16 10:45:00+02:00,Taquanta: Projects Internal Standup,15
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-20,2026-04-20 10:30:00+02:00,2026-04-20 10:45:00+02:00,Taquanta: Projects Internal Standup,26
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-22,2026-04-22 10:30:00+02:00,2026-04-22 10:45:00+02:00,Taquanta: Projects Internal Standup,9
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-04-23,2026-04-23 10:30:00+02:00,2026-04-23 10:45:00+02:00,Taquanta: Projects Internal Standup,9
@@ -663,9 +665,8 @@ Ben.Brooker@slipstreamdata.co.za,2026-04-02,2026-04-02 09:30:00+02:00,2026-04-02
 Ben.Brooker@slipstreamdata.co.za,2026-04-07,2026-04-07 09:30:00+02:00,2026-04-07 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,79
 Ben.Brooker@slipstreamdata.co.za,2026-04-08,2026-04-08 09:30:00+02:00,2026-04-08 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,94
 Ben.Brooker@slipstreamdata.co.za,2026-04-09,2026-04-09 09:30:00+02:00,2026-04-09 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,82
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 14:00:00+02:00,2026-04-01 14:30:00+02:00,Update of Existing Dashboards:  ,76
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 19:30:00+02:00,2026-04-01 22:00:00+02:00,Snowflake,76
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 23:30:00+02:00,2026-04-02 00:00:00+02:00,Snowflake,76
+Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 19:30:00+02:00,2026-04-01 22:00:00+02:00,Snowflake,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 23:30:00+02:00,2026-04-02 00:00:00+02:00,Snowflake,35
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 00:00:00+02:00,2026-04-02 03:00:00+02:00,Snowflake,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 07:30:00+02:00,2026-04-02 08:30:00+02:00,Focus time,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 09:00:00+02:00,2026-04-02 09:30:00+02:00,RAF - Retro Feedback,100
@@ -848,7 +849,6 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-22,2026-06-22 09:00:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-24,2026-06-24 09:00:00+02:00,2026-06-24 13:00:00+02:00,OM Work,88
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 09:00:00+02:00,2026-06-29 13:00:00+02:00,OM Work,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-01,2026-07-01 09:00:00+02:00,2026-07-01 13:00:00+02:00,OM Work,71
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 14:00:00+02:00,2026-04-01 17:00:00+02:00,OM Work,76
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-06,2026-04-06 14:00:00+02:00,2026-04-06 16:00:00+02:00,OM Work,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-08,2026-04-08 14:00:00+02:00,2026-04-08 16:00:00+02:00,OM Work,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-13,2026-04-13 14:00:00+02:00,2026-04-13 16:00:00+02:00,OM Work - SFTP Writes,100
@@ -1001,7 +1001,6 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-11,2026-06-11 12:00:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-18,2026-06-18 12:00:00+02:00,2026-06-18 12:30:00+02:00,Blocked-OM_PD,82
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-25,2026-06-25 12:00:00+02:00,2026-06-25 12:30:00+02:00,Blocked-OM_PD,82
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-02,2026-07-02 12:00:00+02:00,2026-07-02 12:30:00+02:00,Blocked-OM_PD,41
-Mark@slipstreamdata.co.za,2026-04-01,2026-04-01 14:00:00+02:00,2026-04-01 15:00:00+02:00,EVA-LAST & SLIPSTREAM | DATA VISIBILITY & LOGISTICS REPORTING SOLUTIONS,12
 Mark@slipstreamdata.co.za,2026-04-02,2026-04-02 12:30:00+02:00,2026-04-02 14:00:00+02:00,RAF Bid - 24/03 Retrospective,47
 Mark@slipstreamdata.co.za,2026-04-02,2026-04-02 15:30:00+02:00,2026-04-02 16:00:00+02:00,Datalake Solution - Openflow Next Steps,47
 Mark@slipstreamdata.co.za,2026-04-05,2026-04-05 15:00:00+02:00,2026-04-05 15:30:00+02:00,pi,6
@@ -1371,8 +1370,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 09:30:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-29,2026-06-29 09:30:00+02:00,2026-06-29 10:30:00+02:00,Ongoing: Daily operational tasks DSY,76
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 09:30:00+02:00,2026-06-30 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 09:30:00+02:00,2026-07-01 10:30:00+02:00,Ongoing: Daily operational tasks DSY,38
-Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:30:00+02:00,2026-07-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,35
-Michael.Malia@slipstreamdata.co.za,2026-04-01,2026-04-01 16:00:00+02:00,2026-04-01 16:15:00+02:00,DSY DW - Daily standup,26
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:30:00+02:00,2026-07-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,38
 Michael.Malia@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 16:15:00+02:00,DSY DW - Daily standup,56
 Michael.Malia@slipstreamdata.co.za,2026-04-03,2026-04-03 16:00:00+02:00,2026-04-03 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-04-07,2026-04-07 16:00:00+02:00,2026-04-07 16:15:00+02:00,DSY DW - Daily standup,44
@@ -1425,7 +1423,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-25,2026-06-25 16:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 16:00:00+02:00,2026-06-26 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 16:00:00+02:00,2026-06-30 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 16:00:00+02:00,2026-07-01 16:15:00+02:00,DSY DW - Daily standup,38
-Michael.Malia@slipstreamdata.co.za,2026-04-01,2026-04-01 13:00:00+02:00,2026-04-01 15:00:00+02:00,Development activities - Glue - code and data,26
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 16:00:00+02:00,2026-07-02 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-04-02,2026-04-02 13:00:00+02:00,2026-04-02 15:00:00+02:00,Development activities - Glue - code and data,56
 Michael.Malia@slipstreamdata.co.za,2026-04-07,2026-04-07 13:00:00+02:00,2026-04-07 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-04-08,2026-04-08 13:00:00+02:00,2026-04-08 15:00:00+02:00,Development activities - Glue - code and data,68
@@ -1465,7 +1463,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-24,2026-06-24 13:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-25,2026-06-25 13:00:00+02:00,2026-06-25 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 13:00:00+02:00,2026-06-30 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 13:00:00+02:00,2026-07-01 15:00:00+02:00,Development activities - Glue - code and data,38
-Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 13:00:00+02:00,2026-07-02 15:00:00+02:00,Development activities - Glue - code and data,35
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 13:00:00+02:00,2026-07-02 15:00:00+02:00,Development activities - Glue - code and data,38
 Michael.Malia@slipstreamdata.co.za,2026-04-06,2026-04-06 11:00:00+02:00,2026-04-06 12:00:00+02:00,DWH Transform load Monitoring  ,65
 Michael.Malia@slipstreamdata.co.za,2026-04-13,2026-04-13 11:00:00+02:00,2026-04-13 12:00:00+02:00,DWH Transform load Monitoring  ,59
 Michael.Malia@slipstreamdata.co.za,2026-04-20,2026-04-20 11:00:00+02:00,2026-04-20 12:00:00+02:00,DWH Transform load Monitoring  ,76
@@ -1526,6 +1524,7 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-10,2026-04-10 11:00:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-10,2026-04-10 14:15:00+02:00,2026-04-10 14:30:00+02:00,DataLake - Streaming,44
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-10,2026-04-10 14:30:00+02:00,2026-04-10 15:30:00+02:00,Taquanta Diployment scripts,44
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-13,2026-04-13 11:00:00+02:00,2026-04-13 11:30:00+02:00,Equity indices,47
+Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-17,2026-04-17 11:00:00+02:00,2026-04-17 11:30:00+02:00,UT account script,24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-23,2026-04-23 11:30:00+02:00,2026-04-23 13:00:00+02:00,RAF Bid - 24/03 Retrospective Part II,32
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-13,2026-04-13 14:30:00+02:00,2026-04-13 16:00:00+02:00,Canceled: Tech Team retro,47
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-27,2026-04-27 14:30:00+02:00,2026-04-27 16:00:00+02:00,Canceled: Tech Team retro,41
@@ -1639,7 +1638,7 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,29
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,26
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,15
-Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,18
+Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,62
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,26
@@ -1753,7 +1752,7 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-23,2026-06-23 12:00:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-30,2026-06-30 12:00:00+02:00,2026-06-30 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-03,2026-04-03 15:00:00+02:00,2026-04-03 16:00:00+02:00,Tech Friday,18
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-10,2026-04-10 15:00:00+02:00,2026-04-10 16:00:00+02:00,Canceled: Tech Friday,44
-Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-17,2026-04-17 15:00:00+02:00,2026-04-17 16:00:00+02:00,Tech Friday,18
+Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-17,2026-04-17 15:00:00+02:00,2026-04-17 16:00:00+02:00,Tech Friday,24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,18
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-05-01,2026-05-01 15:00:00+02:00,2026-05-01 16:00:00+02:00,Tech Friday,18
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-05-08,2026-05-08 15:00:00+02:00,2026-05-08 16:00:00+02:00,Tech Friday,24
@@ -1787,6 +1786,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-04-14,2026-04-14 10:30:00+02:00,2026-04
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-16,2026-04-16 10:15:00+02:00,2026-04-16 11:00:00+02:00,Robin <> Palesa Planning Meeting,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-16,2026-04-16 11:00:00+02:00,2026-04-16 12:00:00+02:00,Data Mesh Demo: How to Build and Govern Your Data Products in Snowflake,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-22,2026-04-22 19:00:00+02:00,2026-04-22 20:00:00+02:00,Snowflake Connect: Data Engineering Building Transformation Pipelines for AI-ready data,21
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-29,2026-04-29 11:30:00+02:00,2026-04-29 13:00:00+02:00,AI Builder Series: Northstar Education Workshops,26
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-07,2026-04-07 11:30:00+02:00,2026-04-07 12:00:00+02:00,Palesa <> Nate - 1:1,44
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-21,2026-04-21 11:30:00+02:00,2026-04-21 12:00:00+02:00,Palesa <> Nate - 1:1,15
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-05,2026-05-05 11:30:00+02:00,2026-05-05 12:00:00+02:00,Palesa <> Nate - 1:1,21
@@ -1809,10 +1809,10 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-04-20,2026-04-20 10:00:00+02:00,2026-04
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-21,2026-04-21 10:00:00+02:00,2026-04-21 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,15
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-22,2026-04-22 10:00:00+02:00,2026-04-22 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,21
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-23,2026-04-23 10:00:00+02:00,2026-04-23 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 10:00:00+02:00,2026-04-24 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 10:00:00+02:00,2026-04-24 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-27,2026-04-27 10:00:00+02:00,2026-04-27 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,12
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-28,2026-04-28 10:00:00+02:00,2026-04-28 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-29,2026-04-29 10:00:00+02:00,2026-04-29 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-29,2026-04-29 10:00:00+02:00,2026-04-29 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,26
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-30,2026-04-30 10:00:00+02:00,2026-04-30 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-01,2026-05-01 10:00:00+02:00,2026-05-01 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-04,2026-05-04 10:00:00+02:00,2026-05-04 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,35
@@ -1834,7 +1834,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-05-25,2026-05-25 10:00:00+02:00,2026-05
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-26,2026-05-26 10:00:00+02:00,2026-05-26 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-27,2026-05-27 10:00:00+02:00,2026-05-27 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-28,2026-05-28 10:00:00+02:00,2026-05-28 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 10:00:00+02:00,2026-05-29 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 10:00:00+02:00,2026-05-29 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-01,2026-06-01 10:00:00+02:00,2026-06-01 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-02,2026-06-02 10:00:00+02:00,2026-06-02 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,21
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-03,2026-06-03 10:00:00+02:00,2026-06-03 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
@@ -1854,7 +1854,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-06-22,2026-06-22 10:00:00+02:00,2026-06
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-23,2026-06-23 10:00:00+02:00,2026-06-23 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-24,2026-06-24 10:00:00+02:00,2026-06-24 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-25,2026-06-25 10:00:00+02:00,2026-06-25 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 10:00:00+02:00,2026-06-26 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 10:00:00+02:00,2026-06-26 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-29,2026-06-29 10:00:00+02:00,2026-06-29 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-30,2026-06-30 10:00:00+02:00,2026-06-30 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,15
 Palesa.Maboeei@slipstreamdata.co.za,2026-07-01,2026-07-01 10:00:00+02:00,2026-07-01 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,3
@@ -1874,10 +1874,10 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,15
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,21
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-27,2026-04-27 08:30:00+02:00,2026-04-27 09:00:00+02:00,Daily Stand Up,12
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-28,2026-04-28 08:30:00+02:00,2026-04-28 09:00:00+02:00,Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,9
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,26
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-30,2026-04-30 08:30:00+02:00,2026-04-30 09:00:00+02:00,Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-01,2026-05-01 08:30:00+02:00,2026-05-01 09:00:00+02:00,Daily Stand Up,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-04,2026-05-04 08:30:00+02:00,2026-05-04 09:00:00+02:00,Daily Stand Up,35
@@ -1899,7 +1899,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-05-25,2026-05-25 08:30:00+02:00,2026-05
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-26,2026-05-26 08:30:00+02:00,2026-05-26 09:00:00+02:00,Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-27,2026-05-27 08:30:00+02:00,2026-05-27 09:00:00+02:00,Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-28,2026-05-28 08:30:00+02:00,2026-05-28 09:00:00+02:00,Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 08:30:00+02:00,2026-05-29 09:00:00+02:00,Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 08:30:00+02:00,2026-05-29 09:00:00+02:00,Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-01,2026-06-01 08:30:00+02:00,2026-06-01 09:00:00+02:00,Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-02,2026-06-02 08:30:00+02:00,2026-06-02 09:00:00+02:00,Daily Stand Up,21
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-03,2026-06-03 08:30:00+02:00,2026-06-03 09:00:00+02:00,Daily Stand Up,9
@@ -1919,7 +1919,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-06-22,2026-06-22 08:30:00+02:00,2026-06
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-23,2026-06-23 08:30:00+02:00,2026-06-23 09:00:00+02:00,Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-24,2026-06-24 08:30:00+02:00,2026-06-24 09:00:00+02:00,Daily Stand Up,9
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-25 09:00:00+02:00,Daily Stand Up,9
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Daily Stand Up,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Daily Stand Up,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Daily Stand Up,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Daily Stand Up,15
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-04,2026-05-04 13:30:00+02:00,2026-05-04 14:30:00+02:00,PM Forum,35
@@ -1930,16 +1930,16 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-06-12,2026-06-12 11:30:00+02:00,2026-06
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-03,2026-04-03 15:00:00+02:00,2026-04-03 16:00:00+02:00,Tech Friday,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-10,2026-04-10 15:00:00+02:00,2026-04-10 16:00:00+02:00,Canceled: Tech Friday,38
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-17,2026-04-17 15:00:00+02:00,2026-04-17 16:00:00+02:00,Tech Friday,24
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-01,2026-05-01 15:00:00+02:00,2026-05-01 16:00:00+02:00,Tech Friday,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-08,2026-05-08 15:00:00+02:00,2026-05-08 16:00:00+02:00,Tech Friday,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-15,2026-05-15 15:00:00+02:00,2026-05-15 16:00:00+02:00,Tech Friday,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-22,2026-05-22 15:00:00+02:00,2026-05-22 16:00:00+02:00,Tech Friday,24
-Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 15:00:00+02:00,2026-05-29 16:00:00+02:00,Tech Friday,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 15:00:00+02:00,2026-05-29 16:00:00+02:00,Tech Friday,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-05,2026-06-05 15:00:00+02:00,2026-06-05 16:00:00+02:00,Tech Friday,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-12,2026-06-12 15:00:00+02:00,2026-06-12 16:00:00+02:00,Tech Friday,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-19,2026-06-19 15:00:00+02:00,2026-06-19 16:00:00+02:00,Tech Friday,24
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 15:00:00+02:00,2026-06-26 16:00:00+02:00,Tech Friday,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 15:00:00+02:00,2026-06-26 16:00:00+02:00,Tech Friday,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-08,2026-04-08 14:00:00+02:00,2026-04-08 15:00:00+02:00,Snowflake Tribe Bi-weekly Session,38
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-20,2026-04-20 15:00:00+02:00,2026-04-20 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-04,2026-05-04 15:00:00+02:00,2026-05-04 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,35
@@ -1955,7 +1955,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-04-10,2026-04-10 10:30:00+02:00,2026-04
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-13,2026-04-13 10:30:00+02:00,2026-04-13 10:45:00+02:00,SSGP26 - Grad Project Standup,42
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-17,2026-04-17 10:30:00+02:00,2026-04-17 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-20,2026-04-20 10:30:00+02:00,2026-04-20 10:45:00+02:00,SSGP26 - Grad Project Standup,24
-Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 10:30:00+02:00,2026-04-24 10:45:00+02:00,SSGP26 - Grad Project Standup,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 10:30:00+02:00,2026-04-24 10:45:00+02:00,SSGP26 - Grad Project Standup,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-27,2026-04-27 10:30:00+02:00,2026-04-27 10:45:00+02:00,SSGP26 - Grad Project Standup,12
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-01,2026-05-01 10:30:00+02:00,2026-05-01 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-04,2026-05-04 10:30:00+02:00,2026-05-04 10:45:00+02:00,SSGP26 - Grad Project Standup,35
@@ -1965,7 +1965,7 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-05-15,2026-05-15 10:30:00+02:00,2026-05
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-18,2026-05-18 10:30:00+02:00,2026-05-18 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-22,2026-05-22 10:30:00+02:00,2026-05-22 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-05-25,2026-05-25 10:30:00+02:00,2026-05-25 10:45:00+02:00,SSGP26 - Grad Project Standup,12
-Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 10:30:00+02:00,2026-05-29 10:45:00+02:00,SSGP26 - Grad Project Standup,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 10:30:00+02:00,2026-05-29 10:45:00+02:00,SSGP26 - Grad Project Standup,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-01,2026-06-01 10:30:00+02:00,2026-06-01 10:45:00+02:00,SSGP26 - Grad Project Standup,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-05,2026-06-05 10:30:00+02:00,2026-06-05 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-08,2026-06-08 10:30:00+02:00,2026-06-08 10:45:00+02:00,SSGP26 - Grad Project Standup,12
@@ -1973,12 +1973,15 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-06-12,2026-06-12 10:30:00+02:00,2026-06
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-15,2026-06-15 10:30:00+02:00,2026-06-15 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-19,2026-06-19 10:30:00+02:00,2026-06-19 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-22,2026-06-22 10:30:00+02:00,2026-06-22 10:45:00+02:00,SSGP26 - Grad Project Standup,12
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 10:30:00+02:00,2026-06-26 10:45:00+02:00,SSGP26 - Grad Project Standup,24
+Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 10:30:00+02:00,2026-06-26 10:45:00+02:00,SSGP26 - Grad Project Standup,35
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-29,2026-06-29 10:30:00+02:00,2026-06-29 10:45:00+02:00,SSGP26 - Grad Project Standup,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-02,2026-04-02 09:30:00+02:00,2026-04-02 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,26
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-07,2026-04-07 09:30:00+02:00,2026-04-07 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,44
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-08,2026-04-08 09:30:00+02:00,2026-04-08 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,38
 Palesa.Maboeei@slipstreamdata.co.za,2026-04-09,2026-04-09 09:30:00+02:00,2026-04-09 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,26
+Palesa.Maboeei@slipstreamdata.co.za,2026-04-24,2026-04-24 13:00:00+02:00,2026-04-24 14:00:00+02:00,Monthly Snowflake Partner Tech Update,35
+Palesa.Maboeei@slipstreamdata.co.za,2026-05-29,2026-05-29 13:00:00+02:00,2026-05-29 14:00:00+02:00,Monthly Snowflake Partner Tech Update,35
+Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 13:00:00+02:00,2026-06-26 14:00:00+02:00,Monthly Snowflake Partner Tech Update,35
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-02,2026-04-02 10:00:00+02:00,2026-04-02 10:30:00+02:00,debtors ageing update,53
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-02,2026-04-02 11:00:00+02:00,2026-04-02 12:00:00+02:00,Testing framework code review (dim + fact tests),53
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-02,2026-04-02 12:30:00+02:00,2026-04-02 14:00:00+02:00,RAF Bid - 24/03 Retrospective,53
@@ -1994,9 +1997,10 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-04-13,2026-04-13 14:00:00+02:00,2026-04
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-15,2026-04-15 09:30:00+02:00,2026-04-15 10:30:00+02:00,Wonga Mapping Doc Update,94
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-15,2026-04-15 09:00:00+02:00,2026-04-15 13:00:00+02:00,Wonga : Querying Marts,94
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-15,2026-04-15 13:30:00+02:00,2026-04-15 14:30:00+02:00,SACCRA Process Review,94
-Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 09:30:00+02:00,2026-04-16 11:30:00+02:00,Wonga Mapping Doc,44
-Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 11:45:00+02:00,2026-04-16 12:00:00+02:00,Discovery Streaming Solution,44
-Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 12:00:00+02:00,2026-04-16 13:00:00+02:00,Discovery SLA: Technical concerns on transform process discussion ,44
+Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 09:30:00+02:00,2026-04-16 11:30:00+02:00,Wonga Mapping Doc,50
+Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 11:45:00+02:00,2026-04-16 12:00:00+02:00,Discovery Streaming Solution,50
+Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 12:00:00+02:00,2026-04-16 13:00:00+02:00,Discovery SLA: Technical concerns on transform process discussion ,50
+Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 16:30:00+02:00,2026-04-16 17:00:00+02:00,Wonga Saccra,50
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-23,2026-04-23 11:30:00+02:00,2026-04-23 13:00:00+02:00,RAF Bid - 24/03 Retrospective Part II,24
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-07,2026-04-07 13:30:00+02:00,2026-04-07 14:00:00+02:00,Riyad <> Nate - 1:1 ,26
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-21,2026-04-21 13:30:00+02:00,2026-04-21 14:00:00+02:00,Riyad <> Nate - 1:1 ,12
@@ -2018,7 +2022,7 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-04-10,2026-04-10 08:30:00+02:00,2026-04
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-13 09:00:00+02:00,Daily Stand Up,32
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,6
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,94
-Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,44
+Riyadh.Leonard@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,50
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,18
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,6
 Riyadh.Leonard@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,12
@@ -3035,7 +3039,6 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-06-10,2026-06-10 10:00:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-11,2026-06-11 10:00:00+02:00,2026-06-11 10:30:00+02:00,Focus time,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-12,2026-06-12 10:00:00+02:00,2026-06-12 10:30:00+02:00,Focus time,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-15,2026-06-15 10:00:00+02:00,2026-06-15 10:30:00+02:00,Focus time,100
-Suzanne.Edlmann@slipstreamdata.co.za,2026-04-01,2026-04-01 14:30:00+02:00,2026-04-01 15:00:00+02:00,Focus time,6
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 16:30:00+02:00,Focus time,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-03,2026-04-03 14:00:00+02:00,2026-04-03 14:30:00+02:00,Focus time,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-06,2026-04-06 14:00:00+02:00,2026-04-06 14:30:00+02:00,Focus time,29
@@ -3122,10 +3125,15 @@ Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 09:00:00+02:00,2026-04-
 Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 12:00:00+02:00,2026-04-13 13:15:00+02:00,Wonga DWH Project Handover Planning ,71
 Thando.Calana@slipstreamdata.co.za,2026-04-14,2026-04-14 09:00:00+02:00,2026-04-14 10:00:00+02:00,Chatbot Review + discussion,41
 Thando.Calana@slipstreamdata.co.za,2026-04-15,2026-04-15 09:30:00+02:00,2026-04-15 10:30:00+02:00,Wonga Mapping Doc Update,44
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 09:30:00+02:00,2026-04-16 11:30:00+02:00,Wonga Mapping Doc,71
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 11:00:00+02:00,2026-04-16 12:00:00+02:00,Data Mesh Demo: How to Build and Govern Your Data Products in Snowflake,71
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 14:00:00+02:00,2026-04-16 14:30:00+02:00,Chatbot review session,71
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 09:30:00+02:00,2026-04-16 11:30:00+02:00,Wonga Mapping Doc,76
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 11:00:00+02:00,2026-04-16 12:00:00+02:00,Data Mesh Demo: How to Build and Govern Your Data Products in Snowflake,76
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 14:00:00+02:00,2026-04-16 15:00:00+02:00,Chatbot review session,76
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 11:00:00+02:00,2026-04-22 12:00:00+02:00,Getting More from SAP Data with Snowflake,50
+Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 11:00:00+02:00,2026-04-23 12:00:00+02:00,Build Reliable and Production-Ready Agents Faster,41
 Thando.Calana@slipstreamdata.co.za,2026-04-24,2026-04-24 11:00:00+02:00,2026-04-24 12:00:00+02:00,Standard Tableau Demo - Final,32
+Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 11:30:00+02:00,2026-04-29 13:00:00+02:00,AI Builder Series: Northstar Education Workshops,50
+Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 13:00:00+02:00,2026-05-01 01:00:00+02:00,"Snowflake Marketplace – Growth, Monetization & Competitive Positioning",100
+Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 13:00:00+02:00,2026-05-01 01:00:00+02:00,"Snowflake Marketplace – Growth, Monetization & Competitive Positioning",100
 Thando.Calana@slipstreamdata.co.za,2026-05-07,2026-05-07 09:00:00+02:00,2026-05-07 10:00:00+02:00,Tableau Pulse Demo - Final,41
 Thando.Calana@slipstreamdata.co.za,2026-04-02,2026-04-02 08:30:00+02:00,2026-04-02 09:00:00+02:00,Daily Stand Up,53
 Thando.Calana@slipstreamdata.co.za,2026-04-03,2026-04-03 08:30:00+02:00,2026-04-03 09:00:00+02:00,Daily Stand Up,21
@@ -3137,17 +3145,17 @@ Thando.Calana@slipstreamdata.co.za,2026-04-10,2026-04-10 08:30:00+02:00,2026-04-
 Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-13 09:00:00+02:00,Daily Stand Up,71
 Thando.Calana@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,41
 Thando.Calana@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,44
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,71
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,76
 Thando.Calana@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,21
 Thando.Calana@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,44
 Thando.Calana@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,29
-Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,38
-Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,29
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,50
+Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,41
 Thando.Calana@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,32
 Thando.Calana@slipstreamdata.co.za,2026-04-27,2026-04-27 08:30:00+02:00,2026-04-27 09:00:00+02:00,Daily Stand Up,44
 Thando.Calana@slipstreamdata.co.za,2026-04-28,2026-04-28 08:30:00+02:00,2026-04-28 09:00:00+02:00,Daily Stand Up,29
-Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,32
-Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 08:30:00+02:00,2026-04-30 09:00:00+02:00,Daily Stand Up,29
+Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,50
+Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 08:30:00+02:00,2026-04-30 09:00:00+02:00,Daily Stand Up,100
 Thando.Calana@slipstreamdata.co.za,2026-05-01,2026-05-01 08:30:00+02:00,2026-05-01 09:00:00+02:00,Daily Stand Up,21
 Thando.Calana@slipstreamdata.co.za,2026-05-04,2026-05-04 08:30:00+02:00,2026-05-04 09:00:00+02:00,Daily Stand Up,44
 Thando.Calana@slipstreamdata.co.za,2026-05-05,2026-05-05 08:30:00+02:00,2026-05-05 09:00:00+02:00,Daily Stand Up,29
@@ -3191,7 +3199,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Daily Stand Up,21
 Thando.Calana@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Daily Stand Up,44
 Thando.Calana@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Daily Stand Up,18
-Thando.Calana@slipstreamdata.co.za,2026-04-01,2026-04-01 16:00:00+02:00,2026-04-01 17:00:00+02:00,Upskilling,12
 Thando.Calana@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 17:00:00+02:00,Upskilling,53
 Thando.Calana@slipstreamdata.co.za,2026-04-06,2026-04-06 16:00:00+02:00,2026-04-06 17:00:00+02:00,Upskilling,32
 Thando.Calana@slipstreamdata.co.za,2026-04-07,2026-04-07 16:00:00+02:00,2026-04-07 17:00:00+02:00,Upskilling,53
@@ -3200,15 +3207,15 @@ Thando.Calana@slipstreamdata.co.za,2026-04-09,2026-04-09 16:00:00+02:00,2026-04-
 Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 16:00:00+02:00,2026-04-13 17:00:00+02:00,Upskilling,71
 Thando.Calana@slipstreamdata.co.za,2026-04-14,2026-04-14 16:00:00+02:00,2026-04-14 17:00:00+02:00,Upskilling,41
 Thando.Calana@slipstreamdata.co.za,2026-04-15,2026-04-15 16:00:00+02:00,2026-04-15 17:00:00+02:00,Upskilling,44
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 17:00:00+02:00,Upskilling,71
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 17:00:00+02:00,Upskilling,76
 Thando.Calana@slipstreamdata.co.za,2026-04-20,2026-04-20 16:00:00+02:00,2026-04-20 17:00:00+02:00,Upskilling,44
 Thando.Calana@slipstreamdata.co.za,2026-04-21,2026-04-21 16:00:00+02:00,2026-04-21 17:00:00+02:00,Upskilling,29
-Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 16:00:00+02:00,2026-04-22 17:00:00+02:00,Upskilling,38
-Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 16:00:00+02:00,2026-04-23 17:00:00+02:00,Upskilling,29
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 16:00:00+02:00,2026-04-22 17:00:00+02:00,Upskilling,50
+Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 16:00:00+02:00,2026-04-23 17:00:00+02:00,Upskilling,41
 Thando.Calana@slipstreamdata.co.za,2026-04-27,2026-04-27 16:00:00+02:00,2026-04-27 17:00:00+02:00,Upskilling,44
 Thando.Calana@slipstreamdata.co.za,2026-04-28,2026-04-28 16:00:00+02:00,2026-04-28 17:00:00+02:00,Upskilling,29
-Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 16:00:00+02:00,2026-04-29 17:00:00+02:00,Upskilling,32
-Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 16:00:00+02:00,2026-04-30 17:00:00+02:00,Upskilling,29
+Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 16:00:00+02:00,2026-04-29 17:00:00+02:00,Upskilling,50
+Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 16:00:00+02:00,2026-04-30 17:00:00+02:00,Upskilling,100
 Thando.Calana@slipstreamdata.co.za,2026-05-04,2026-05-04 16:00:00+02:00,2026-05-04 17:00:00+02:00,Upskilling,44
 Thando.Calana@slipstreamdata.co.za,2026-05-05,2026-05-05 16:00:00+02:00,2026-05-05 17:00:00+02:00,Upskilling,29
 Thando.Calana@slipstreamdata.co.za,2026-05-06,2026-05-06 16:00:00+02:00,2026-05-06 17:00:00+02:00,Upskilling,38
@@ -3250,15 +3257,15 @@ Thando.Calana@slipstreamdata.co.za,2026-04-09,2026-04-09 13:00:00+02:00,2026-04-
 Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 13:00:00+02:00,2026-04-13 14:00:00+02:00,Lunch,71
 Thando.Calana@slipstreamdata.co.za,2026-04-14,2026-04-14 13:00:00+02:00,2026-04-14 14:00:00+02:00,Lunch,41
 Thando.Calana@slipstreamdata.co.za,2026-04-15,2026-04-15 13:00:00+02:00,2026-04-15 14:00:00+02:00,Lunch,44
-Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 13:00:00+02:00,2026-04-16 14:00:00+02:00,Lunch,71
+Thando.Calana@slipstreamdata.co.za,2026-04-16,2026-04-16 13:00:00+02:00,2026-04-16 14:00:00+02:00,Lunch,76
 Thando.Calana@slipstreamdata.co.za,2026-04-20,2026-04-20 13:00:00+02:00,2026-04-20 14:00:00+02:00,Lunch,44
 Thando.Calana@slipstreamdata.co.za,2026-04-21,2026-04-21 13:00:00+02:00,2026-04-21 14:00:00+02:00,Lunch,29
-Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 13:00:00+02:00,2026-04-22 14:00:00+02:00,Lunch,38
-Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 13:00:00+02:00,2026-04-23 14:00:00+02:00,Lunch,29
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 13:00:00+02:00,2026-04-22 14:00:00+02:00,Lunch,50
+Thando.Calana@slipstreamdata.co.za,2026-04-23,2026-04-23 13:00:00+02:00,2026-04-23 14:00:00+02:00,Lunch,41
 Thando.Calana@slipstreamdata.co.za,2026-04-27,2026-04-27 13:00:00+02:00,2026-04-27 14:00:00+02:00,Lunch,44
 Thando.Calana@slipstreamdata.co.za,2026-04-28,2026-04-28 13:00:00+02:00,2026-04-28 14:00:00+02:00,Lunch,29
-Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 13:00:00+02:00,2026-04-29 14:00:00+02:00,Lunch,32
-Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 13:00:00+02:00,2026-04-30 14:00:00+02:00,Lunch,29
+Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 13:00:00+02:00,2026-04-29 14:00:00+02:00,Lunch,50
+Thando.Calana@slipstreamdata.co.za,2026-04-30,2026-04-30 13:00:00+02:00,2026-04-30 14:00:00+02:00,Lunch,100
 Thando.Calana@slipstreamdata.co.za,2026-05-04,2026-05-04 13:00:00+02:00,2026-05-04 14:00:00+02:00,Lunch,44
 Thando.Calana@slipstreamdata.co.za,2026-05-05,2026-05-05 13:00:00+02:00,2026-05-05 14:00:00+02:00,Lunch,29
 Thando.Calana@slipstreamdata.co.za,2026-05-06,2026-05-06 13:00:00+02:00,2026-05-06 14:00:00+02:00,Lunch,38
@@ -3303,10 +3310,10 @@ Thando.Calana@slipstreamdata.co.za,2026-04-13,2026-04-13 10:45:00+02:00,2026-04-
 Thando.Calana@slipstreamdata.co.za,2026-04-15,2026-04-15 09:45:00+02:00,2026-04-15 10:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,44
 Thando.Calana@slipstreamdata.co.za,2026-04-17,2026-04-17 10:45:00+02:00,2026-04-17 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,21
 Thando.Calana@slipstreamdata.co.za,2026-04-20,2026-04-20 10:45:00+02:00,2026-04-20 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,44
-Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 10:45:00+02:00,2026-04-22 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,38
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 10:45:00+02:00,2026-04-22 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,50
 Thando.Calana@slipstreamdata.co.za,2026-04-24,2026-04-24 10:45:00+02:00,2026-04-24 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,32
 Thando.Calana@slipstreamdata.co.za,2026-04-27,2026-04-27 10:45:00+02:00,2026-04-27 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,44
-Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 10:45:00+02:00,2026-04-29 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,32
+Thando.Calana@slipstreamdata.co.za,2026-04-29,2026-04-29 10:45:00+02:00,2026-04-29 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,50
 Thando.Calana@slipstreamdata.co.za,2026-05-01,2026-05-01 10:45:00+02:00,2026-05-01 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,21
 Thando.Calana@slipstreamdata.co.za,2026-05-04,2026-05-04 10:45:00+02:00,2026-05-04 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,44
 Thando.Calana@slipstreamdata.co.za,2026-05-06,2026-05-06 10:45:00+02:00,2026-05-06 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,38
@@ -3335,7 +3342,7 @@ Thando.Calana@slipstreamdata.co.za,2026-06-26,2026-06-26 10:45:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-29,2026-06-29 10:45:00+02:00,2026-06-29 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,44
 Thando.Calana@slipstreamdata.co.za,2026-07-01,2026-07-01 10:45:00+02:00,2026-07-01 11:00:00+02:00,Slipstream - IPD - Internal Projects Check-In,21
 Thando.Calana@slipstreamdata.co.za,2026-04-08,2026-04-08 14:30:00+02:00,2026-04-08 15:00:00+02:00,one on one - Thando,68
-Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 14:30:00+02:00,2026-04-22 15:00:00+02:00,one on one - Thando,38
+Thando.Calana@slipstreamdata.co.za,2026-04-22,2026-04-22 14:30:00+02:00,2026-04-22 15:00:00+02:00,one on one - Thando,50
 Thando.Calana@slipstreamdata.co.za,2026-05-06,2026-05-06 14:30:00+02:00,2026-05-06 15:00:00+02:00,one on one - Thando,38
 Thando.Calana@slipstreamdata.co.za,2026-05-20,2026-05-20 14:30:00+02:00,2026-05-20 15:00:00+02:00,one on one - Thando,38
 Thando.Calana@slipstreamdata.co.za,2026-06-03,2026-06-03 14:30:00+02:00,2026-06-03 15:00:00+02:00,one on one - Thando,38
