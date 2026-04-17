@@ -1221,7 +1221,7 @@ Michael.Malia@slipstreamdata.co.za,2026-04-10,2026-04-10 10:30:00+02:00,2026-04-
 Michael.Malia@slipstreamdata.co.za,2026-04-10,2026-04-10 13:30:00+02:00,2026-04-10 13:45:00+02:00,DataLake - Catalogues,41
 Michael.Malia@slipstreamdata.co.za,2026-04-14,2026-04-14 12:00:00+02:00,2026-04-14 12:30:00+02:00,DWH ,50
 Michael.Malia@slipstreamdata.co.za,2026-04-16,2026-04-16 12:00:00+02:00,2026-04-16 13:00:00+02:00,Discovery SLA: Technical concerns on transform process discussion ,56
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 12:00:00+02:00,2026-04-17 12:30:00+02:00,Discovery streaming solution : Transform changes,44
+Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 12:00:00+02:00,2026-04-17 12:30:00+02:00,Discovery streaming solution : Transform changes,32
 Michael.Malia@slipstreamdata.co.za,2026-04-06,2026-04-06 12:00:00+02:00,2026-04-06 14:00:00+02:00,Internal Study time(PDP),65
 Michael.Malia@slipstreamdata.co.za,2026-04-13,2026-04-13 12:00:00+02:00,2026-04-13 14:00:00+02:00,Internal Study time(PDP),59
 Michael.Malia@slipstreamdata.co.za,2026-04-20,2026-04-20 12:00:00+02:00,2026-04-20 14:00:00+02:00,Internal Study time(PDP),76
@@ -1266,7 +1266,7 @@ Michael.Malia@slipstreamdata.co.za,2026-04-13,2026-04-13 08:30:00+02:00,2026-04-
 Michael.Malia@slipstreamdata.co.za,2026-04-14,2026-04-14 08:30:00+02:00,2026-04-14 09:00:00+02:00,Daily Stand Up,50
 Michael.Malia@slipstreamdata.co.za,2026-04-15,2026-04-15 08:30:00+02:00,2026-04-15 09:00:00+02:00,Daily Stand Up,44
 Michael.Malia@slipstreamdata.co.za,2026-04-16,2026-04-16 08:30:00+02:00,2026-04-16 09:00:00+02:00,Daily Stand Up,56
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,44
+Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:00:00+02:00,Daily Stand Up,32
 Michael.Malia@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,76
 Michael.Malia@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,44
 Michael.Malia@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,44
@@ -1330,7 +1330,7 @@ Michael.Malia@slipstreamdata.co.za,2026-04-13,2026-04-13 09:30:00+02:00,2026-04-
 Michael.Malia@slipstreamdata.co.za,2026-04-14,2026-04-14 09:30:00+02:00,2026-04-14 10:30:00+02:00,Ongoing: Daily operational tasks DSY,50
 Michael.Malia@slipstreamdata.co.za,2026-04-15,2026-04-15 09:30:00+02:00,2026-04-15 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-04-16,2026-04-16 09:30:00+02:00,2026-04-16 10:30:00+02:00,Ongoing: Daily operational tasks DSY,56
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 09:30:00+02:00,2026-04-17 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
+Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 09:30:00+02:00,2026-04-17 10:30:00+02:00,Ongoing: Daily operational tasks DSY,32
 Michael.Malia@slipstreamdata.co.za,2026-04-20,2026-04-20 09:30:00+02:00,2026-04-20 10:30:00+02:00,Ongoing: Daily operational tasks DSY,76
 Michael.Malia@slipstreamdata.co.za,2026-04-21,2026-04-21 09:30:00+02:00,2026-04-21 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-04-22,2026-04-22 09:30:00+02:00,2026-04-22 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
@@ -1394,7 +1394,7 @@ Michael.Malia@slipstreamdata.co.za,2026-04-10,2026-04-10 16:00:00+02:00,2026-04-
 Michael.Malia@slipstreamdata.co.za,2026-04-14,2026-04-14 16:00:00+02:00,2026-04-14 16:15:00+02:00,DSY DW - Daily standup,50
 Michael.Malia@slipstreamdata.co.za,2026-04-15,2026-04-15 16:00:00+02:00,2026-04-15 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-04-16,2026-04-16 16:00:00+02:00,2026-04-16 16:15:00+02:00,DSY DW - Daily standup,56
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 16:00:00+02:00,2026-04-17 16:15:00+02:00,DSY DW - Daily standup,44
+Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 16:00:00+02:00,2026-04-17 16:15:00+02:00,DSY DW - Daily standup,32
 Michael.Malia@slipstreamdata.co.za,2026-04-21,2026-04-21 16:00:00+02:00,2026-04-21 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-04-22,2026-04-22 16:00:00+02:00,2026-04-22 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-04-23,2026-04-23 16:00:00+02:00,2026-04-23 16:15:00+02:00,DSY DW - Daily standup,44
@@ -1493,7 +1493,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-22,2026-06-22 11:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-29,2026-06-29 11:00:00+02:00,2026-06-29 12:00:00+02:00,DWH Transform load Monitoring  ,76
 Michael.Malia@slipstreamdata.co.za,2026-04-03,2026-04-03 12:00:00+02:00,2026-04-03 12:30:00+02:00,Weekly round-up-meeting,38
 Michael.Malia@slipstreamdata.co.za,2026-04-10,2026-04-10 12:00:00+02:00,2026-04-10 12:30:00+02:00,Weekly round-up-meeting,41
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 12:00:00+02:00,2026-04-17 12:30:00+02:00,Weekly round-up-meeting,44
+Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 12:00:00+02:00,2026-04-17 12:30:00+02:00,Weekly round-up-meeting,32
 Michael.Malia@slipstreamdata.co.za,2026-04-24,2026-04-24 12:00:00+02:00,2026-04-24 12:30:00+02:00,Weekly round-up-meeting,44
 Michael.Malia@slipstreamdata.co.za,2026-05-01,2026-05-01 12:00:00+02:00,2026-05-01 12:30:00+02:00,Weekly round-up-meeting,38
 Michael.Malia@slipstreamdata.co.za,2026-05-08,2026-05-08 12:00:00+02:00,2026-05-08 12:30:00+02:00,Weekly round-up-meeting,50
@@ -1505,7 +1505,6 @@ Michael.Malia@slipstreamdata.co.za,2026-06-12,2026-06-12 12:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-19,2026-06-19 12:00:00+02:00,2026-06-19 12:30:00+02:00,Weekly round-up-meeting,44
 Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 12:00:00+02:00,2026-06-26 12:30:00+02:00,Weekly round-up-meeting,38
 Michael.Malia@slipstreamdata.co.za,2026-04-03,2026-04-03 15:00:00+02:00,2026-04-03 16:00:00+02:00,Tech Friday,38
-Michael.Malia@slipstreamdata.co.za,2026-04-17,2026-04-17 15:00:00+02:00,2026-04-17 16:00:00+02:00,Canceled: Tech Friday,44
 Michael.Malia@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,44
 Michael.Malia@slipstreamdata.co.za,2026-05-01,2026-05-01 15:00:00+02:00,2026-05-01 16:00:00+02:00,Tech Friday,38
 Michael.Malia@slipstreamdata.co.za,2026-05-08,2026-05-08 15:00:00+02:00,2026-05-08 16:00:00+02:00,Tech Friday,50
