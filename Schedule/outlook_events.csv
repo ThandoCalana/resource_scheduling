@@ -33,7 +33,7 @@ Andrew@slipstreamdata.co.za,2026-04-17,2026-04-17 08:00:00+02:00,2026-04-17 16:0
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 11:00:00+02:00,2026-04-20 11:30:00+02:00,Discovery SLA ,65
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 14:00:00+02:00,2026-04-20 15:00:00+02:00,Tableau Server solution install,65
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 11:00:00+02:00,2026-04-21 12:00:00+02:00,GPT Technical Questions - internal review ,76
-Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 12:00:00+02:00,2026-04-21 12:30:00+02:00,RDS discussion,76
+Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 12:00:00+02:00,2026-04-21 12:30:00+02:00,Canceled: RDS discussion,76
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 15:00:00+02:00,2026-04-21 15:30:00+02:00,Sir Fruit / Slipstream - Assessment to be Postponed,76
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 16:00:00+02:00,2026-04-21 18:00:00+02:00,WhereScape 3D + DVE Virtual Hands-On Lab - 9:00 AM CDT / 4:00 PM CEST,76
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 09:00:00+02:00,2026-04-22 11:00:00+02:00,Tableau performance assessment session,88
@@ -41,7 +41,8 @@ Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 10:00:00+02:00,2026-04-22 11:0
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 12:00:00+02:00,2026-04-22 13:00:00+02:00,Tableau Disscussion with OM,88
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 13:00:00+02:00,2026-04-22 14:00:00+02:00,ATNS Check-In,88
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 17:00:00+02:00,2026-04-22 18:00:00+02:00,The Modern Data Lifecycle: From Design to Deployment in an AI-Driven World,88
-Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 11:30:00+02:00,2026-04-23 13:00:00+02:00,RAF Bid - 24/03 Retrospective Part II,35
+Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 09:30:00+02:00,2026-04-23 10:00:00+02:00,"SDH Security, Routing & Infra",41
+Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 11:30:00+02:00,2026-04-23 13:00:00+02:00,RAF Bid - 24/03 Retrospective Part II,41
 Andrew@slipstreamdata.co.za,2026-05-06,2026-05-06 08:45:00+02:00,2026-05-06 15:00:00+02:00,Confirmed | In-person Salesforce Training | Sales & Agentforce Enablement | 6-May | Johannesburg,91
 Andrew@slipstreamdata.co.za,2026-05-13,2026-05-13 11:00:00+02:00,2026-05-13 12:00:00+02:00,Alteryx One Roadmap Update,41
 Andrew@slipstreamdata.co.za,2026-05-15,2026-05-15 08:00:00+02:00,2026-05-15 16:00:00+02:00,ScaleUp - Execution Discipline ,100
@@ -99,7 +100,7 @@ Andrew@slipstreamdata.co.za,2026-04-17,2026-04-17 08:30:00+02:00,2026-04-17 09:0
 Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:00:00+02:00,Daily Stand Up,65
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,76
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,88
-Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,35
+Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,41
 Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,71
 Andrew@slipstreamdata.co.za,2026-04-27,2026-04-27 08:30:00+02:00,2026-04-27 09:00:00+02:00,Daily Stand Up,29
 Andrew@slipstreamdata.co.za,2026-04-28,2026-04-28 08:30:00+02:00,2026-04-28 09:00:00+02:00,Daily Stand Up,35
@@ -200,7 +201,7 @@ Andrew@slipstreamdata.co.za,2026-06-09,2026-06-09 12:00:00+02:00,2026-06-09 12:3
 Andrew@slipstreamdata.co.za,2026-06-16,2026-06-16 12:00:00+02:00,2026-06-16 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),35
 Andrew@slipstreamdata.co.za,2026-06-23,2026-06-23 12:00:00+02:00,2026-06-23 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),35
 Andrew@slipstreamdata.co.za,2026-06-30,2026-06-30 12:00:00+02:00,2026-06-30 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),18
-Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 14:00:00+02:00,2026-04-23 15:00:00+02:00,Slipstream Data / WhereScape,35
+Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 14:00:00+02:00,2026-04-23 15:00:00+02:00,Slipstream Data / WhereScape,41
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 14:00:00+02:00,2026-05-21 15:00:00+02:00,Slipstream Data / WhereScape,100
 Andrew@slipstreamdata.co.za,2026-06-18,2026-06-18 14:00:00+02:00,2026-06-18 15:00:00+02:00,Slipstream Data / WhereScape,100
 Andrew@slipstreamdata.co.za,2026-04-03,2026-04-03 10:00:00+02:00,2026-04-03 10:30:00+02:00,Tech <> Ops: Alignment Session,24
