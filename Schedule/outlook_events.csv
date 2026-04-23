@@ -49,7 +49,8 @@ Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 17:00:00+02:00,2026-04-22 18:0
 Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 09:30:00+02:00,2026-04-23 10:00:00+02:00,"SDH Security, Routing & Infra",65
 Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 10:00:00+02:00,2026-04-23 12:30:00+02:00,Slipstream: Datalake internal project Check-in ,65
 Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 13:00:00+02:00,2026-04-23 13:30:00+02:00,Shoprite Tableau Server Performance Review,65
-Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 10:30:00+02:00,2026-04-24 11:00:00+02:00,GIA | Slipstream data warehouse audit ,71
+Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 10:30:00+02:00,2026-04-24 11:00:00+02:00,GIA | Slipstream data warehouse audit ,76
+Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 14:00:00+02:00,2026-04-24 14:30:00+02:00,SAML attributes & Security configuration,76
 Andrew@slipstreamdata.co.za,2026-04-25,2026-04-25 08:00:00+02:00,2026-04-25 08:30:00+02:00,i,6
 Andrew@slipstreamdata.co.za,2026-04-28,2026-04-28 11:00:00+02:00,2026-04-28 12:00:00+02:00,RAF Bid - 24/03 Retrospective Part II,47
 Andrew@slipstreamdata.co.za,2026-04-29,2026-04-29 09:00:00+02:00,2026-04-29 15:30:00+02:00,Data lake Project session,94
@@ -116,7 +117,7 @@ Andrew@slipstreamdata.co.za,2026-04-20,2026-04-20 08:30:00+02:00,2026-04-20 09:0
 Andrew@slipstreamdata.co.za,2026-04-21,2026-04-21 08:30:00+02:00,2026-04-21 09:00:00+02:00,Daily Stand Up,94
 Andrew@slipstreamdata.co.za,2026-04-22,2026-04-22 08:30:00+02:00,2026-04-22 09:00:00+02:00,Daily Stand Up,76
 Andrew@slipstreamdata.co.za,2026-04-23,2026-04-23 08:30:00+02:00,2026-04-23 09:00:00+02:00,Daily Stand Up,65
-Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,71
+Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 08:30:00+02:00,2026-04-24 09:00:00+02:00,Daily Stand Up,76
 Andrew@slipstreamdata.co.za,2026-04-27,2026-04-27 08:30:00+02:00,2026-04-27 09:00:00+02:00,Daily Stand Up,29
 Andrew@slipstreamdata.co.za,2026-04-28,2026-04-28 08:30:00+02:00,2026-04-28 09:00:00+02:00,Daily Stand Up,47
 Andrew@slipstreamdata.co.za,2026-04-29,2026-04-29 08:30:00+02:00,2026-04-29 09:00:00+02:00,Daily Stand Up,94
@@ -232,7 +233,7 @@ Andrew@slipstreamdata.co.za,2026-06-12,2026-06-12 10:00:00+02:00,2026-06-12 10:3
 Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 10:00:00+02:00,2026-06-19 10:30:00+02:00,Tech <> Ops: Alignment Session,24
 Andrew@slipstreamdata.co.za,2026-06-26,2026-06-26 10:00:00+02:00,2026-06-26 10:30:00+02:00,Tech <> Ops: Alignment Session,82
 Andrew@slipstreamdata.co.za,2026-04-03,2026-04-03 15:00:00+02:00,2026-04-03 16:00:00+02:00,Tech Friday,24
-Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,71
+Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 15:00:00+02:00,2026-04-24 16:00:00+02:00,Tech Friday,76
 Andrew@slipstreamdata.co.za,2026-05-01,2026-05-01 15:00:00+02:00,2026-05-01 16:00:00+02:00,Tech Friday,24
 Andrew@slipstreamdata.co.za,2026-05-08,2026-05-08 15:00:00+02:00,2026-05-08 16:00:00+02:00,Tech Friday,29
 Andrew@slipstreamdata.co.za,2026-05-15,2026-05-15 15:00:00+02:00,2026-05-15 16:00:00+02:00,Tech Friday,100
@@ -255,7 +256,7 @@ Andrew@slipstreamdata.co.za,2026-05-13,2026-05-13 15:30:00+02:00,2026-05-13 16:3
 Andrew@slipstreamdata.co.za,2026-05-27,2026-05-27 15:30:00+02:00,2026-05-27 16:30:00+02:00,PMO Office Hours Sessions,18
 Andrew@slipstreamdata.co.za,2026-06-10,2026-06-10 15:30:00+02:00,2026-06-10 16:30:00+02:00,PMO Office Hours Sessions,18
 Andrew@slipstreamdata.co.za,2026-06-24,2026-06-24 15:30:00+02:00,2026-06-24 16:30:00+02:00,PMO Office Hours Sessions,18
-Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 09:30:00+02:00,2026-04-24 13:30:00+02:00,Monthly Management Meeting,71
+Andrew@slipstreamdata.co.za,2026-04-24,2026-04-24 09:30:00+02:00,2026-04-24 13:30:00+02:00,Monthly Management Meeting,76
 Andrew@slipstreamdata.co.za,2026-05-22,2026-05-22 09:30:00+02:00,2026-05-22 13:30:00+02:00,Monthly Management Meeting,71
 Andrew@slipstreamdata.co.za,2026-06-26,2026-06-26 09:30:00+02:00,2026-06-26 13:30:00+02:00,Monthly Management Meeting,82
 Andrew@slipstreamdata.co.za,2026-04-01,2026-04-01 09:30:00+02:00,2026-04-01 10:00:00+02:00,Wonga: DWH development & migration on Snowflake Project Daily Standup**With Client**,71
