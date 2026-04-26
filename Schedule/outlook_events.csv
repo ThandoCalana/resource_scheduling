@@ -1559,8 +1559,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 09:30:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-29,2026-06-29 09:30:00+02:00,2026-06-29 10:30:00+02:00,Ongoing: Daily operational tasks DSY,76
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 09:30:00+02:00,2026-06-30 10:30:00+02:00,Ongoing: Daily operational tasks DSY,50
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 09:30:00+02:00,2026-07-01 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
-Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:30:00+02:00,2026-07-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,41
-Michael.Malia@slipstreamdata.co.za,2026-04-01,2026-04-01 16:00:00+02:00,2026-04-01 16:15:00+02:00,DSY DW - Daily standup,3
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:30:00+02:00,2026-07-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 16:15:00+02:00,DSY DW - Daily standup,56
 Michael.Malia@slipstreamdata.co.za,2026-04-03,2026-04-03 16:00:00+02:00,2026-04-03 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-04-07,2026-04-07 16:00:00+02:00,2026-04-07 16:15:00+02:00,DSY DW - Daily standup,44
@@ -1613,6 +1612,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-25,2026-06-25 16:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 16:00:00+02:00,2026-06-26 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 16:00:00+02:00,2026-06-30 16:15:00+02:00,DSY DW - Daily standup,50
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 16:00:00+02:00,2026-07-01 16:15:00+02:00,DSY DW - Daily standup,44
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 16:00:00+02:00,2026-07-02 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-04-02,2026-04-02 13:00:00+02:00,2026-04-02 15:00:00+02:00,Development activities - Glue - code and data,56
 Michael.Malia@slipstreamdata.co.za,2026-04-07,2026-04-07 13:00:00+02:00,2026-04-07 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-04-08,2026-04-08 13:00:00+02:00,2026-04-08 15:00:00+02:00,Development activities - Glue - code and data,68
@@ -1652,7 +1652,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-24,2026-06-24 13:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-25,2026-06-25 13:00:00+02:00,2026-06-25 15:00:00+02:00,Development activities - Glue - code and data,50
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 13:00:00+02:00,2026-06-30 15:00:00+02:00,Development activities - Glue - code and data,50
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 13:00:00+02:00,2026-07-01 15:00:00+02:00,Development activities - Glue - code and data,44
-Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 13:00:00+02:00,2026-07-02 15:00:00+02:00,Development activities - Glue - code and data,41
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 13:00:00+02:00,2026-07-02 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-04-06,2026-04-06 11:00:00+02:00,2026-04-06 12:00:00+02:00,DWH Transform load Monitoring  ,65
 Michael.Malia@slipstreamdata.co.za,2026-04-13,2026-04-13 11:00:00+02:00,2026-04-13 12:00:00+02:00,DWH Transform load Monitoring  ,59
 Michael.Malia@slipstreamdata.co.za,2026-04-20,2026-04-20 11:00:00+02:00,2026-04-20 12:00:00+02:00,DWH Transform load Monitoring  ,76
@@ -1730,7 +1730,7 @@ Michael.Malia@slipstreamdata.co.za,2026-06-24,2026-06-24 09:00:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-25,2026-06-25 09:00:00+02:00,2026-06-25 09:30:00+02:00,RAF Bid DEMO Check-in,50
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 09:00:00+02:00,2026-06-30 09:30:00+02:00,RAF Bid DEMO Check-in,50
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 09:00:00+02:00,2026-07-01 09:30:00+02:00,RAF Bid DEMO Check-in,44
-Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:00:00+02:00,2026-07-02 09:30:00+02:00,RAF Bid DEMO Check-in,41
+Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:00:00+02:00,2026-07-02 09:30:00+02:00,RAF Bid DEMO Check-in,44
 Michael.Malia@slipstreamdata.co.za,2026-05-08,2026-05-08 12:00:00+02:00,2026-05-08 12:30:00+02:00,Discovery: Monthly SLA Sessions,44
 Michael.Malia@slipstreamdata.co.za,2026-06-08,2026-06-08 12:00:00+02:00,2026-06-08 12:30:00+02:00,Discovery: Monthly SLA Sessions,65
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-04-02,2026-04-02 12:30:00+02:00,2026-04-02 14:00:00+02:00,RAF Bid - 24/03 Retrospective,38
