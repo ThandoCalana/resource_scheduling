@@ -62,6 +62,7 @@ Andrew@slipstreamdata.co.za,2026-05-14,2026-05-14 11:00:00+02:00,2026-05-14 12:3
 Andrew@slipstreamdata.co.za,2026-05-15,2026-05-15 08:00:00+02:00,2026-05-15 16:00:00+02:00,ScaleUp - Execution Discipline ,100
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 11:00:00+02:00,2026-05-21 12:00:00+02:00,Sophie orthodontist ,100
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 11:30:00+02:00,2026-05-21 12:30:00+02:00,Climate Survey Discussion ,100
+Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 15:45:00+02:00,2026-05-21 17:00:00+02:00,Blocker: May Panel Discussion - Designing Data Architectures That Adapt as You Evolve,100
 Andrew@slipstreamdata.co.za,2026-05-07,2026-05-07 09:00:00+02:00,2026-05-07 16:00:00+02:00,Strategy and solution Day,100
 Andrew@slipstreamdata.co.za,2026-05-14,2026-05-14 09:00:00+02:00,2026-05-14 16:00:00+02:00,Strategy and solution Day,100
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 09:00:00+02:00,2026-05-21 16:00:00+02:00,Strategy and solution Day,100
@@ -770,8 +771,8 @@ Ben.Brooker@slipstreamdata.co.za,2026-06-25,2026-06-25 09:00:00+02:00,2026-06-25
 Ben.Brooker@slipstreamdata.co.za,2026-06-30,2026-06-30 09:00:00+02:00,2026-06-30 09:30:00+02:00,RAF Bid DEMO Check-in,21
 Ben.Brooker@slipstreamdata.co.za,2026-07-01,2026-07-01 09:00:00+02:00,2026-07-01 09:30:00+02:00,RAF Bid DEMO Check-in,12
 Ben.Brooker@slipstreamdata.co.za,2026-07-02,2026-07-02 09:00:00+02:00,2026-07-02 09:30:00+02:00,RAF Bid DEMO Check-in,12
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 19:30:00+02:00,2026-04-01 22:00:00+02:00,Snowflake,71
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 23:30:00+02:00,2026-04-02 00:00:00+02:00,Snowflake,71
+Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 19:30:00+02:00,2026-04-01 22:00:00+02:00,Snowflake,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 23:30:00+02:00,2026-04-02 00:00:00+02:00,Snowflake,35
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 00:00:00+02:00,2026-04-02 03:00:00+02:00,Snowflake,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 07:30:00+02:00,2026-04-02 08:30:00+02:00,Focus time,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-02,2026-04-02 09:00:00+02:00,2026-04-02 09:30:00+02:00,RAF - Retro Feedback,100
@@ -987,7 +988,6 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-22,2026-06-22 09:00:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-24,2026-06-24 09:00:00+02:00,2026-06-24 13:00:00+02:00,OM Work,88
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 09:00:00+02:00,2026-06-29 13:00:00+02:00,OM Work,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-01,2026-07-01 09:00:00+02:00,2026-07-01 13:00:00+02:00,OM Work,71
-Flora.Kundaeli@slipstreamdata.co.za,2026-04-01,2026-04-01 14:00:00+02:00,2026-04-01 17:00:00+02:00,OM Work,71
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-06,2026-04-06 14:00:00+02:00,2026-04-06 16:00:00+02:00,OM Work,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-08,2026-04-08 14:00:00+02:00,2026-04-08 16:00:00+02:00,OM Work,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-04-13,2026-04-13 14:00:00+02:00,2026-04-13 16:00:00+02:00,OM Work - SFTP Writes,100
@@ -1560,7 +1560,6 @@ Michael.Malia@slipstreamdata.co.za,2026-06-29,2026-06-29 09:30:00+02:00,2026-06-
 Michael.Malia@slipstreamdata.co.za,2026-06-30,2026-06-30 09:30:00+02:00,2026-06-30 10:30:00+02:00,Ongoing: Daily operational tasks DSY,50
 Michael.Malia@slipstreamdata.co.za,2026-07-01,2026-07-01 09:30:00+02:00,2026-07-01 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-07-02,2026-07-02 09:30:00+02:00,2026-07-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
-Michael.Malia@slipstreamdata.co.za,2026-04-01,2026-04-01 16:00:00+02:00,2026-04-01 16:15:00+02:00,DSY DW - Daily standup,3
 Michael.Malia@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 16:15:00+02:00,DSY DW - Daily standup,56
 Michael.Malia@slipstreamdata.co.za,2026-04-03,2026-04-03 16:00:00+02:00,2026-04-03 16:15:00+02:00,DSY DW - Daily standup,38
 Michael.Malia@slipstreamdata.co.za,2026-04-07,2026-04-07 16:00:00+02:00,2026-04-07 16:15:00+02:00,DSY DW - Daily standup,44
@@ -3211,6 +3210,7 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-04-23,2026-04-23 11:00:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-24,2026-04-24 11:00:00+02:00,2026-04-24 12:00:00+02:00,Standard Tableau Demo - Final,65
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-24,2026-04-24 12:30:00+02:00,2026-04-24 13:00:00+02:00,DataLake Catch-up,65
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-24,2026-04-24 13:00:00+02:00,2026-04-24 15:00:00+02:00,Fatca P2,65
+Suzanne.Edlmann@slipstreamdata.co.za,2026-04-28,2026-04-28 11:30:00+02:00,2026-04-28 12:30:00+02:00,Fw: FATCA - Run Book ,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-28,2026-04-28 14:00:00+02:00,2026-04-28 15:00:00+02:00,DBT review sessioin,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-29,2026-04-29 09:00:00+02:00,2026-04-29 15:30:00+02:00,Data lake Project session,94
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-30,2026-04-30 09:30:00+02:00,2026-04-30 11:00:00+02:00,Appointment,47
@@ -3347,7 +3347,7 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-04-23,2026-04-23 10:00:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-27,2026-04-27 10:00:00+02:00,2026-04-27 10:30:00+02:00,Focus time,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-28,2026-04-28 10:00:00+02:00,2026-04-28 10:30:00+02:00,Focus time,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-29,2026-04-29 10:00:00+02:00,2026-04-29 10:30:00+02:00,Focus time,94
-Suzanne.Edlmann@slipstreamdata.co.za,2026-04-30,2026-04-30 10:00:00+02:00,2026-04-30 10:30:00+02:00,Focus time,47
+Suzanne.Edlmann@slipstreamdata.co.za,2026-04-30,2026-04-30 11:00:00+02:00,2026-04-30 11:30:00+02:00,Focus time,47
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-01,2026-05-01 10:00:00+02:00,2026-05-01 10:30:00+02:00,Focus time,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-04,2026-05-04 10:00:00+02:00,2026-05-04 10:30:00+02:00,Focus time,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-05,2026-05-05 10:00:00+02:00,2026-05-05 10:30:00+02:00,Focus time,100
@@ -3400,7 +3400,7 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-04-24,2026-04-24 13:30:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-27,2026-04-27 14:00:00+02:00,2026-04-27 14:30:00+02:00,Focus time,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-28,2026-04-28 14:00:00+02:00,2026-04-28 14:30:00+02:00,Focus time,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-04-29,2026-04-29 14:00:00+02:00,2026-04-29 14:30:00+02:00,Focus time,94
-Suzanne.Edlmann@slipstreamdata.co.za,2026-04-30,2026-04-30 14:00:00+02:00,2026-04-30 14:30:00+02:00,Focus time,47
+Suzanne.Edlmann@slipstreamdata.co.za,2026-04-30,2026-04-30 14:30:00+02:00,2026-04-30 15:00:00+02:00,Focus time,47
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-01,2026-05-01 14:00:00+02:00,2026-05-01 14:30:00+02:00,Focus time,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-04,2026-05-04 14:00:00+02:00,2026-05-04 14:30:00+02:00,Focus time,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-05-05,2026-05-05 14:00:00+02:00,2026-05-05 14:30:00+02:00,Focus time,100
@@ -3581,7 +3581,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Daily Stand Up,32
 Thando.Calana@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Daily Stand Up,44
 Thando.Calana@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Daily Stand Up,18
-Thando.Calana@slipstreamdata.co.za,2026-04-01,2026-04-01 16:00:00+02:00,2026-04-01 17:00:00+02:00,Upskilling,12
 Thando.Calana@slipstreamdata.co.za,2026-04-02,2026-04-02 16:00:00+02:00,2026-04-02 17:00:00+02:00,Upskilling,53
 Thando.Calana@slipstreamdata.co.za,2026-04-06,2026-04-06 16:00:00+02:00,2026-04-06 17:00:00+02:00,Upskilling,32
 Thando.Calana@slipstreamdata.co.za,2026-04-07,2026-04-07 16:00:00+02:00,2026-04-07 17:00:00+02:00,Upskilling,53
