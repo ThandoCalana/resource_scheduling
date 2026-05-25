@@ -55,9 +55,11 @@ Andrew@slipstreamdata.co.za,2026-05-25,2026-05-25 12:00:00+02:00,2026-05-25 13:0
 Andrew@slipstreamdata.co.za,2026-05-25,2026-05-25 13:30:00+02:00,2026-05-25 15:00:00+02:00,Discovery Reports - review and polish,82
 Andrew@slipstreamdata.co.za,2026-05-25,2026-05-25 15:00:00+02:00,2026-05-25 15:30:00+02:00,SAML Certificate & Private Key File creation,82
 Andrew@slipstreamdata.co.za,2026-05-25,2026-05-25 15:30:00+02:00,2026-05-25 16:00:00+02:00,Discovery Invest Project vs SLA work ,82
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:15:00+02:00,Tableau Server-HANA SSO integration using SAML,56
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 16:00:00+02:00,2026-05-26 17:00:00+02:00,WhereScape RED 11: A Landmark Roadmap Update for Our Partners,56
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 16:00:00+02:00,2026-05-26 17:00:00+02:00,WhereScape RED 11: A Landmark Roadmap Update for Our Partners,56
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:15:00+02:00,Tableau Server-HANA SSO integration using SAML,74
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:15:00+02:00,Canceled: Tableau Server-HANA security integration using SAML,74
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:15:00+02:00,Tableau Server-HANA security integration using SAML,74
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 16:00:00+02:00,2026-05-26 17:00:00+02:00,WhereScape RED 11: A Landmark Roadmap Update for Our Partners,74
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 16:00:00+02:00,2026-05-26 17:00:00+02:00,WhereScape RED 11: A Landmark Roadmap Update for Our Partners,74
 Andrew@slipstreamdata.co.za,2026-05-27,2026-05-27 18:00:00+02:00,2026-05-27 19:00:00+02:00,Exclusive Partner Preview: What's New at Snowflake Summit 2026,35
 Andrew@slipstreamdata.co.za,2026-05-28,2026-05-28 03:00:00+02:00,2026-05-28 04:00:00+02:00,Exclusive Partner Preview: What's New at Snowflake Summit 2026,94
 Andrew@slipstreamdata.co.za,2026-05-28,2026-05-28 12:00:00+02:00,2026-05-28 13:00:00+02:00,Discovery Health - Environment Assessment discussion ,94
@@ -92,7 +94,7 @@ Andrew@slipstreamdata.co.za,2026-05-18,2026-05-18 18:00:00+02:00,2026-05-18 18:3
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 18:00:00+02:00,2026-06-15 18:30:00+02:00,FW: AWS Patching | ALXPROD,53
 Andrew@slipstreamdata.co.za,2026-07-20,2026-07-20 18:00:00+02:00,2026-07-20 18:30:00+02:00,FW: AWS Patching | ALXPROD,29
 Andrew@slipstreamdata.co.za,2026-05-05,2026-05-05 10:30:00+02:00,2026-05-05 11:00:00+02:00,Resource Utilisation Review,100
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 10:30:00+02:00,2026-05-26 11:00:00+02:00,Resource Utilisation Review,56
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 10:30:00+02:00,2026-05-26 11:00:00+02:00,Resource Utilisation Review,74
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 10:30:00+02:00,2026-06-02 11:00:00+02:00,Resource Utilisation Review,76
 Andrew@slipstreamdata.co.za,2026-06-09,2026-06-09 10:30:00+02:00,2026-06-09 11:00:00+02:00,Resource Utilisation Review,47
 Andrew@slipstreamdata.co.za,2026-06-16,2026-06-16 10:30:00+02:00,2026-06-16 11:00:00+02:00,Resource Utilisation Review,47
@@ -118,7 +120,7 @@ Andrew@slipstreamdata.co.za,2026-05-20,2026-05-20 08:30:00+02:00,2026-05-20 09:0
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 08:30:00+02:00,2026-05-21 09:00:00+02:00,Daily Stand Up,100
 Andrew@slipstreamdata.co.za,2026-05-22,2026-05-22 08:30:00+02:00,2026-05-22 09:00:00+02:00,Daily Stand Up,100
 Andrew@slipstreamdata.co.za,2026-05-25,2026-05-25 08:30:00+02:00,2026-05-25 09:00:00+02:00,Daily Stand Up,82
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 08:30:00+02:00,2026-05-26 09:00:00+02:00,Daily Stand Up,56
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 08:30:00+02:00,2026-05-26 09:00:00+02:00,Daily Stand Up,74
 Andrew@slipstreamdata.co.za,2026-05-27,2026-05-27 08:30:00+02:00,2026-05-27 09:00:00+02:00,Daily Stand Up,35
 Andrew@slipstreamdata.co.za,2026-05-28,2026-05-28 08:30:00+02:00,2026-05-28 09:00:00+02:00,Daily Stand Up,94
 Andrew@slipstreamdata.co.za,2026-05-29,2026-05-29 08:30:00+02:00,2026-05-29 09:00:00+02:00,Daily Stand Up,88
@@ -271,7 +273,7 @@ Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 10:30:00+02:00,2026-06-19 11:0
 Andrew@slipstreamdata.co.za,2026-06-22,2026-06-22 10:30:00+02:00,2026-06-22 11:00:00+02:00,Tableau Technical Check in,35
 Andrew@slipstreamdata.co.za,2026-05-12,2026-05-12 09:00:00+02:00,2026-05-12 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,56
 Andrew@slipstreamdata.co.za,2026-05-20,2026-05-20 08:30:00+02:00,2026-05-20 09:00:00+02:00,Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,76
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 09:00:00+02:00,2026-05-26 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,56
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 09:00:00+02:00,2026-05-26 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,74
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,76
 Andrew@slipstreamdata.co.za,2026-06-09,2026-06-09 09:00:00+02:00,2026-06-09 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,47
 Andrew@slipstreamdata.co.za,2026-06-16,2026-06-16 09:00:00+02:00,2026-06-16 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,47
@@ -290,7 +292,7 @@ Andrew@slipstreamdata.co.za,2026-07-22,2026-07-22 15:30:00+02:00,2026-07-22 16:3
 Andrew@slipstreamdata.co.za,2026-05-20,2026-05-20 12:00:00+02:00,2026-05-20 13:00:00+02:00,Raw to Datalake | Click-up Guidance and Planning,76
 Andrew@slipstreamdata.co.za,2026-05-22,2026-05-22 12:00:00+02:00,2026-05-22 13:00:00+02:00,Raw to Datalake | Click-up Guidance and Planning,100
 Andrew@slipstreamdata.co.za,2026-05-21,2026-05-21 15:30:00+02:00,2026-05-21 16:00:00+02:00,RAF Bid DEMO Check-in,100
-Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:00:00+02:00,RAF Bid DEMO Check-in,56
+Andrew@slipstreamdata.co.za,2026-05-26,2026-05-26 15:30:00+02:00,2026-05-26 16:00:00+02:00,RAF Bid DEMO Check-in,74
 Andrew@slipstreamdata.co.za,2026-05-28,2026-05-28 15:30:00+02:00,2026-05-28 16:00:00+02:00,RAF Bid DEMO Check-in,94
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 15:30:00+02:00,2026-06-02 16:00:00+02:00,RAF Bid DEMO Check-in,76
 Andrew@slipstreamdata.co.za,2026-06-04,2026-06-04 15:30:00+02:00,2026-06-04 16:00:00+02:00,RAF Bid DEMO Check-in,100
