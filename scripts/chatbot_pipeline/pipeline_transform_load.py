@@ -16,6 +16,8 @@ Run:
 import os
 import argparse
 from datetime import date
+import snowflake.connector
+from snowflake.connector.pandas_tools import write_pandas
 # from dotenv import load_dotenv
 
 # load_dotenv()
@@ -170,11 +172,6 @@ def validate(meetings: pd.DataFrame, daily: pd.DataFrame):
 
 
 def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
-    try:
-        import snowflake.connector
-        from snowflake.connector.pandas_tools import write_pandas
-    except ImportError:
-        raise ImportError("Run: pip install snowflake-connector-python")
 
     conn = snowflake.connector.connect(
         account   = os.environ["SNOWFLAKE_ACCOUNT"],
@@ -186,14 +183,14 @@ def load_to_snowflake(meetings: pd.DataFrame, daily: pd.DataFrame):
     )
     cur = conn.cursor()
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_MEETINGS")
+    cur.execute("TRUNCATE TABLE FACT_SCHEDULE_MEETINGS")
 
     success, nchunks, nrows, _ = write_pandas(
         conn, meetings.rename(columns=str.upper), "FACT_SCHEDULE_MEETINGS",
         auto_create_table=False,use_logical_type=True
     )
 
-    cur.execute("TRUNCATE TABLE SCHEDULE_DB.PUBLIC.FACT_SCHEDULE_DAILY")
+    cur.execute("TRUNCATE TABLE FACT_SCHEDULE_DAILY")
 
     success, nchunks, nrows, _ = write_pandas(
         conn, daily.rename(columns=str.upper), "FACT_SCHEDULE_DAILY",

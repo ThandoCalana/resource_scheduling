@@ -38,10 +38,10 @@ jobs:
             - name: Setup dependencies
               run: |
                 python -m pip install --upgrade pip
-                pip install -r Schedule/requirements.txt
+                pip install -r scripts/chatbot_pipeline/requirements.txt
             
             - name: Extract Outlook data
-              run: python Schedule/outlook_to_csv.py
+              run: python scripts/chatbot_pipeline/outlook_to_csv.py
 
             - name: Set current_timestamp
               run: echo "NOW=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
@@ -54,5 +54,5 @@ jobs:
                   message: "Added new Outlook data at ${{ env.NOW }}"
 
             - name: Transform and load to Snowflake
-              run: python scripts/pipeline_transform_load.py --input ./Schedule/outlook_events.csv 
+              run: python scripts/chatbot_pipeline/pipeline_transform_load.py --input ./data/outlook_events.csv 
    

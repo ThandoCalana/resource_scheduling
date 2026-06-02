@@ -1,2 +1,4 @@
 .env
-outlook_events.csv
+__pycache__
+llm
+.ipynb_checkpoints

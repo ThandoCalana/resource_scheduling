@@ -8,7 +8,7 @@ from openpyxl.utils import get_column_letter
 # from dotenv import load_dotenv
 
 # -------------------- ENV SETUP --------------------
-# load_dotenv()
+# load_dotenv(dotenv_path="./.env") # used for local machine testing
 
 CLICKUP_API_TOKEN = os.environ["CLICKUP_TOKEN"]
 SPACE_IDS = [s.strip() for s in os.environ["CLICKUP_SPACE_IDS"].split(",") if s.strip()]
@@ -59,9 +59,6 @@ def get_lists_directly_in_space(space_id):
 def get_tasks(list_id):
     return requests.get(f"https://api.clickup.com/api/v2/list/{list_id}/task?subtasks=true", headers=CLICKUP_HEADERS).json().get("tasks", [])
 
-def get_subtasks(task_id):
-    return requests.get(f"https://api.clickup.com/api/v2/task/{task_id}/subtask", headers=CLICKUP_HEADERS).json().get("tasks", [])
-
 def fetch_clickup_tasks():
     now = datetime.now(timezone.utc)
     weekdays = get_week_dates()
@@ -93,7 +90,7 @@ def fetch_clickup_tasks():
         assignees = [a.get("username", "") for a in t.get("assignees", [])] or ["Unassigned"]
 
         if restrict and ("Unassigned" in assignees or (due and due < now.date())):
-            for sub in get_subtasks(tid):
+            for sub in get_tasks(tid):
                 add_task(sub, allowed, list_name, restrict, True, due)
             return
 
@@ -103,7 +100,7 @@ def fetch_clickup_tasks():
                 name = f"(Subtask) {t.get('name','Untitled')}" if is_sub else f"[{list_name}] {t.get('name','Untitled')}"
                 push(tid, name, t.get("url"), assignees, sheet_dates)
 
-        for sub in get_subtasks(tid):
+        for sub in get_tasks(tid):
             add_task(sub, allowed, list_name, restrict, True, due)
 
     for space_id in SPACE_IDS:

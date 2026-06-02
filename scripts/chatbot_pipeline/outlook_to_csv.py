@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, time
 # from dotenv import load_dotenv
 
 # --- Load environment variables ---
-# load_dotenv()
+# load_dotenv() # only necessary for testing on local machine. Github doesn't have dotenv lib
 
 TENANT_ID = os.environ["TENANT_ID"]
 CLIENT_ID = os.environ["CLIENT_ID"]
@@ -14,7 +14,7 @@ CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 OUTLOOK_USER_EMAIL = [u.strip() for u in os.environ["OUTLOOK_USER_EMAIL"].split(",") if u.strip()]
 
 # --- Config ---
-OUTPUT_DIR = "./Schedule"
+OUTPUT_DIR = "./data"
 EVENTS_FILE = os.path.join(OUTPUT_DIR, "outlook_events.csv")
 
 LOCAL_TZ = pytz.timezone("Africa/Johannesburg")
