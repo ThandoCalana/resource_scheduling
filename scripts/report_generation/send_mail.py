@@ -5,7 +5,7 @@ from datetime import datetime
 # from dotenv import load_dotenv
 
 # -------------------- ENV --------------------
-# load_dotenv()
+# load_dotenv(dotenv_path="./.env")
 
 EMAIL_USER = os.environ["EMAIL_USER"] 
 EMAIL_PASS = os.environ["EMAIL_PASS"]    
