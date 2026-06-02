@@ -493,14 +493,25 @@ def push_to_snowflake(df: pd.DataFrame) -> None:
     database = get_required_env("SNOWFLAKE_DATABASE")
     schema = get_required_env("SNOWFLAKE_SCHEMA")
 
+
+    cur = conn.cursor()
+
+    cur.execute("TRUNCATE TABLE SKILLS_DB.PUBLIC.CERTIFICATIONS")
+
+    success, nchunks, nrows, _ = write_pandas(
+        conn, meetings.rename(columns=str.upper), "CERTIFICATIONS",
+        auto_create_table=False,use_logical_type=True
+    )
+
+    
     conn_str = (
         f"snowflake://{user}:{password}@{account}/{database}/{schema}"
         f"?warehouse={warehouse}&role={role}"
     )
 
     engine = create_engine(conn_str)
-    with engine.connect() as conn:
-        df.to_sql("certifications", con=conn, index=False, if_exists="replace", chunksize=10000)
+    #with engine.connect() as conn:
+    df.to_sql("CERTIFICATIONS", con=engine, index=False, if_exists="replace", chunksize=10000)
 
 
 
