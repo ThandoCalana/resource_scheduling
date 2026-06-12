@@ -1,5 +1,4 @@
 user_email,date,start_dt,end_dt,subject,load_pct
-Andrew@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 16:30:00+02:00,Assistance with Tableau  - Slipstream Data | Inovo ,6
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 15:00:00+02:00,2026-06-02 16:00:00+02:00,Discovery: Monthly complete SLA report review and sign-off ,47
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 16:30:00+02:00,Slipstream / Snowflake: Xeris Pharma,47
 Andrew@slipstreamdata.co.za,2026-06-03,2026-06-03 09:00:00+02:00,2026-06-03 09:30:00+02:00,,100
@@ -1880,7 +1879,6 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-12,2026-06-12 12:00:00+02:00,2026-06-12 12:30:00+02:00,Canceled: DW: Weekly round-up meeting,24
 Riyadh.Leonard@slipstreamdata.co.za,2026-07-10,2026-07-10 12:00:00+02:00,2026-07-10 12:30:00+02:00,DW: Weekly round-up meeting,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08-07 12:30:00+02:00,DW: Weekly round-up meeting,24
-Robin.April@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,SSG26 - Monthly Report Update,12
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 08:00:00+02:00,2026-06-02 08:30:00+02:00,SSGP26 - Daily Admin and Planning ,100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 12:00:00+02:00,"Internal Projects - Monthly Reports Deployment, Quality and Handover Prep",100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 12:00:00+02:00,2026-06-02 15:00:00+02:00,Slipstream Analytical Platform (SAP) - Development of Ingestions Platform in Openflow,100
@@ -2465,7 +2463,6 @@ Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-07,2026-08-07 11:00:00+02:00,2026
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-14,2026-08-14 11:00:00+02:00,2026-08-14 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-21,2026-08-21 11:00:00+02:00,2026-08-21 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-28,2026-08-28 11:00:00+02:00,2026-08-28 11:30:00+02:00,Resource Utilization Review ,79
-Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 17:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,24
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-02,2026-06-02 12:30:00+02:00,2026-06-02 14:30:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,88
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-03,2026-06-03 11:00:00+02:00,2026-06-03 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,91
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-04,2026-06-04 11:00:00+02:00,2026-06-04 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,65
@@ -2803,7 +2800,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-16,2026-06-16 12:30:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-17,2026-06-17 11:00:00+02:00,2026-06-17 12:00:00+02:00,From Prompt to Production: Build a Real-Time Fraud Detection Model in Snowflake,50
 Thando.Calana@slipstreamdata.co.za,2026-06-18,2026-06-18 11:00:00+02:00,2026-06-18 12:00:00+02:00,Snowflake AI Pulse,47
 Thando.Calana@slipstreamdata.co.za,2026-06-23,2026-06-23 11:00:00+02:00,2026-06-23 12:00:00+02:00,Power Your Agents with dbt and Snowflake,47
-Thando.Calana@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,Upskilling,12
 Thando.Calana@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 17:00:00+02:00,Upskilling,35
 Thando.Calana@slipstreamdata.co.za,2026-06-03,2026-06-03 16:00:00+02:00,2026-06-03 17:00:00+02:00,Upskilling,68
 Thando.Calana@slipstreamdata.co.za,2026-06-04,2026-06-04 16:00:00+02:00,2026-06-04 17:00:00+02:00,Upskilling,35
