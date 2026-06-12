@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-    FILE_NAME: "./Schedule/outlook_events.csv"
+    FILE_NAME: "./data/outlook_events.csv"
     
     CLICKUP_TOKEN: ${{ secrets.CLICKUP_TOKEN }}
     CLICKUP_SPACE_IDS: ${{ secrets.CLICKUP_SPACE_IDS }}
