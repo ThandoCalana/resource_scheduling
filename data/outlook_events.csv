@@ -1,5 +1,4 @@
 user_email,date,start_dt,end_dt,subject,load_pct
-Andrew@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 16:30:00+02:00,Assistance with Tableau  - Slipstream Data | Inovo ,41
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 15:00:00+02:00,2026-06-02 16:00:00+02:00,Discovery: Monthly complete SLA report review and sign-off ,47
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 16:30:00+02:00,Slipstream / Snowflake: Xeris Pharma,47
 Andrew@slipstreamdata.co.za,2026-06-03,2026-06-03 09:00:00+02:00,2026-06-03 09:30:00+02:00,,100
@@ -31,7 +30,8 @@ Andrew@slipstreamdata.co.za,2026-06-12,2026-06-12 09:00:00+02:00,2026-06-12 12:0
 Andrew@slipstreamdata.co.za,2026-06-12,2026-06-12 12:00:00+02:00,2026-06-12 12:30:00+02:00,DW: Weekly round-up meeting,76
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 11:30:00+02:00,2026-06-15 12:30:00+02:00,The Lab Brief,76
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 12:30:00+02:00,2026-06-15 13:30:00+02:00,Sanlam - Runbook review and Handover ,76
-Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 13:00:00+02:00,2026-06-17 15:00:00+02:00,Discuss and Create ClickUp Standard Templates/Structures ,47
+Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 13:00:00+02:00,2026-06-17 15:00:00+02:00,Discuss and Create ClickUp Standard Templates/Structures ,41
+Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 16:00:00+02:00,2026-06-17 16:30:00+02:00,FW: CPC x The Lab (Daily System Session),41
 Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 09:00:00+02:00,2026-06-19 09:30:00+02:00,Altron | Slipstream Data introduction,41
 Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 11:00:00+02:00,2026-06-19 12:00:00+02:00,Inovo - Data & analytics environment assessment proposal,41
 Andrew@slipstreamdata.co.za,2026-06-23,2026-06-23 00:55:00+02:00,2026-06-23 08:35:00+02:00,Emirates flight 255 to Barcelona (L27GWW),96
@@ -102,7 +102,6 @@ Andrew@slipstreamdata.co.za,2026-08-25,2026-08-25 12:00:00+02:00,2026-08-25 12:3
 Andrew@slipstreamdata.co.za,2026-09-01,2026-09-01 12:00:00+02:00,2026-09-01 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),24
 Andrew@slipstreamdata.co.za,2026-06-18,2026-06-18 14:00:00+02:00,2026-06-18 15:00:00+02:00,Slipstream Data / WhereScape,94
 Andrew@slipstreamdata.co.za,2026-08-20,2026-08-20 14:00:00+02:00,2026-08-20 15:00:00+02:00,Slipstream Data / WhereScape,100
-Andrew@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,41
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,76
 Andrew@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,41
 Andrew@slipstreamdata.co.za,2026-07-27,2026-07-27 15:00:00+02:00,2026-07-27 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,41
@@ -121,14 +120,13 @@ Andrew@slipstreamdata.co.za,2026-07-10,2026-07-10 14:00:00+02:00,2026-07-10 15:0
 Andrew@slipstreamdata.co.za,2026-07-24,2026-07-24 14:00:00+02:00,2026-07-24 15:00:00+02:00,Tableau Tribe Development and Upskilling,18
 Andrew@slipstreamdata.co.za,2026-08-07,2026-08-07 14:00:00+02:00,2026-08-07 15:00:00+02:00,Tableau Tribe Development and Upskilling,24
 Andrew@slipstreamdata.co.za,2026-08-21,2026-08-21 14:00:00+02:00,2026-08-21 15:00:00+02:00,Tableau Tribe Development and Upskilling,18
-Andrew@slipstreamdata.co.za,2026-06-01,2026-06-01 14:00:00+02:00,2026-06-01 16:00:00+02:00,Tableau Technical Check in,41
 Andrew@slipstreamdata.co.za,2026-06-03,2026-06-03 15:00:00+02:00,2026-06-03 15:30:00+02:00,Tableau Technical Check in,100
 Andrew@slipstreamdata.co.za,2026-06-05,2026-06-05 10:30:00+02:00,2026-06-05 11:00:00+02:00,Tableau Technical Check in,88
 Andrew@slipstreamdata.co.za,2026-06-08,2026-06-08 10:30:00+02:00,2026-06-08 11:00:00+02:00,Tableau Technical Check in,88
 Andrew@slipstreamdata.co.za,2026-06-10,2026-06-10 11:30:00+02:00,2026-06-10 12:00:00+02:00,Tableau Technical Check in,65
 Andrew@slipstreamdata.co.za,2026-06-12,2026-06-12 10:30:00+02:00,2026-06-12 11:00:00+02:00,Tableau Technical Check in,76
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 10:30:00+02:00,2026-06-15 11:00:00+02:00,Tableau Technical Check in,76
-Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 10:00:00+02:00,2026-06-17 10:30:00+02:00,Tableau Technical Check in,47
+Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 10:00:00+02:00,2026-06-17 10:30:00+02:00,Tableau Technical Check in,41
 Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 10:30:00+02:00,2026-06-19 11:00:00+02:00,Tableau Technical Check in,41
 Andrew@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,47
 Andrew@slipstreamdata.co.za,2026-06-09,2026-06-09 09:00:00+02:00,2026-06-09 09:30:00+02:00,FW: Bi Weekly Check-In: Tableau Progress Sales Data Hub (Group Office);​,100
@@ -157,7 +155,7 @@ Andrew@slipstreamdata.co.za,2026-06-10,2026-06-10 08:30:00+02:00,2026-06-10 09:0
 Andrew@slipstreamdata.co.za,2026-06-11,2026-06-11 08:30:00+02:00,2026-06-11 09:00:00+02:00,Tech Team Daily Stand Up,71
 Andrew@slipstreamdata.co.za,2026-06-12,2026-06-12 08:30:00+02:00,2026-06-12 09:00:00+02:00,Tech Team Daily Stand Up,76
 Andrew@slipstreamdata.co.za,2026-06-15,2026-06-15 08:30:00+02:00,2026-06-15 09:00:00+02:00,Tech Team Daily Stand Up,76
-Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 08:30:00+02:00,2026-06-17 09:00:00+02:00,Tech Team Daily Stand Up,47
+Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 08:30:00+02:00,2026-06-17 09:00:00+02:00,Tech Team Daily Stand Up,41
 Andrew@slipstreamdata.co.za,2026-06-18,2026-06-18 08:30:00+02:00,2026-06-18 09:00:00+02:00,Tech Team Daily Stand Up,94
 Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 08:30:00+02:00,2026-06-19 09:00:00+02:00,Tech Team Daily Stand Up,41
 Andrew@slipstreamdata.co.za,2026-06-23,2026-06-23 08:30:00+02:00,2026-06-23 09:00:00+02:00,Tech Team Daily Stand Up,96
@@ -217,7 +215,6 @@ Andrew@slipstreamdata.co.za,2026-06-19,2026-06-19 15:00:00+02:00,2026-06-19 16:0
 Andrew@slipstreamdata.co.za,2026-06-26,2026-06-26 15:00:00+02:00,2026-06-26 16:00:00+02:00,Tech Friday,29
 Andrew@slipstreamdata.co.za,2026-07-03,2026-07-03 15:00:00+02:00,2026-07-03 16:00:00+02:00,Tech Friday,24
 Andrew@slipstreamdata.co.za,2026-06-03,2026-06-03 16:00:00+02:00,2026-06-03 17:00:00+02:00,Data Cloud Implentation Questions,100
-Andrew@slipstreamdata.co.za,2026-06-17,2026-06-17 16:00:00+02:00,2026-06-17 17:00:00+02:00,Data Cloud Implentation Questions,47
 Andrew@slipstreamdata.co.za,2026-07-01,2026-07-01 16:00:00+02:00,2026-07-01 17:00:00+02:00,Data Cloud Implentation Questions,18
 Andrew@slipstreamdata.co.za,2026-07-08,2026-07-08 16:00:00+02:00,2026-07-08 17:00:00+02:00,Data Cloud Implentation Questions,18
 Andrew@slipstreamdata.co.za,2026-07-15,2026-07-15 16:00:00+02:00,2026-07-15 17:00:00+02:00,Data Cloud Implentation Questions,18
@@ -298,7 +295,6 @@ Azabenathi.Pupuma@slipstreamdata.co.za,2026-08-19,2026-08-19 10:00:00+02:00,2026
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-08-20,2026-08-20 10:00:00+02:00,2026-08-20 10:15:00+02:00,Taquanta: Projects Internal Standup,9
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-08-26,2026-08-26 10:00:00+02:00,2026-08-26 10:15:00+02:00,Taquanta: Projects Internal Standup,9
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-08-27,2026-08-27 10:00:00+02:00,2026-08-27 10:15:00+02:00,Taquanta: Projects Internal Standup,9
-Azabenathi.Pupuma@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,12
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,21
 Azabenathi.Pupuma@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,21
@@ -410,6 +406,7 @@ Ben.Brooker@slipstreamdata.co.za,2026-06-11,2026-06-11 09:00:00+02:00,2026-06-11
 Ben.Brooker@slipstreamdata.co.za,2026-06-11,2026-06-11 14:00:00+02:00,2026-06-11 15:30:00+02:00,DR,74
 Ben.Brooker@slipstreamdata.co.za,2026-06-11,2026-06-11 15:00:00+02:00,2026-06-11 16:00:00+02:00,Canceled: DWH: Config File,74
 Ben.Brooker@slipstreamdata.co.za,2026-06-12,2026-06-12 09:00:00+02:00,2026-06-12 12:00:00+02:00,Analytical Solution Session,62
+Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 15:00:00+02:00,2026-06-22 15:30:00+02:00,Behavior changes in Snowflake and DBT - initial process chat,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-02,2026-06-02 10:00:00+02:00,2026-06-02 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,59
 Ben.Brooker@slipstreamdata.co.za,2026-06-03,2026-06-03 10:00:00+02:00,2026-06-03 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,100
 Ben.Brooker@slipstreamdata.co.za,2026-06-04,2026-06-04 10:00:00+02:00,2026-06-04 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,100
@@ -424,7 +421,7 @@ Ben.Brooker@slipstreamdata.co.za,2026-06-16,2026-06-16 10:00:00+02:00,2026-06-16
 Ben.Brooker@slipstreamdata.co.za,2026-06-17,2026-06-17 10:00:00+02:00,2026-06-17 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,12
 Ben.Brooker@slipstreamdata.co.za,2026-06-18,2026-06-18 10:00:00+02:00,2026-06-18 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-19,2026-06-19 10:00:00+02:00,2026-06-19 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,21
-Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 10:00:00+02:00,2026-06-22 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,12
+Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 10:00:00+02:00,2026-06-22 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-23,2026-06-23 10:00:00+02:00,2026-06-23 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,21
 Ben.Brooker@slipstreamdata.co.za,2026-06-24,2026-06-24 10:00:00+02:00,2026-06-24 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,12
 Ben.Brooker@slipstreamdata.co.za,2026-06-25,2026-06-25 10:00:00+02:00,2026-06-25 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,18
@@ -476,13 +473,12 @@ Ben.Brooker@slipstreamdata.co.za,2026-08-27,2026-08-27 10:00:00+02:00,2026-08-27
 Ben.Brooker@slipstreamdata.co.za,2026-08-28,2026-08-28 10:00:00+02:00,2026-08-28 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,9
 Ben.Brooker@slipstreamdata.co.za,2026-08-31,2026-08-31 10:00:00+02:00,2026-08-31 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,12
 Ben.Brooker@slipstreamdata.co.za,2026-09-01,2026-09-01 10:00:00+02:00,2026-09-01 10:15:00+02:00,Shoprite Analytics|| Cloud BI Daily Stand Up,15
-Ben.Brooker@slipstreamdata.co.za,2026-06-01,2026-06-01 13:30:00+02:00,2026-06-01 14:30:00+02:00,PM Forum,24
 Ben.Brooker@slipstreamdata.co.za,2026-07-06,2026-07-06 13:30:00+02:00,2026-07-06 14:30:00+02:00,PM Forum,24
 Ben.Brooker@slipstreamdata.co.za,2026-06-12,2026-06-12 11:30:00+02:00,2026-06-12 12:00:00+02:00,Canceled: PM Alignment Meeting,62
 Ben.Brooker@slipstreamdata.co.za,2026-07-10,2026-07-10 11:30:00+02:00,2026-07-10 12:00:00+02:00,Canceled: PM Alignment Meeting,15
 Ben.Brooker@slipstreamdata.co.za,2026-06-08,2026-06-08 10:30:00+02:00,2026-06-08 10:45:00+02:00,Taquanta: Projects Internal Standup,47
 Ben.Brooker@slipstreamdata.co.za,2026-06-15,2026-06-15 10:30:00+02:00,2026-06-15 10:45:00+02:00,Canceled: Taquanta: Projects Internal Standup,24
-Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 10:30:00+02:00,2026-06-22 10:45:00+02:00,Taquanta: Projects Internal Standup,12
+Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 10:30:00+02:00,2026-06-22 10:45:00+02:00,Taquanta: Projects Internal Standup,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-29,2026-06-29 10:30:00+02:00,2026-06-29 10:45:00+02:00,Taquanta: Projects Internal Standup,24
 Ben.Brooker@slipstreamdata.co.za,2026-07-06,2026-07-06 10:30:00+02:00,2026-07-06 10:45:00+02:00,Taquanta: Projects Internal Standup,24
 Ben.Brooker@slipstreamdata.co.za,2026-07-13,2026-07-13 10:30:00+02:00,2026-07-13 10:45:00+02:00,Taquanta: Projects Internal Standup,24
@@ -533,7 +529,6 @@ Ben.Brooker@slipstreamdata.co.za,2026-08-19,2026-08-19 10:00:00+02:00,2026-08-19
 Ben.Brooker@slipstreamdata.co.za,2026-08-20,2026-08-20 10:00:00+02:00,2026-08-20 10:15:00+02:00,Taquanta: Projects Internal Standup,12
 Ben.Brooker@slipstreamdata.co.za,2026-08-26,2026-08-26 10:00:00+02:00,2026-08-26 10:15:00+02:00,Taquanta: Projects Internal Standup,12
 Ben.Brooker@slipstreamdata.co.za,2026-08-27,2026-08-27 10:00:00+02:00,2026-08-27 10:15:00+02:00,Taquanta: Projects Internal Standup,12
-Ben.Brooker@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Ben.Brooker@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Ben.Brooker@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Ben.Brooker@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
@@ -561,7 +556,7 @@ Ben.Brooker@slipstreamdata.co.za,2026-06-16,2026-06-16 08:30:00+02:00,2026-06-16
 Ben.Brooker@slipstreamdata.co.za,2026-06-17,2026-06-17 08:30:00+02:00,2026-06-17 09:00:00+02:00,Tech Team Daily Stand Up,12
 Ben.Brooker@slipstreamdata.co.za,2026-06-18,2026-06-18 08:30:00+02:00,2026-06-18 09:00:00+02:00,Tech Team Daily Stand Up,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-19,2026-06-19 08:30:00+02:00,2026-06-19 09:00:00+02:00,Tech Team Daily Stand Up,21
-Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 08:30:00+02:00,2026-06-22 09:00:00+02:00,Tech Team Daily Stand Up,12
+Ben.Brooker@slipstreamdata.co.za,2026-06-22,2026-06-22 08:30:00+02:00,2026-06-22 09:00:00+02:00,Tech Team Daily Stand Up,18
 Ben.Brooker@slipstreamdata.co.za,2026-06-23,2026-06-23 08:30:00+02:00,2026-06-23 09:00:00+02:00,Tech Team Daily Stand Up,21
 Ben.Brooker@slipstreamdata.co.za,2026-06-24,2026-06-24 08:30:00+02:00,2026-06-24 09:00:00+02:00,Tech Team Daily Stand Up,12
 Ben.Brooker@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-25 09:00:00+02:00,Tech Team Daily Stand Up,18
@@ -687,7 +682,6 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-07-14,2026-07-14 09:00:00+02:00,2026-07
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-28,2026-07-28 09:00:00+02:00,2026-07-28 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-08-11,2026-08-11 09:00:00+02:00,2026-08-11 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,12
 Flora.Kundaeli@slipstreamdata.co.za,2026-08-25,2026-08-25 09:00:00+02:00,2026-08-25 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,12
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,12
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
@@ -832,7 +826,6 @@ Mark@slipstreamdata.co.za,2026-08-10,2026-08-10 09:00:00+02:00,2026-08-10 10:30:
 Mark@slipstreamdata.co.za,2026-08-17,2026-08-17 09:00:00+02:00,2026-08-17 10:30:00+02:00,Weekly sales meeting,24
 Mark@slipstreamdata.co.za,2026-08-24,2026-08-24 09:00:00+02:00,2026-08-24 10:30:00+02:00,Weekly sales meeting,24
 Mark@slipstreamdata.co.za,2026-08-31,2026-08-31 09:00:00+02:00,2026-08-31 10:30:00+02:00,Weekly sales meeting,24
-Mark@slipstreamdata.co.za,2026-06-01,2026-06-01 13:30:00+02:00,2026-06-01 14:30:00+02:00,PM Forum,24
 Mark@slipstreamdata.co.za,2026-07-06,2026-07-06 13:30:00+02:00,2026-07-06 14:30:00+02:00,PM Forum,35
 Mark@slipstreamdata.co.za,2026-06-04,2026-06-04 10:00:00+02:00,2026-06-04 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,94
 Mark@slipstreamdata.co.za,2026-06-11,2026-06-11 10:00:00+02:00,2026-06-11 10:30:00+02:00,FW: Weekly Check-In: Tableau Progress,59
@@ -860,7 +853,6 @@ Mark@slipstreamdata.co.za,2026-08-11,2026-08-11 12:00:00+02:00,2026-08-11 12:30:
 Mark@slipstreamdata.co.za,2026-08-18,2026-08-18 12:00:00+02:00,2026-08-18 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),18
 Mark@slipstreamdata.co.za,2026-08-25,2026-08-25 12:00:00+02:00,2026-08-25 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),18
 Mark@slipstreamdata.co.za,2026-09-01,2026-09-01 12:00:00+02:00,2026-09-01 12:30:00+02:00,Taquanta: Weekly SLA & Projects update (Client meeting),24
-Mark@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Mark@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,56
 Mark@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,35
 Mark@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,35
@@ -1027,7 +1019,6 @@ Michael.Malia@slipstreamdata.co.za,2026-08-10,2026-08-10 08:30:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-17,2026-08-17 08:30:00+02:00,2026-08-17 09:00:00+02:00,Reminder: Update and Submit Timesheets,59
 Michael.Malia@slipstreamdata.co.za,2026-08-24,2026-08-24 08:30:00+02:00,2026-08-24 09:00:00+02:00,Reminder: Update and Submit Timesheets,59
 Michael.Malia@slipstreamdata.co.za,2026-08-31,2026-08-31 08:30:00+02:00,2026-08-31 09:00:00+02:00,Reminder: Update and Submit Timesheets,59
-Michael.Malia@slipstreamdata.co.za,2026-06-01,2026-06-01 14:00:00+02:00,2026-06-01 14:30:00+02:00,Michael <> Nate - 1:1,18
 Michael.Malia@slipstreamdata.co.za,2026-06-02,2026-06-02 09:30:00+02:00,2026-06-02 10:30:00+02:00,Ongoing: Daily operational tasks DSY,62
 Michael.Malia@slipstreamdata.co.za,2026-06-03,2026-06-03 09:30:00+02:00,2026-06-03 10:30:00+02:00,Ongoing: Daily operational tasks DSY,68
 Michael.Malia@slipstreamdata.co.za,2026-06-04,2026-06-04 09:30:00+02:00,2026-06-04 10:30:00+02:00,Ongoing: Daily operational tasks DSY,68
@@ -1093,7 +1084,7 @@ Michael.Malia@slipstreamdata.co.za,2026-08-26,2026-08-26 09:30:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-27,2026-08-27 09:30:00+02:00,2026-08-27 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-08-28,2026-08-28 09:30:00+02:00,2026-08-28 10:30:00+02:00,Ongoing: Daily operational tasks DSY,26
 Michael.Malia@slipstreamdata.co.za,2026-08-31,2026-08-31 09:30:00+02:00,2026-08-31 10:30:00+02:00,Ongoing: Daily operational tasks DSY,59
-Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 09:30:00+02:00,2026-09-01 10:30:00+02:00,Ongoing: Daily operational tasks DSY,41
+Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 09:30:00+02:00,2026-09-01 10:30:00+02:00,Ongoing: Daily operational tasks DSY,44
 Michael.Malia@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 16:15:00+02:00,DSY DW - Daily standup,62
 Michael.Malia@slipstreamdata.co.za,2026-06-03,2026-06-03 16:00:00+02:00,2026-06-03 16:15:00+02:00,DSY DW - Daily standup,68
 Michael.Malia@slipstreamdata.co.za,2026-06-04,2026-06-04 16:00:00+02:00,2026-06-04 16:15:00+02:00,DSY DW - Daily standup,68
@@ -1146,6 +1137,7 @@ Michael.Malia@slipstreamdata.co.za,2026-08-25,2026-08-25 16:00:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-26,2026-08-26 16:00:00+02:00,2026-08-26 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-08-27,2026-08-27 16:00:00+02:00,2026-08-27 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-08-28,2026-08-28 16:00:00+02:00,2026-08-28 16:15:00+02:00,DSY DW - Daily standup,26
+Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 16:00:00+02:00,2026-09-01 16:15:00+02:00,DSY DW - Daily standup,44
 Michael.Malia@slipstreamdata.co.za,2026-06-02,2026-06-02 13:00:00+02:00,2026-06-02 15:00:00+02:00,Development activities - Glue - code and data,62
 Michael.Malia@slipstreamdata.co.za,2026-06-03,2026-06-03 13:00:00+02:00,2026-06-03 15:00:00+02:00,Development activities - Glue - code and data,68
 Michael.Malia@slipstreamdata.co.za,2026-06-04,2026-06-04 13:00:00+02:00,2026-06-04 15:00:00+02:00,Development activities - Glue - code and data,68
@@ -1185,7 +1177,7 @@ Michael.Malia@slipstreamdata.co.za,2026-08-20,2026-08-20 13:00:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-25,2026-08-25 13:00:00+02:00,2026-08-25 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-08-26,2026-08-26 13:00:00+02:00,2026-08-26 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-08-27,2026-08-27 13:00:00+02:00,2026-08-27 15:00:00+02:00,Development activities - Glue - code and data,44
-Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 13:00:00+02:00,2026-09-01 15:00:00+02:00,Development activities - Glue - code and data,41
+Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 13:00:00+02:00,2026-09-01 15:00:00+02:00,Development activities - Glue - code and data,44
 Michael.Malia@slipstreamdata.co.za,2026-06-08,2026-06-08 11:00:00+02:00,2026-06-08 12:00:00+02:00,DWH Transform load Monitoring  ,88
 Michael.Malia@slipstreamdata.co.za,2026-06-15,2026-06-15 11:00:00+02:00,2026-06-15 12:00:00+02:00,DWH Transform load Monitoring  ,71
 Michael.Malia@slipstreamdata.co.za,2026-06-22,2026-06-22 11:00:00+02:00,2026-06-22 12:00:00+02:00,DWH Transform load Monitoring  ,65
@@ -1212,7 +1204,6 @@ Michael.Malia@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-14,2026-08-14 12:00:00+02:00,2026-08-14 12:30:00+02:00,Weekly round-up-meeting,26
 Michael.Malia@slipstreamdata.co.za,2026-08-21,2026-08-21 12:00:00+02:00,2026-08-21 12:30:00+02:00,Weekly round-up-meeting,26
 Michael.Malia@slipstreamdata.co.za,2026-08-28,2026-08-28 12:00:00+02:00,2026-08-28 12:30:00+02:00,Weekly round-up-meeting,26
-Michael.Malia@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
 Michael.Malia@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,71
 Michael.Malia@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,71
 Michael.Malia@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,71
@@ -1289,7 +1280,7 @@ Michael.Malia@slipstreamdata.co.za,2026-08-26,2026-08-26 08:30:00+02:00,2026-08-
 Michael.Malia@slipstreamdata.co.za,2026-08-27,2026-08-27 08:30:00+02:00,2026-08-27 09:00:00+02:00,Tech Team Daily Stand Up,44
 Michael.Malia@slipstreamdata.co.za,2026-08-28,2026-08-28 08:30:00+02:00,2026-08-28 09:00:00+02:00,Tech Team Daily Stand Up,26
 Michael.Malia@slipstreamdata.co.za,2026-08-31,2026-08-31 08:30:00+02:00,2026-08-31 09:00:00+02:00,Tech Team Daily Stand Up,59
-Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 08:30:00+02:00,2026-09-01 09:00:00+02:00,Tech Team Daily Stand Up,41
+Michael.Malia@slipstreamdata.co.za,2026-09-01,2026-09-01 08:30:00+02:00,2026-09-01 09:00:00+02:00,Tech Team Daily Stand Up,44
 Michael.Malia@slipstreamdata.co.za,2026-06-05,2026-06-05 15:00:00+02:00,2026-06-05 16:00:00+02:00,Tech Friday,85
 Michael.Malia@slipstreamdata.co.za,2026-06-19,2026-06-19 15:00:00+02:00,2026-06-19 16:00:00+02:00,Tech Friday,38
 Michael.Malia@slipstreamdata.co.za,2026-06-26,2026-06-26 15:00:00+02:00,2026-06-26 16:00:00+02:00,Tech Friday,38
@@ -1349,7 +1340,6 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-25,2026-08-25 08:30:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-26,2026-08-26 08:30:00+02:00,2026-08-26 09:00:00+02:00,SS Tech Team Daily check-in,26
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-27,2026-08-27 08:30:00+02:00,2026-08-27 09:00:00+02:00,SS Tech Team Daily check-in,15
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-09-01,2026-09-01 08:30:00+02:00,2026-09-01 09:00:00+02:00,SS Tech Team Daily check-in,18
-Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Canceled: Tech team huddle,35
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Canceled: Tech team huddle,68
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Canceled: Tech team huddle,50
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Canceled: Tech team huddle,62
@@ -1419,7 +1409,6 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Canceled: Daily Stand Up,24
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Canceled: Daily Stand Up,50
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Canceled: Daily Stand Up,24
-Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-01,2026-06-01 13:30:00+02:00,2026-06-01 14:30:00+02:00,PM Forum,35
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-07-06,2026-07-06 13:30:00+02:00,2026-07-06 14:30:00+02:00,PM Forum,53
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-12,2026-06-12 11:30:00+02:00,2026-06-12 12:00:00+02:00,Canceled: PM Alignment Meeting,65
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-07-10,2026-07-10 11:30:00+02:00,2026-07-10 12:00:00+02:00,Canceled: PM Alignment Meeting,12
@@ -1476,7 +1465,6 @@ Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-19,2026-08-19 10:00:00+02:00,2026
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-20,2026-08-20 10:00:00+02:00,2026-08-20 10:15:00+02:00,Taquanta: Projects Internal Standup,15
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-26,2026-08-26 10:00:00+02:00,2026-08-26 10:15:00+02:00,Taquanta: Projects Internal Standup,26
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-08-27,2026-08-27 10:00:00+02:00,2026-08-27 10:15:00+02:00,Taquanta: Projects Internal Standup,15
-Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,35
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,68
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,50
 Ntsako.Mavuyangwa@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,62
@@ -1663,11 +1651,9 @@ Palesa.Maboeei@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Canceled: Daily Stand Up,41
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Canceled: Daily Stand Up,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Canceled: Daily Stand Up,21
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-01,2026-06-01 13:30:00+02:00,2026-06-01 14:30:00+02:00,PM Forum,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-07-06,2026-07-06 13:30:00+02:00,2026-07-06 14:30:00+02:00,PM Forum,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-12,2026-06-12 11:30:00+02:00,2026-06-12 12:00:00+02:00,Canceled: PM Alignment Meeting,100
 Palesa.Maboeei@slipstreamdata.co.za,2026-07-10,2026-07-10 11:30:00+02:00,2026-07-10 12:00:00+02:00,Canceled: PM Alignment Meeting,18
-Palesa.Maboeei@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,29
 Palesa.Maboeei@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
@@ -1805,6 +1791,7 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-06-10,2026-06-10 10:30:00+02:00,2026-06
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-10,2026-06-10 12:00:00+02:00,2026-06-10 12:30:00+02:00,Wonga : DebtSale Extracts Missing Accounts,47
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-11,2026-06-11 13:30:00+02:00,2026-06-11 14:00:00+02:00,GIA Data warehouse dataset,18
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-11,2026-06-11 14:00:00+02:00,2026-06-11 14:30:00+02:00,DSY: Annuities,18
+Riyadh.Leonard@slipstreamdata.co.za,2026-06-22,2026-06-22 15:00:00+02:00,2026-06-22 15:30:00+02:00,Behavior changes in Snowflake and DBT - initial process chat,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-02,2026-06-02 13:30:00+02:00,2026-06-02 14:00:00+02:00,Riyad <> Nate - 1:1 ,24
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-17,2026-06-17 11:30:00+02:00,2026-06-17 12:00:00+02:00,Canceled: Senior Tech Team: Insights Session,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-07-15,2026-07-15 11:30:00+02:00,2026-07-15 12:00:00+02:00,Canceled: Senior Tech Team: Insights Session,12
@@ -1823,7 +1810,7 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-06-16,2026-06-16 08:30:00+02:00,2026-06
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-17,2026-06-17 08:30:00+02:00,2026-06-17 09:00:00+02:00,Tech Team Daily Stand Up,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-18,2026-06-18 08:30:00+02:00,2026-06-18 09:00:00+02:00,Tech Team Daily Stand Up,6
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-19,2026-06-19 08:30:00+02:00,2026-06-19 09:00:00+02:00,Tech Team Daily Stand Up,18
-Riyadh.Leonard@slipstreamdata.co.za,2026-06-22,2026-06-22 08:30:00+02:00,2026-06-22 09:00:00+02:00,Tech Team Daily Stand Up,6
+Riyadh.Leonard@slipstreamdata.co.za,2026-06-22,2026-06-22 08:30:00+02:00,2026-06-22 09:00:00+02:00,Tech Team Daily Stand Up,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-23,2026-06-23 08:30:00+02:00,2026-06-23 09:00:00+02:00,Tech Team Daily Stand Up,6
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-24,2026-06-24 08:30:00+02:00,2026-06-24 09:00:00+02:00,Tech Team Daily Stand Up,6
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-25 09:00:00+02:00,Tech Team Daily Stand Up,6
@@ -1888,7 +1875,6 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-12,2026-06-12 12:00:00+02:00,2026-06-12 12:30:00+02:00,Canceled: DW: Weekly round-up meeting,24
 Riyadh.Leonard@slipstreamdata.co.za,2026-07-10,2026-07-10 12:00:00+02:00,2026-07-10 12:30:00+02:00,DW: Weekly round-up meeting,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08-07 12:30:00+02:00,DW: Weekly round-up meeting,24
-Robin.April@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,SSG26 - Monthly Report Update,24
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 08:00:00+02:00,2026-06-02 08:30:00+02:00,SSGP26 - Daily Admin and Planning ,100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 12:00:00+02:00,"Internal Projects - Monthly Reports Deployment, Quality and Handover Prep",100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 12:00:00+02:00,2026-06-02 15:00:00+02:00,Slipstream Analytical Platform (SAP) - Development of Ingestions Platform in Openflow,100
@@ -2022,7 +2008,6 @@ Robin.April@slipstreamdata.co.za,2026-06-29,2026-06-29 12:30:00+02:00,2026-06-29
 Robin.April@slipstreamdata.co.za,2026-07-13,2026-07-13 12:30:00+02:00,2026-07-13 13:00:00+02:00,Alteryx Decomission,38
 Robin.April@slipstreamdata.co.za,2026-07-27,2026-07-27 12:30:00+02:00,2026-07-27 13:00:00+02:00,Alteryx Decomission,38
 Robin.April@slipstreamdata.co.za,2026-08-10,2026-08-10 12:30:00+02:00,2026-08-10 13:00:00+02:00,Alteryx Decomission,38
-Robin.April@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Robin.April@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,32
 Robin.April@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,38
 Robin.April@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,38
@@ -2258,7 +2243,6 @@ Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-27,2026-08-27 13:00:00+02:00,2026
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-28,2026-08-28 13:00:00+02:00,2026-08-28 13:30:00+02:00,Taquanta January report daily tasks update + emails,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-31,2026-08-31 13:00:00+02:00,2026-08-31 13:30:00+02:00,Taquanta January report daily tasks update + emails,88
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-09-01,2026-09-01 13:00:00+02:00,2026-09-01 13:30:00+02:00,Taquanta January report daily tasks update + emails,71
-Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-01,2026-06-01 13:00:00+02:00,2026-06-01 15:00:00+02:00,"Slipstream - IPD - Internal Projects  ( Slipstream Data ) (Harvest Timesheets and Reports, ClickUp Tasks and Reports, Billing, Emails, Documentation, Reports)",47
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 11:00:00+02:00,"Slipstream - IPD - Internal Projects  ( Slipstream Data ) (Harvest Timesheets and Reports, ClickUp Tasks and Reports, Billing, Emails, Documentation, Reports)",88
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-03,2026-06-03 14:00:00+02:00,2026-06-03 16:00:00+02:00,"Slipstream - IPD - Internal Projects  ( Slipstream Data ) (Harvest Timesheets and Reports, ClickUp Tasks and Reports, Billing, Emails, Documentation, Reports)",91
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-04,2026-06-04 13:00:00+02:00,2026-06-04 15:00:00+02:00,"Slipstream - IPD - Internal Projects  ( Slipstream Data ) (Harvest Timesheets and Reports, ClickUp Tasks and Reports, Billing, Emails, Documentation, Reports)",65
@@ -2463,7 +2447,6 @@ Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-07,2026-08-07 11:00:00+02:00,2026
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-14,2026-08-14 11:00:00+02:00,2026-08-14 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-21,2026-08-21 11:00:00+02:00,2026-08-21 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-28,2026-08-28 11:00:00+02:00,2026-08-28 11:30:00+02:00,Resource Utilization Review ,79
-Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 17:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,47
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-02,2026-06-02 12:30:00+02:00,2026-06-02 14:30:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,88
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-03,2026-06-03 11:00:00+02:00,2026-06-03 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,91
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-04,2026-06-04 11:00:00+02:00,2026-06-04 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,65
@@ -2687,7 +2670,6 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-06-18,2026-06-18 14:30:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-18,2026-06-18 15:00:00+02:00,2026-06-18 16:00:00+02:00,Mapmaking with Tableau: Crafting Eye-Catching Maps with Dennis Kao,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-25,2026-06-25 18:00:00+02:00,2026-06-25 20:00:00+02:00,Analytics Tableau User Group June 2026 : Desktop or Web Edit - Composable Analytics - Tableau Tips,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-03,2026-06-03 11:30:00+02:00,2026-06-03 12:00:00+02:00,Suzanne <> Nate - 1:1,53
-Suzanne.Edlmann@slipstreamdata.co.za,2026-06-01,2026-06-01 13:30:00+02:00,2026-06-01 14:30:00+02:00,PM Forum,24
 Suzanne.Edlmann@slipstreamdata.co.za,2026-07-06,2026-07-06 13:30:00+02:00,2026-07-06 14:30:00+02:00,PM Forum,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-02,2026-06-02 09:30:00+02:00,2026-06-02 10:00:00+02:00,GRCA Portfolio | Team Stand-up,12
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-09,2026-06-09 09:30:00+02:00,2026-06-09 10:30:00+02:00,GRCA Portfolio | Team Stand-up,65
@@ -2703,13 +2685,12 @@ Suzanne.Edlmann@slipstreamdata.co.za,2026-08-11,2026-08-11 09:30:00+02:00,2026-0
 Suzanne.Edlmann@slipstreamdata.co.za,2026-08-18,2026-08-18 09:30:00+02:00,2026-08-18 10:30:00+02:00,GRCA Portfolio | Team Stand-up,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-08-25,2026-08-25 09:30:00+02:00,2026-08-25 10:30:00+02:00,GRCA Portfolio | Team Stand-up,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-09-01,2026-09-01 09:30:00+02:00,2026-09-01 10:30:00+02:00,GRCA Portfolio | Team Stand-up,18
-Suzanne.Edlmann@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,100
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-07-27,2026-07-27 15:00:00+02:00,2026-07-27 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
 Suzanne.Edlmann@slipstreamdata.co.za,2026-08-10,2026-08-10 15:00:00+02:00,2026-08-10 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,18
-Suzanne.Edlmann@slipstreamdata.co.za,2026-06-18,2026-06-18 15:00:00+02:00,2026-06-18 15:30:00+02:00,Mentor Session,29
+Suzanne.Edlmann@slipstreamdata.co.za,2026-06-18,2026-06-18 13:30:00+02:00,2026-06-18 14:00:00+02:00,Mentor Session,29
 Suzanne.Edlmann@slipstreamdata.co.za,2026-07-16,2026-07-16 15:00:00+02:00,2026-07-16 15:30:00+02:00,Mentor Session,12
 Suzanne.Edlmann@slipstreamdata.co.za,2026-08-20,2026-08-20 15:00:00+02:00,2026-08-20 15:30:00+02:00,Mentor Session,12
 Suzanne.Edlmann@slipstreamdata.co.za,2026-06-12,2026-06-12 14:00:00+02:00,2026-06-12 15:00:00+02:00,Tableau Tribe Development and Upskilling,100
@@ -2806,7 +2787,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-17,2026-06-17 11:00:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-18,2026-06-18 11:00:00+02:00,2026-06-18 12:00:00+02:00,Snowflake AI Pulse,47
 Thando.Calana@slipstreamdata.co.za,2026-06-23,2026-06-23 11:00:00+02:00,2026-06-23 12:00:00+02:00,Power Your Agents with dbt and Snowflake,47
 Thando.Calana@slipstreamdata.co.za,2026-06-25,2026-06-25 18:00:00+02:00,2026-06-25 20:00:00+02:00,Analytics Tableau User Group June 2026 : Desktop or Web Edit - Composable Analytics - Tableau Tips,59
-Thando.Calana@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,Upskilling,24
 Thando.Calana@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 17:00:00+02:00,Upskilling,35
 Thando.Calana@slipstreamdata.co.za,2026-06-03,2026-06-03 16:00:00+02:00,2026-06-03 17:00:00+02:00,Upskilling,68
 Thando.Calana@slipstreamdata.co.za,2026-06-04,2026-06-04 16:00:00+02:00,2026-06-04 17:00:00+02:00,Upskilling,35
@@ -2901,7 +2881,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-03,2026-06-03 14:30:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-06-17,2026-06-17 14:30:00+02:00,2026-06-17 15:00:00+02:00,one on one - Thando,50
 Thando.Calana@slipstreamdata.co.za,2026-07-01,2026-07-01 14:30:00+02:00,2026-07-01 15:00:00+02:00,one on one - Thando,26
 Thando.Calana@slipstreamdata.co.za,2026-07-15,2026-07-15 14:30:00+02:00,2026-07-15 15:00:00+02:00,one on one - Thando,26
-Thando.Calana@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,24
 Thando.Calana@slipstreamdata.co.za,2026-06-15,2026-06-15 15:00:00+02:00,2026-06-15 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,44
 Thando.Calana@slipstreamdata.co.za,2026-06-29,2026-06-29 15:00:00+02:00,2026-06-29 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,44
 Thando.Calana@slipstreamdata.co.za,2026-07-13,2026-07-13 15:00:00+02:00,2026-07-13 16:00:00+02:00,Snowflake Tribe Bi-weekly Session,32
