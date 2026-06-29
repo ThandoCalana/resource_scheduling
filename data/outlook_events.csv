@@ -741,8 +741,10 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 09:30:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 10:30:00+02:00,2026-06-29 12:30:00+02:00,Airflow and Prefect,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 13:30:00+02:00,2026-06-29 15:00:00+02:00,Analytics Platform: Backend Handover,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 17:00:00+02:00,2026-06-29 17:30:00+02:00,Snowflake Streamlit Data Application Builders Workshop,94
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 07:30:00+02:00,2026-06-30 08:30:00+02:00,Focus time,35
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 11:00:00+02:00,2026-06-30 11:30:00+02:00,Python FASTAPI and REACT for FE,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 07:30:00+02:00,2026-06-30 08:30:00+02:00,Focus time,94
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 10:00:00+02:00,2026-06-30 11:00:00+02:00,Retest Orchestration Code,94
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 11:30:00+02:00,2026-06-30 13:00:00+02:00,Python FASTAPI and REACT for FE,94
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 14:00:00+02:00,2026-06-30 17:00:00+02:00,Fast API,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-01,2026-07-01 07:30:00+02:00,2026-07-01 08:30:00+02:00,Focus time,35
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-01,2026-07-01 11:00:00+02:00,2026-07-01 12:00:00+02:00,Orchestration Solution for the Analytical Platform,35
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-02,2026-07-02 07:30:00+02:00,2026-07-02 08:30:00+02:00,Focus time,18
@@ -774,10 +776,10 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-24,2026-06-24 08:30:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-25 09:00:00+02:00,Canceled: Daily Stand Up,76
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Canceled: Daily Stand Up,74
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Canceled: Daily Stand Up,94
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Canceled: Daily Stand Up,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Canceled: Daily Stand Up,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,29
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-16,2026-06-16 09:00:00+02:00,2026-06-16 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,100
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 09:00:00+02:00,2026-06-30 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 09:00:00+02:00,2026-06-30 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-14,2026-07-14 09:00:00+02:00,2026-07-14 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,12
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-28,2026-07-28 09:00:00+02:00,2026-07-28 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,100
 Flora.Kundaeli@slipstreamdata.co.za,2026-08-11,2026-08-11 09:00:00+02:00,2026-08-11 09:30:00+02:00,S/Stream - EBU Cadence - Bi-Monthly,12
@@ -813,7 +815,7 @@ Flora.Kundaeli@slipstreamdata.co.za,2026-06-24,2026-06-24 08:30:00+02:00,2026-06
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-25,2026-06-25 08:30:00+02:00,2026-06-25 09:00:00+02:00,Tech Team Daily Stand Up,76
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-26,2026-06-26 08:30:00+02:00,2026-06-26 09:00:00+02:00,Tech Team Daily Stand Up,74
 Flora.Kundaeli@slipstreamdata.co.za,2026-06-29,2026-06-29 08:30:00+02:00,2026-06-29 09:00:00+02:00,Tech Team Daily Stand Up,94
-Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Tech Team Daily Stand Up,35
+Flora.Kundaeli@slipstreamdata.co.za,2026-06-30,2026-06-30 08:30:00+02:00,2026-06-30 09:00:00+02:00,Tech Team Daily Stand Up,94
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-01,2026-07-01 08:30:00+02:00,2026-07-01 09:00:00+02:00,Tech Team Daily Stand Up,35
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-02,2026-07-02 08:30:00+02:00,2026-07-02 09:00:00+02:00,Tech Team Daily Stand Up,18
 Flora.Kundaeli@slipstreamdata.co.za,2026-07-03,2026-07-03 08:30:00+02:00,2026-07-03 09:00:00+02:00,Tech Team Daily Stand Up,29
@@ -2027,7 +2029,6 @@ Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08
 Riyadh.Leonard@slipstreamdata.co.za,2026-06-12,2026-06-12 12:00:00+02:00,2026-06-12 12:30:00+02:00,Canceled: DW: Weekly round-up meeting,24
 Riyadh.Leonard@slipstreamdata.co.za,2026-07-10,2026-07-10 12:00:00+02:00,2026-07-10 12:30:00+02:00,DW: Weekly round-up meeting,12
 Riyadh.Leonard@slipstreamdata.co.za,2026-08-07,2026-08-07 12:00:00+02:00,2026-08-07 12:30:00+02:00,DW: Weekly round-up meeting,24
-Robin.April@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,SSG26 - Monthly Report Update,12
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 08:00:00+02:00,2026-06-02 08:30:00+02:00,SSGP26 - Daily Admin and Planning ,100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 09:00:00+02:00,2026-06-02 12:00:00+02:00,"Internal Projects - Monthly Reports Deployment, Quality and Handover Prep",100
 Robin.April@slipstreamdata.co.za,2026-06-02,2026-06-02 12:00:00+02:00,2026-06-02 15:00:00+02:00,Slipstream Analytical Platform (SAP) - Development of Ingestions Platform in Openflow,100
@@ -2686,7 +2687,6 @@ Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-07,2026-08-07 11:00:00+02:00,2026
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-14,2026-08-14 11:00:00+02:00,2026-08-14 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-21,2026-08-21 11:00:00+02:00,2026-08-21 11:30:00+02:00,Resource Utilization Review ,79
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-08-28,2026-08-28 11:00:00+02:00,2026-08-28 11:30:00+02:00,Resource Utilization Review ,79
-Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-01,2026-06-01 15:00:00+02:00,2026-06-01 17:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,24
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-02,2026-06-02 12:30:00+02:00,2026-06-02 14:30:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,88
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-03,2026-06-03 11:00:00+02:00,2026-06-03 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,91
 Sandisiwe.Manquma@slipstreamdata.co.za,2026-06-04,2026-06-04 11:00:00+02:00,2026-06-04 13:00:00+02:00,Slipstream Internal Bursary Application draft for all my courses + Allison online training course studies ,68
@@ -3067,7 +3067,6 @@ Thando.Calana@slipstreamdata.co.za,2026-06-29,2026-06-29 13:30:00+02:00,2026-06-
 Thando.Calana@slipstreamdata.co.za,2026-07-01,2026-07-01 11:00:00+02:00,2026-07-01 12:15:00+02:00,Summit Encore,47
 Thando.Calana@slipstreamdata.co.za,2026-07-07,2026-07-07 11:00:00+02:00,2026-07-07 12:00:00+02:00,Powering Data Integration with AI: Mastering Openflow with Cortex Code,29
 Thando.Calana@slipstreamdata.co.za,2026-07-15,2026-07-15 11:00:00+02:00,2026-07-15 12:00:00+02:00,Modernizing SQL Server ETL with Snowflake CoCo,44
-Thando.Calana@slipstreamdata.co.za,2026-06-01,2026-06-01 16:00:00+02:00,2026-06-01 17:00:00+02:00,Upskilling,12
 Thando.Calana@slipstreamdata.co.za,2026-06-02,2026-06-02 16:00:00+02:00,2026-06-02 17:00:00+02:00,Upskilling,35
 Thando.Calana@slipstreamdata.co.za,2026-06-03,2026-06-03 16:00:00+02:00,2026-06-03 17:00:00+02:00,Upskilling,65
 Thando.Calana@slipstreamdata.co.za,2026-06-04,2026-06-04 16:00:00+02:00,2026-06-04 17:00:00+02:00,Upskilling,35
