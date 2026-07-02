@@ -1,9 +1,9 @@
 name: Schedule ETL
 
 on:
-  schedule:
-    - cron: '0 6-18 * * 1-5' #https://crontab.guru/
-  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 6-18 * * 1-5' #https://crontab.guru/
+  # workflow_dispatch:
 
 env:
     FILE_NAME: "./data/outlook_events.csv"
